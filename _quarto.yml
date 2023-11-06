@@ -16,7 +16,7 @@ website:
             - publi.qmd
             - pedaPerspectives.qmd
             - publiPerspectives.qmd
-           - ComplexSystems.qmd
+            - ComplexSystems.qmd
             - ComplexPsycho.qmd
       - href: CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf
         text: cv
