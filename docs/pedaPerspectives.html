@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.288">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Yannick Morvan – pedaperspectives</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Yannick Morvan</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Acceuil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">A propos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mon-hdr" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Mon HDR</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mon-hdr">    
+        <li>
+    <a class="dropdown-item" href="./peda.html" rel="" target="">
+ <span class="dropdown-text">Activités universitaires et d’enseignement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publi.html" rel="" target="">
+ <span class="dropdown-text">Activités scientifiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pedaPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Pédagogiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publiPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexSystems.html" rel="" target="">
+ <span class="dropdown-text">Les approches en systèmes complexes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexPsycho.html" rel="" target="">
+ <span class="dropdown-text">Les systèmes complexes en psychologie : la question psychométrique</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf" rel="" target="">
+ <span class="menu-text">cv</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html" rel="" target="">
+ <span class="menu-text">Références</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/yannickmorvan/yannickmorvan.github.io" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/yannick_morvan" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ymorvan@parisnanterre.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-PerspPed" id="toc-sec-PerspPed" class="nav-link active" data-scroll-target="#sec-PerspPed">Pédagogiques</a>
+  <ul class="collapse">
+  <li><a href="#transmettre-la-science-ouverte" id="toc-transmettre-la-science-ouverte" class="nav-link" data-scroll-target="#transmettre-la-science-ouverte">Transmettre la science ouverte</a></li>
+  <li><a href="#crise-et-révolution-de-crédibilité" id="toc-crise-et-révolution-de-crédibilité" class="nav-link" data-scroll-target="#crise-et-révolution-de-crédibilité">Crise et révolution de crédibilité</a></li>
+  <li><a href="#lutter-contre-les-a-priori-et-éveiller-la-réflexion" id="toc-lutter-contre-les-a-priori-et-éveiller-la-réflexion" class="nav-link" data-scroll-target="#lutter-contre-les-a-priori-et-éveiller-la-réflexion">Lutter contre les a priori et éveiller la réflexion</a></li>
+  <li><a href="#les-pratiques-de-recherche-et-académiques-discutables" id="toc-les-pratiques-de-recherche-et-académiques-discutables" class="nav-link" data-scroll-target="#les-pratiques-de-recherche-et-académiques-discutables">Les pratiques de recherche et académiques discutables</a></li>
+  <li><a href="#des-conséquences-des-pratiques-discutables-sur-la-clinique" id="toc-des-conséquences-des-pratiques-discutables-sur-la-clinique" class="nav-link" data-scroll-target="#des-conséquences-des-pratiques-discutables-sur-la-clinique">Des conséquences des pratiques discutables sur la clinique</a></li>
+  <li><a href="#une-réflexion-éthique-de-la-démarche-scientifique" id="toc-une-réflexion-éthique-de-la-démarche-scientifique" class="nav-link" data-scroll-target="#une-réflexion-éthique-de-la-démarche-scientifique">Une réflexion éthique de la démarche scientifique</a>
+  <ul class="collapse">
+  <li><a href="#pour-la-pratique-clinique" id="toc-pour-la-pratique-clinique" class="nav-link" data-scroll-target="#pour-la-pratique-clinique">Pour la pratique clinique</a></li>
+  <li><a href="#pour-la-compréhension-et-la-mesure-des-phénomènes-cliniques" id="toc-pour-la-compréhension-et-la-mesure-des-phénomènes-cliniques" class="nav-link" data-scroll-target="#pour-la-compréhension-et-la-mesure-des-phénomènes-cliniques">Pour la compréhension et la mesure des phénomènes cliniques</a></li>
+  </ul></li>
+  <li><a href="#transmettre-des-compétences-de-sciences-ouvertes-aux-cliniciens" id="toc-transmettre-des-compétences-de-sciences-ouvertes-aux-cliniciens" class="nav-link" data-scroll-target="#transmettre-des-compétences-de-sciences-ouvertes-aux-cliniciens">Transmettre des compétences de sciences ouvertes aux cliniciens</a>
+  <ul class="collapse">
+  <li><a href="#reproductibilité-computationelle-ça-ne-concerne-pas-la-clinique" id="toc-reproductibilité-computationelle-ça-ne-concerne-pas-la-clinique" class="nav-link" data-scroll-target="#reproductibilité-computationelle-ça-ne-concerne-pas-la-clinique">Reproductibilité computationelle : ça ne concerne pas la clinique ?</a></li>
+  <li><a href="#science-ouverte-hal-et-ça-ne-concerne-que-les-approches-quanti" id="toc-science-ouverte-hal-et-ça-ne-concerne-que-les-approches-quanti" class="nav-link" data-scroll-target="#science-ouverte-hal-et-ça-ne-concerne-que-les-approches-quanti">Science ouverte “=HAL et ça ne concerne que les approches quanti” ?</a></li>
+  <li><a href="#réflexion-personnelle-clinicien-et-méthodologiste" id="toc-réflexion-personnelle-clinicien-et-méthodologiste" class="nav-link" data-scroll-target="#réflexion-personnelle-clinicien-et-méthodologiste">Réflexion personnelle : clinicien et méthodologiste !</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+
+<section id="sec-PerspPed" class="level1">
+<h1>Pédagogiques</h1>
+<p>Il s’agit ici de présenter, en tant qu’enseignant-chercheur, quelles sont mes perspectives d’enseignements. Il s’agit, par delà les indicateurs, de proposer un éclairage narratif plus particulièrement focalisé sur les enseignements de Master et de Doctorat en psychologie.</p>
+<p>Une partie de l’évaluation de mes enseignements et notamment la partie qualitative a permis de dégager différents axes pédagogique<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Il s’agit ici de présenter plus précisément les principes organisateurs que je cherche à promouvoir et dont je tente d’imprégner mes enseignements au niveau du Master et du Doctorat de Psychologie.</p>
+<section id="transmettre-la-science-ouverte" class="level2">
+<h2 class="anchored" data-anchor-id="transmettre-la-science-ouverte">Transmettre la science ouverte</h2>
+<p>Cet éclairage est le résultat d’une sollicitation pour évoquer la place de la science ouverte<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> en psychologie clinique, ce qui m’a permis de formaliser par écrit une partie de ce qui était sous-jacent à la construction de mes cours<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Il s’agit également d’être en cohérence avec ce que je pense important pour ce champ disciplinaire et, pour reprendre l’expression anglaise, “<em>to put my money where my mouth is</em>”<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://twitter.com/lakens/status/1709062558848553225?s=12&amp;t=-BaOHKSmB_k0eSWxiAakSA"><img src="images/Lakens_Tweet_PutMoneyMouthIs.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Putting Your Money Where Your Mouth Is. Credit Steve Lindsay cité par Daniel Lakens</figcaption>
+</figure>
+</div>
+<p>Il s’agit ici d’être <a href="https://twitter.com/yannick_morvan/status/1662712851260231680">activement engagé dans l’évolution et la dissémination des pratiques de science ouverte auprès des collègues et des étudiants</a>. Ces enjeux sont, fort heureusement, de plus en plus reconnus au niveau comme en témoigne l’engagement des institutions européennes à ce sujet, mais doivent pouvoir s’incarner concrètement au plus tôt dans nos enseignements <span class="citation" data-cites="SupportEuropeBold2022a leisingTenStepsBetter2022 cristeaCommentPsychologieAborde2022 kowalczykWhatSeniorAcademics2022a">[@SupportEuropeBold2022a; @leisingTenStepsBetter2022; @cristeaCommentPsychologieAborde2022; @kowalczykWhatSeniorAcademics2022a]</span>.</p>
+<blockquote class="blockquote">
+<p>“<em>Les jeunes chercheurs et les étudiants en master doivent être formés aux pratiques de la science ouverte afin d’en faire un comportement par défaut, et dans de nombreux programmes de psychologie, c’est ce qui se passe actuellement. La reproductibilité, en particulier, est considérée comme un élément vital. Je constate un changement de perspective et de formation à tous les niveaux, y compris au niveau du premier cycle et des études supérieures. La jeune génération est très favorable à la science ouverte. En psychologie, les projets de réplication deviennent la norme en tant que projets étudiants. Beaucoup de choses se passent en termes de formation dans cet espace et j’ai bon espoir que cette nouvelle direction soit la bonne.</em>” <span class="citation" data-cites="cristeaCommentPsychologieAborde2022">@cristeaCommentPsychologieAborde2022</span></p>
+</blockquote>
+</section>
+<section id="crise-et-révolution-de-crédibilité" class="level2">
+<h2 class="anchored" data-anchor-id="crise-et-révolution-de-crédibilité">Crise et révolution de crédibilité</h2>
+<p>En effet, la crise de reproductibilité/réplicabilité, qui a touché la psychologie il y a plus d’une décennie maintenant, a été un tournant majeur pour que notre discipline puisse entamer sa “<em>révolution de crédibilité</em>” (voir par exemple les modes de changement présentés dans la figure 1 de l’article de <span class="citation" data-cites="korbmacherReplicationCrisisHas2023">@korbmacherReplicationCrisisHas2023</span>, librement accessible sur <a href="https://osf.io/preprints/metaarxiv/r6cvx/">MetaArXiv</a>). Compte-tenu de leur importance, il convient d’expliciter brièvement les termes de reproductibilité ou de réplicabilité. La reproductibilité renvoie à la capacité de reproduire ou de retrouver les mêmes résultats qu’un chercheur à partir de ses données initiales (et de son code d’analyse). La réplicabilité renvoie à la capacité à retrouver les mêmes résultats avec un matériel identique (par exemple les mêmes questionnaires ou échelles de mesures, lorsque cela est possible) mais dans un contexte temporel et spatial différent (à un autre période, dans une autre ville, région ou pays par exemple). Dans le cadre d’une étude de réplication, cela peut parfois être réalisé avec une population similaire (lorsque cela est possible) ou différente s’il s’agit de tester la possibilité que les résultats observés se généralisent à une autre population (par exemple d’une population étudiante en psychologie à une population de jeunes travailleurs).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Korbmacher2023-CredibilityChange.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Modes de changements pour une crédibilité scientifique. Crédit Korbmacher et al.&nbsp;(2023)</figcaption>
+</figure>
+</div>
+<p>Il convient comme autre préalable de préciser que mon propos illustre ici cette question dans mes enseignements à partir d’un point de vue personnel et donc, nécessairement, soumis à ses propres biais. Ce témoignage subjectif, n’a pas une volonté d’exhaustivité ou de preuve, mais aussi de témoigner de certains a priori qui demeurent cependant tant dans le domaine de l’enseignement, de la formation à la recherche que du recrutement des futurs enseignants-chercheurs en psychologie clinique ou encore de l’évaluation de ces derniers.</p>
+</section>
+<section id="lutter-contre-les-a-priori-et-éveiller-la-réflexion" class="level2">
+<h2 class="anchored" data-anchor-id="lutter-contre-les-a-priori-et-éveiller-la-réflexion">Lutter contre les a priori et éveiller la réflexion</h2>
+<p>Une des premières choses qui questionne lorsque que l’on aborde la crise de reproductibilité/réplicabilité dans le champ de la psychologie clinique est tout d’abord l’impression que cette dernière ne serait pas concernée. Un premier a priori qui peut ressortir du dialogue avec des étudiants ou des collègues est de considérer que puisque nos données dépendent de patients et concernent le soin. Ainsi, de nature “plus conversationnelle”, elles seraient “plus solides/fiables” ou moins soumises aux biais que d’autres disciplines “plus expérimentales”. S’en dégagerait ainsi une représentation que la crise que nous avons mentionnée ne soit «&nbsp;cantonnée&nbsp;» aux approches quantitatives voir uniquement à la psychologie sociale ou cognitive <span class="citation" data-cites="Tackett2017 Tackett2019 tackettIntroductionSpecialSection2019">[@Tackett2017; @Tackett2019; @tackettIntroductionSpecialSection2019]</span>.</p>
+<p>En tant qu’enseignant-chercheur à l’université Paris Nanterre, j’ai la chance de pouvoir intervenir au niveau des enseignements de Licence, Master et Doctorat. Ces enseignements sont principalement réalisée au sein de l’équipe pédagogique Psychologie Clinique, Empirique et TCC, qui revendique une approche basée “sur les faits” ; champ théorique dans lequel je me situe et me reconnais<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Parmi les enseignements que j’y aie développés au fil des années, trois enseignements de Master illustrent justement la question de la science ouverte comme voie de progrès en psychologie en général et en clinique en particulier.</p>
+</section>
+<section id="les-pratiques-de-recherche-et-académiques-discutables" class="level2">
+<h2 class="anchored" data-anchor-id="les-pratiques-de-recherche-et-académiques-discutables">Les pratiques de recherche et académiques discutables</h2>
+<p>Le premier est un enseignement en <a href="https://formations.parisnanterre.fr/fr/catalogue-des-formations/master-lmd-05/psychologie-clinique-psychopathologie-et-psychologie-de-la-sante-master-JWQGPN21/psychologie-clinique-et-psychopathologie-empirique-et-cognitivo-comportementale-JXBIB06Q/ue-elargir-ses-connaissances-personnaliser-son-parcours-K233DZ1Q/ue-seminaire-K2BPFWJY/methodologies-de-la-recherche-en-psychologie-clinique-K2BPCK9F.html">méthodologie de la recherche</a> qui est commun aux étudiants qui suivent un parcours en TCC et en psychanalyse. Ce cours se base sur l’ouvrage de Chris Chambers&nbsp;: les 7 péchés capitaux de la psychologie <span class="citation" data-cites="chambersSevenDeadlySins2019">@chambersSevenDeadlySins2019</span>. Parmi les objectifs de cet enseignement figurent :</p>
+<ul>
+<li><p>l’intérêt de présenter la question des biais dans la recherche,</p></li>
+<li><p>de la flexibilité cachée des chercheurs (de multiples dégrées de libertés dans les choix de codage ou d’analyses pour un même jeu de données <span class="citation" data-cites="steegenIncreasingTransparencyMultiverse2016">@steegenIncreasingTransparencyMultiverse2016</span>)</p></li>
+<li><p>des erreurs, voir des fraudes,</p></li>
+<li><p>mais également certains aspects malsains de la publication scientifique.</p></li>
+</ul>
+<p>Parmi ces aspects, différents problèmes sont évoqués comme la place de&nbsp;:</p>
+<ul>
+<li><p>l’impact-factor, “publier au périr”,</p></li>
+<li><p>les auteurs hyper-prolifiques,</p></li>
+<li><p>les pratiques de reviewing et éditoriales discutables,</p></li>
+<li><p>les effets de modes ainsi que les pratiques de clan ou de chapelles dans la science,</p></li>
+<li><p>les biais systémiques en faveur d’une généralisabilité abusive des résultats de la recherche sur certaines populations et contextes au détriment d’autres<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> <span class="citation" data-cites="ritchieScienceFictionsExposing2020 tennantMultidisciplinaryPerspectiveEmergent2017">[@ritchieScienceFictionsExposing2020; @tennantMultidisciplinaryPerspectiveEmergent2017]</span>.</p></li>
+</ul>
+<p>Il s’agit également d’envisager leurs potentielles conséquences en termes&nbsp;de fonctionnement du milieu académique, de l’évaluation des chercheurs ainsi que de recrutement ou de promotion de ces derniers.</p>
+<p>La conclusion de cet enseignement se fonde sur l’utilisation du chapitre intitulé «&nbsp;rédemption&nbsp;» afin de présenter, dès la première année de Master d’étudiants (M1), les possibilités de réforme qu’offre la science ouverte. Chris Chambers est par ailleurs un acteur connu dans la réforme de la publication scientifique pour son engagement autour du pré-enregistrement des recherches. Les projets de réformes centrées sur la science ouverte dans le monde académique sont maintenant bien connus depuis les déclarations de DORA <span class="citation" data-cites="SupportEuropeBold2022">[@SupportEuropeBold2022]</span> ou les différents rapports de l’association des universités européenne <span class="citation" data-cites="moraisPrinciplesPracticesOpen2021">[@moraisPrinciplesPracticesOpen2021]</span> jusqu’à la Commission Européenne <span class="citation" data-cites="europeancomissionOpenScience2023">[@europeancomissionOpenScience2023]</span>.</p>
+</section>
+<section id="des-conséquences-des-pratiques-discutables-sur-la-clinique" class="level2">
+<h2 class="anchored" data-anchor-id="des-conséquences-des-pratiques-discutables-sur-la-clinique">Des conséquences des pratiques discutables sur la clinique</h2>
+<p>Le second enseignement s’intitule <a href="https://formations.parisnanterre.fr/fr/catalogue-des-formations/master-lmd-05/archeologie-sciences-pour-l-archeologie-master-JWQDP9KG/archeologie-JX3119T0/ue-elargir-ses-connaissances-personnaliser-son-parcours-K42IM8DF/banque-de-seminaires-s9-K1W5751X/seminaire-actualite-de-la-recherche-en-psychotherapie-K2BPNEB1.html">Actualité de la recherche en psychothérapie</a> et porte son attention sur l’évaluation de ces dernières ainsi que la compréhension (sur un mode introductif) des techniques de méta-analyses. Il concerne les étudiants Master 2 et la question des biais, ici de mesures ou de méthodes, y demeure centrale. À nouveau, il s’agit d’interroger nos connaissances avec humilité en reconnaissant ce que nous apporte la démarche scientifique sans en cacher ses limites. Là encore, la question de la science ouverte et de la transparence occupe une place importante.</p>
+<p>Une des illustrations de l’enseignement est un article de la revue Science qui illustre la difficulté des méta-analyses (sans en rejeter bien évidemment l’intérêt) tout en pointant un élément intéressant de l’histoire des sciences. En effet, cet article présente aux étudiants les méta-analyses, avec comme point de fondement la question de savoir si les TCC étaient plus efficaces ou non que la psychanalyse dans la prise en charge des troubles psychiques. Cette technique statistique a été développée par Glass qui, d’après son expérience personnelle de la psychanalyse, considérait cette approche de soin comme efficace contrairement à Eysecnck. Il critiquait ce dernier sur sa méthodologie d’évaluation en considérant qu’il faisait du “cherry-picking” d’études lui ce qui lui permettait de démontrer, de manière opportuniste, sa croyance initiale <span class="citation" data-cites="Vrieze2018">[@Vrieze2018]</span>.</p>
+<blockquote class="blockquote">
+<p>“T<em>he term meta-analysis was <a href="http://www.jstor.org/stable/1174772">coined</a> in 1976 by statistician Gene Glass of the University of Colorado in Boulder, who described it as “an analysis of analyses.” Glass, who worked in education psychology, had undergone a psychoanalytic treatment and found it to work very well; he was annoyed by critics of psychoanalysis, including Hans Eysenck, a famous psychologist at King’s College London, who Glass said was cherry picking studies to show that psychoanalysis wasn’t effective, whereas behavior therapy was.</em></p>
+<p><em>At the time, most literature reviews took a narrative approach; a prominent scientist would walk the reader through their selection of available studies and draw conclusions at the end. Glass introduced the concept of a systematic review, in which the literature is scoured using redefined search and selection criteria. Papers that don’t meet those criteria are tossed out; the remaining ones are screened and the key data are extracted. If the process yields enough reasonably similar quantitative data, the reviewer can do the actual meta-analysis, a combined analysis in which the studies’ effect sizes are weighed.</em></p>
+<p><em>When Glass did this for studies of psychoanalysis, the result bore out his personal experience of its efficacy. “All the behavior therapists were outraged and all the Freudians said they knew it all along,” says Glass, now 77 and retired. Eysenck was not impressed; he called meta-analyses “<a href="http://dx.doi.org/10.1037/0003-066X.33.5.517.a">an exercise in mega-silliness</a>” and “abuse of research integration.”“</em></p>
+<p>Extrait de <span class="citation" data-cites="Vrieze2018">@Vrieze2018</span></p>
+</blockquote>
+<p>Ce point fait directement échos à une des citations de Francis Bacon (de 1620) faite par Chambers dans son ouvrage&nbsp;:&nbsp;“<em>The human understanding when it has once adopted an opinion … drawns all things else to support and agree with it</em>”.</p>
+<blockquote class="blockquote">
+<p>“<em>C’est à tort en effet qu’on affirme que les sens humains sont la mesure des choses ; bien au contraire, toutes les perceptions, des sens comme de l’esprit, ont proportion à l’homme, non à l’univers. Et l’entendement humain ressemble à un miroir déformant qui, exposé aux rayons des choses, mêle sa propre nature à la nature des choses, qu’il fausse et brouille.</em></p>
+<p><em>L’entendement humain, en vertu de son caractère propre, est porté à supposer dans les choses plus d’ordre et d’égalité qu’il n’en découvre ; et, bien qu’il y ait dans la nature beaucoup de choses sans concert et sans pareil, cependant l’entendement surajoute des parallèles, des correspondances, des relations qui n’existent pas […] En outre, même en l’absence de cet engouement et de cette vaine frivolité dont nous venons de parler, c’est une erreur constante et propre à l’entendement humain d’être mis en branle davantage par les affirmatives que par les négatives, alors que, en bonne règle, il devrait se prêter également aux deux. Tout au contraire, lorsqu’il faut établir un axiome vrai, la force de l’instance négative est plus grande.</em></p>
+<p><em>L’entendement humain, une fois qu’il s’est plu à certaines opinions (parce qu’elles sont reçues et tenues pour vraies ou qu’elles sont agréables), entraîne tout le reste à les appuyer et à les confirmer ; si fortes et nombreuses que soient les instances contraires, il ne les prend pas en compte, les méprise, ou les écarte et les rejette par des distinctions qui conservent intacte l’autorité accordée aux premières conceptions, non sans une présomption grave et funeste […]</em></p>
+<p><em>L’entendement humain n’est pas une lumière sèche : en lui s’infuse la volonté des passions ; ce qui engendre des sciences taillées sur mesure, car ce que l’homme désire être vrai, il le croit de préférence. C’est pourquoi, il rejette les choses difficiles, par impatience dans la recherche ; les choses modérées, parce qu’elles contraignent ses espérances ; les profondeurs de la nature, par superstition ; la lumière de l’expérience, par orgueil et par morgue, de peur de paraître occuper l’esprit à des objets vils et changeants ; les paradoxes à cause de l’opinion du vulgaire. Bref, c’est de mille façons, parfois imperceptibles, que les passions imprègnent et imbibent l’entendement</em>.”</p>
+<p>Francis Bacon, <a href="https://medium.com/@nmoor/francis-bacon-novum-organum-les-idoles-de-la-race-1047318a7cc8">extrait de Novum Organum, traduction par Michel Malherbe et Jean-Marie Pousseur</a>.</p>
+</blockquote>
+<p>On ne pourra s’empêcher de relever une magnifique illustration des biais cognitifs (ici de confirmation) présents dans cet extrait de 1620 mais dont les racines remontent à la philosophie Grecque, notamment chez les Stoïciens <span class="citation" data-cites="cavannaWesternOriginsMindfulness2023">[@cavannaWesternOriginsMindfulness2023]</span>.</p>
+<p>Un des a priori parfois présents chez les étudiants<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> est la difficulté à comprendre en quoi ces enseignements sont importants, voire essentiels à la formation de futurs psychologues cliniciens dont la mission attendue est celle, avant tout, du soin au patient. Une des réponses se trouve dans l’importance de la démarche scientifique qui, même imparfaite, permet d’orienter les techniques de prise en charge les plus à même d’aider les patients. Sans cette démarche, des théories et des techniques (quelles que soient leurs champs théoriques initiale, TCC, Psychanalyse…) ne peuvent progresser. Elles risquent d’être maintenues dans la pratique clinique ou d’être appliquées de manière inadaptée, entraînant une perte de chance pour les patients ou, pire, des effets indésirables qui ne sont ni identifiés, compris et encore moins maîtrisés.</p>
+</section>
+<section id="une-réflexion-éthique-de-la-démarche-scientifique" class="level2">
+<h2 class="anchored" data-anchor-id="une-réflexion-éthique-de-la-démarche-scientifique">Une réflexion éthique de la démarche scientifique</h2>
+<section id="pour-la-pratique-clinique" class="level3">
+<h3 class="anchored" data-anchor-id="pour-la-pratique-clinique">Pour la pratique clinique</h3>
+<p>Cet enjeu de nature éthique et d’intégrité scientifique fait le lien avec un autre enseignement de M2 (en anglais&nbsp;: <a href="https://formations.parisnanterre.fr/fr/catalogue-des-formations/master-lmd-05/psychologie-clinique-psychopathologie-et-psychologie-de-la-sante-master-JWQGPN21/psychologie-clinique-et-psychopathologie-empirique-et-cognitivo-comportementale-JXBIB06Q/ue-developper-ses-competences-linguistiques-K23COW1K/ue-research-seminar-in-clinical-psychology-science-K23D9B9J/research-seminar-in-clinical-psychology-science-K23DA7L0.html">Research Seminar in Clinical Psychology Science</a>). Même si cet enseignement n’aborde pas aussi directement la question de la science ouverte, il reste en lien avec ces deux enseignements, car il questionne un aspect plus épistémologique de la science. Dans ce cours sont présentées, entre autres choses et en introduction, les idées de Popper, Kuhn, Lakatos et Feyerabend. L’objectif est de questionner en quoi consiste la démarche scientifique, “<a href="https://www.ted.com/talks/naomi_oreskes_why_we_should_trust_scientists?language=fr"><em>Pourquoi nous devons faire confiance aux scientifiques</em></a>” et aux résultats de leurs travaux. Cependant, discuter des “résultats” de la recherche implique de s’intéresser aux pratiques de recherches, tant les pratiques “positives” comme le mouvement de “science ouverte” que les pratiques “négatives” telles que les pratiques de recherches discutables. Une des conséquences est le rapport entre science et société que ces pratiques peuvent impliquer. Il s’agit notamment dans la diffusion par la presse grand publique d’être vigilant aux résultats qui n’ont pas tous les mêmes niveaux de qualités ou de preuves et qui ne restituent pas nécessairement le contexte approprié de ces études. Ces questions sont fréquemment soulevées par <a href="https://ramus-meninges.fr/2022/10/27/science-et-medias-n44-retour-sur-retard-cognitif-2/">Frank Ramus sur son blog</a> et illustrées dans le cours par une <a href="https://youtu.be/0Rnq1NpHdmw">vidéo humoristique de John Oliver de l’émission Last Week Tonight sur la Science</a>.</p>
+<p>Une fois ces éléments présentés aux étudiants, l’accent est ensuite mis sur les travaux de Scott Lilienfeld&nbsp;: tant ceux sur l’approche scientifique en psychologie <span class="citation" data-cites="lilienfeldCanPsychologyBecome2010">@lilienfeldCanPsychologyBecome2010</span> ou des résistances à l’adoption de pratiques “evidence-based” <span class="citation" data-cites="lilienfeldWhyManyClinical2013">@lilienfeldWhyManyClinical2013</span> . Une des citations importantes de ses travaux reste pour les étudiants futurs psychologues cliniciens en charge de patients : “s<em>cience is a prescription for humility and a method of ‘arrogance control’“.</em></p>
+<blockquote class="blockquote">
+<p>“<em>Instructors should also expose students to the ubiquitous heuristics and biases (e.g., confirmation bias, hindsight bias, illusory correlation) that can lead even well-trained individuals to either perceive change in its absence, or to misperceive or misterpret change in its presence.</em></p>
+<p><em>We especially recommend adopting a historical perspective, in which students learn about the lengthy history of errors in medicine, including psychiatry, that have stemmed from an overreliance on naïve realism and unguided clinical intuition.</em></p>
+<p><em>In this way, students can come to see how even intelligent practitioners in previous generations were fooled, and how scientific methods, such as RCTs, allowed scientists to correct previous errors and thereby improve patient care</em>.”</p>
+<p>Extraits de <em>Why many clinical psychologists are resistant to evidence-based practice: Root causes and constructive remedies,</em> <span class="citation" data-cites="lilienfeldWhyManyClinical2013">@lilienfeldWhyManyClinical2013 [p. 895-896]</span>.</p>
+</blockquote>
+<p>Pour compléter cet enseignement, quelques <a href="https://eiko-fried.com/talks/">vidéos des conférences d’Eiko Fried en anglais</a> sont présentées afin de discuter des conséquences cliniques de nos présupposés théoriques et de nos modélisations tant du point de vue de la recherche que de la prise en charge . En fonction des années deux vidéos parmi quatre sont discutés et les deux autres indiquées aux étudiants. Ces dernières sont :</p>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=snaKrIE9thg">Depression is a problematic phenotype: Studying symptoms over syndromes</a> ;</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=DZf8VHM1pHI">Mental health: studying systems instead of syndromes</a> ;</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=m7V_7RiWt5s">Measurement matters: why assessment of mental disorders poses a barrier to clinical progress</a> ;</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=1Zh6n_mOz6Q&amp;list=PL483tLgtbNNqbO78FdohNmeYqMnMYhxjj">Theory and measurement crises as obstacles to replicability in Clinical Psychology</a>.</p></li>
+</ul>
+</section>
+<section id="pour-la-compréhension-et-la-mesure-des-phénomènes-cliniques" class="level3">
+<h3 class="anchored" data-anchor-id="pour-la-compréhension-et-la-mesure-des-phénomènes-cliniques">Pour la compréhension et la mesure des phénomènes cliniques</h3>
+<p>Le troisième enseignement est une option de Master qui s’intitule <a href="https://formations.parisnanterre.fr/fr/catalogue-des-formations/master-lmd-05/psychologie-clinique-psychopathologie-et-psychologie-de-la-sante-master-JWQGPN21/psychologie-clinique-et-psychopathologie-empirique-et-cognitivo-comportementale-JXBIB06Q/ue-maitriser-un-domaine-et-ses-methodes-K23COWLC/ue-intervenir-en-pratique-clinique-K23DEHT4/mesures-et-statistiques-pour-psychologues-cliniciens-K24CREOQ.html">Mesures et statistiques pour psychologue clinicien</a> dont l’objectif est d’apporter des éclairages, tant théoriques que techniques, à la pratique des tests en psychologie et plus particulièrement à l’aspect psychométrique des analyses factorielles<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. Comment “savons-nous” qu’il y a des dimensions différentes dans la mesure de l’intelligence ou de la personnalité ? Comment les identifions-nous et déterminons leurs nombres ainsi que leurs relations&nbsp;? Quels sont les a priori théoriques qui les sous-tendent&nbsp;? Quelles en sont leurs limites, tant dans leur pouvoir explicatif que prédictif, ainsi que leurs présupposées&nbsp;(par exemple, la simple question de l’invariance de mesure ou le fait de présupposer qu’une échelle d’évaluation soit stable dans le temps et l’espace si ce n’est pas le cas) ? Tous ces éléments sont présentés (de manière introductive) autour d’une démarche pas à pas de l’analyse factorielle d’une échelle de personnalité<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
+<p>Cela permet ainsi d’aborder les questions de modélisations et de restrictions que l’on peut leur imposer, de la confrontation des écarts entre “données observées” et “données estimées” sur la base d’un modèle qui exerce des contraintes sur celles-ci. Cela questionne également sur la solidité des construits comme le Big Five<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>. Cet enseignement interroge la nature théorique supposée des construits (latent ou en réseau là encore présentés en méthodologie de la recherche en Master 1)<span class="citation" data-cites="borsboomTheoryConstructionMethodology2021 robinaughInvisibleHandsFine2021">[@borsboomTheoryConstructionMethodology2021; @robinaughInvisibleHandsFine2021]</span>, qui est illustré ici par le questionnement de nos conceptions (théoriques) du développement de l’intelligence <span class="citation" data-cites="Savi2019">[@Savi2019]</span> ou de la personnalité <span class="citation" data-cites="lunanskyPersonalityResiliencePsychopathology2020">[@lunanskyPersonalityResiliencePsychopathology2020]</span> et la manière dont on les modélise avec des outils informatiques tels que le logiciel R.</p>
+<p>Parmi les a priori présents se trouve l’idée que l’enseignement, par-delà son côté méthodologique, serait un cours finalement d’analyses statistiques voir d’informatique ou de mathématiques (dont je suis loin d’avoir les compétences requises) bien top éloigné des considérations cliniques. Pour autant, la question de la mesure en psychologie clinique demeure fondamentale, surtout dans une démarche qui se veut empirique et basée sur les faits. Comprendre les modèles que nous utilisons et leurs limites (modèles latents ou en réseau, invariance de mesure, stationnarité…) parait un outillage extrêmement important pour le psychologue clinicien afin qu’il puisse mieux prendre la mesure et considérer les enjeux du phénomène clinique qu’il lui appartient d’évaluer <span class="citation" data-cites="morvanSanteMentaleEtudiants2021">[@morvanSanteMentaleEtudiants2021]</span>, et ce, en accord avec sa déontologie.</p>
+<blockquote class="blockquote">
+<p>“<strong><em>PRINCIPES GÉNÉRAUX</em></strong></p>
+<p><em>La complexité des situations psychologiques s’oppose à l’application automatique de règles. Le respect du présent code de déontologie repose sur une réflexion éthique et une capacité de discernement dans l’application et le respect des grands principes suivants :</em></p>
+<p><strong><em>Principe 4 : Compétence</em></strong></p>
+<p><em>Chaque psychologue est garant de ses qualifications particulières. Elle·il définit ses limites propres compte tenu de sa formation et de son expérience. Il est de sa responsabilité déontologique de refuser toute intervention lorsqu’elle·il sait ne pas avoir les compétences requises. Quels que soient le contexte de son intervention et les éventuelles pressions subies, elle·il agit avec prudence, mesure, discernement et impartialité.</em></p>
+<p><strong><em>Principe 6 : Rigueur et respect du cadre d’intervention</em></strong></p>
+<p><em>Les dispositifs méthodologiques mis en place par la·le psychologue répondent aux objectifs de ses interventions, et à eux seulement.Les modes d’intervention choisis et construits par la·le psychologue doivent pouvoir faire l’objet d’une explicitation raisonnée et adaptée à son interlocuteur, ou d’une argumentation contradictoire avec ses pairs de leurs fondements théoriques et méthodologiques.</em></p>
+<p><strong><em>CHAPITRE III MODALITÉS TECHNIQUES D’EXERCICE</em></strong></p>
+<p><em><strong>Article 20 :</strong> La pratique de la·du psychologue est indissociable d’une réflexion critique portant sur ses choix d’intervention. Elle ne se réduit pas aux méthodes ou techniques employées. Elle nécessite une mise en perspective théorique et éthique de celles-ci.</em></p>
+<p><em><strong>Article 21 :</strong> Un des outils principaux de la·du psychologue est l’entretien. Quand, à des fins d’évaluation, de diagnostic, d’orientation ou de sélection, la·le psychologue a recours aux tests, ceux-ci doivent avoir été scientifiquement validés. Dans l’administration, la correction et l’analyse des résultats de tests, la·le psychologue respecte les principes scientifiques et professionnels acquis pendant sa formation spécifique et en référence aux recommandations de la commission internationale des tests.</em></p>
+<p><em><strong>Article 22 :</strong> La·le psychologue est averti·e du caractère relatif de ses évaluations et interprétations et elle·il prend en compte les processus évolutifs de la personne. Elle·il émet des conclusions contextualisées et non réductrices concernant les ressources psychologiques et psychosociales des individus ou des groupe.</em></p>
+<p><strong><em>CHAPITRE IV RELATIONS DU PSYCHOLOGUE AVEC SES PAIRS</em></strong></p>
+<p><em><strong>Article 27 :</strong> La·le psychologue respecte la pluralité des références théoriques et les pratiques de ses pairs, pour autant qu’elles ne contreviennent pas aux principes généraux du présent Code. Cela n’exclut pas l’éventualité d’une critique argumentée.</em></p>
+<p><strong><em>CHAPITRE V DIFFUSION DE LA PSYCHOLOGIE</em></strong></p>
+<p><em><strong>Article 30 :</strong> La·le psychologue a une responsabilité dans ce qu’elle·il diffuse de la psychologie et de l’image de la profession auprès du public et des médias. Elle·il se montre vigilant quant au respect du présent Code dans les conditions de sa participation à tout message diffusé publiquement.</em></p>
+<p><em><strong>Article 31 :</strong> La·le psychologue fait preuve de rigueur et circonspection dans sa présentation au public, des méthodes, techniques et outils psychologiques qui lui sont propres. Elle·il veille à rappeler, le cas échéant, que leur utilisation, instrumentalisation ou détournement par des non-psychologues est illégitime, et peut être source de danger pour le public.</em></p>
+<p><strong><em>TITRE II FORMATION DU PSYCHOLOGUE</em></strong></p>
+<p><em><strong>Article 34 :</strong> L’enseignement de la psychologie fait une place aux disciplines qui contribuent à la connaissance de l’homme et au respect de ses droits, afin de préparer les étudiant·e·s à aborder les questions liées à leur futur exercice dans le respect des connaissances disponibles, de leurs fondements épistémologiques, scientifiques et des valeurs éthiques.</em></p>
+<p><em><strong>Article 35 :</strong> La formation initiale de la·du psychologue intègre les différents champs d’étude de la psychologie, et la pluralité des cadres théoriques, méthodologiques et pratiques, dans une volonté d’ouverture, de mise en perspective et de confrontation critique.</em></p>
+<p><em><strong>Article 36 :</strong> Les institutions de formation présentent et explicitent tout au long de leur cursus le contenu du présent code aux étudiant·e·s en psychologie. Elles impulsent la réflexion sur les questions éthiques et déontologiques liées aux différentes pratiques : enseignement, formation, exercice professionnel, recherche. Elles fournissent les références des textes législatifs et réglementaires en lien avec la profession.</em></p>
+<p><em><strong>Article 37 :</strong> La·le psychologue peut intervenir dans des formations qui font l’objet d’une explicitation compréhensible et d’une argumentation critique de leurs fondements théoriques et de leur construction.</em></p>
+<p><em><strong>Article 38 :</strong> Il est enseigné aux étudiant·e·s que les modes d’intervention concernant l’évaluation relative aux personnes et aux groupes requièrent une réflexion épistémologique, la plus grande prudence et la plus grande rigueur scientifique et éthique. Les présentations de cas veillent au respect de la dignité et de l’intégrité des personnes concernées.</em></p>
+<p><em><strong>Article 44 :</strong> L’évaluation relative aux travaux des étudiant·e·s tient compte des règles de validation des connaissances acquises au cours de la formation initiale selon les modalités officielles. Elle porte sur les disciplines enseignées à l’université, sur les capacités critiques et d’auto- évaluation des candidat·e·s. Elle requiert la référence aux exigences éthiques et aux règles déontologiques des psychologues.</em></p>
+<p><strong><em>TITRE III LA RECHERCHE EN PSYCHOLOGIE</em></strong></p>
+<p><em><strong>Article 47 :</strong> La recherche en psychologie s’appuie sur une connaissance approfondie de la littérature scientifique, notamment dans le champ des sciences humaines qui reste la référence prépondérante. La·le chercheuse·eur choisit une méthodologie permettant de construire des connaissances valides. Cette méthodologie doit se référer à la charte nationale de déontologie de la recherche.</em></p>
+<p><em><strong>Article 53 :</strong> La·le chercheuse·eur a le devoir d’informer le public des connaissances acquises en restant prudent·e dans ses conclusions. Elle·il veille à ce que ses comptes rendus ne soient pas modifiés ou utilisés dans des développements contraires aux principes éthiques et déontologiques. Elle·il reste vigilant·e quant au risque de détournement des résultats de ses recherches.</em></p>
+<p><em><strong>Article 54 :</strong> La·le chercheuse·eur analyse les effets de ses interventions sur les participant·e·s à la recherche. Elle·il s’enquiert de la façon dont elles·ils ont vécu leur participation. Elle·il s’efforce de remédier aux inconvénients ou aux effets éventuellement néfastes qu’aurait pu entraîner sa recherche</em>.”</p>
+<p>Extraits du <a href="https://www.codededeontologiedespsychologues.fr/Code-de-Deontologie-des.html">Code de Déontologie des Psychologues 2021</a></p>
+</blockquote>
+<p>Je présente parfois aux étudiants une image afin d’illustrer que la complémentarité des compétences psychologiques et techniques qui représente un des atouts des psychologues et des chercheurs en psychologue non négligeable. L’image est issue d’un billet de blog (librement accessible sur internet) de <span class="citation" data-cites="grootendorstWhyPsychologistsCan2020">@grootendorstWhyPsychologistsCan2020</span> intitulé <em>Why Psychologists can be great Data Scientist</em>s. Dans ce billet de blog, l’auteur s’amuse des compétences, souvent ignorées des psychologues qui peuvent faire d’eux d’excellents “data scientist” en les positionnant dans le carré “licorne” par rapport aux carrières d’“ingeneering” et de “business”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.maartengrootendorst.com/blog/psychologists/"><img src="images/Psychology_Unicorn.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Les compétences en data des psychologues. Crédit Maarten Grootendorst, 2020</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="transmettre-des-compétences-de-sciences-ouvertes-aux-cliniciens" class="level2">
+<h2 class="anchored" data-anchor-id="transmettre-des-compétences-de-sciences-ouvertes-aux-cliniciens">Transmettre des compétences de sciences ouvertes aux cliniciens</h2>
+<section id="reproductibilité-computationelle-ça-ne-concerne-pas-la-clinique" class="level3">
+<h3 class="anchored" data-anchor-id="reproductibilité-computationelle-ça-ne-concerne-pas-la-clinique">Reproductibilité computationelle : ça ne concerne pas la clinique ?</h3>
+<p>L’a priori reposant sur le côté “informatique plus que psychologique, voire clinique” de l’enseignement est également présent dans la formation à la recherche (encadrement de mémoires de Master et de Thèse). Un des points très importants que je cherche à développer dans les compétences transmises aux étudiants qui effectuent des recherches sous ma direction est de maîtriser concrètement des outils de la science ouverte. À ce titre il s’agit d’apprendre à utiliser R, Rstudio &amp; Github comme des outils de bonne pratique de recherche liée notamment à la transparence ainsi qu’à la reproductibilité “computationnelle”.</p>
+<p>Ce terme, qui constitue un chapitre d’un ouvrage en ligne de Daniel Lakens (<a href="https://lakens.github.io/statistical_inferences/14-computationalreproducibility.html">chapitre 14</a>), constitue le premier exercice que je donne aux étudiants de manière à initier un travail sur deux années qui se développera sur ces bases <span class="citation" data-cites="lakensImprovingYourStatistical2022">[@lakensImprovingYourStatistical2022]</span>. À nouveau ces éléments ne renvoient pas qu’à une compétence informatique. Il s’agit de voir au-delà, non seulement comme l’acquisition de compétences de bonnes pratiques en sciences au service de la psychologie clinique, mais aussi à l’acquisition de compétences qui peuvent être rares et précieuses dans la formation de nos étudiants <span class="citation" data-cites="lowndesOurPathBetter2017">[@lowndesOurPathBetter2017]</span>. En effet, ces dernières associées à leur formation en psychologie leur confèrent une bien plus grande attractivité sur le marché du travail <span class="citation" data-cites="grootendorstWhyPsychologistsCan2020">[@grootendorstWhyPsychologistsCan2020]</span>, loin des présupposés et autres caricatures sur la formation des psychologues qui ont tendance à être véhiculés, notamment en France.</p>
+<p>La question de la reproductibilité computationnelle m’amène à la question des compétences que l’on recherche pour les enseignants-chercheurs en psychologie clinique. S’il est évident que l’expérience et les compétences cliniques en rapport aux soins sont très importantes, il n’en demeure pas moins que les soins se doivent d’avancer en articulant l’expérience clinique avec la recherche<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>. Cette indispensable articulation entre expérience clinique et recherche se doit également d’être présente dans la formation des futurs psychologues cliniciens. C’est par exemple le cas de l’autre acception du terme computationnel lorsqu’il est associé au terme modèle renvoyant ici à l’idée d’une formalisation mathématique des modèles théoriques. Ce type de “modèles computationnels” se développent de plus en plus en psychologie clinique [<span class="citation" data-cites="robinaughAdvancingNetworkTheory2019">@robinaughAdvancingNetworkTheory2019</span>]<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>.</p>
+<p>Parmi certains a priori qui me paraissent présents, il y aurait l’idée que ces compétences (méthodologiques, statistiques, mathématiques, informatiques) ou ce qui à avoir avec la science ouverte seraient accessoire, secondaire à la clinique. Nous avons déjà mentionné le fait que la science ouverte (dont la reproductibilité) est un enjeu d’éthique et d’intégrité scientifique aussi dans le cadre du soin, elle concerne donc bien l’ensemble des acteurs de la psychologie clinique. Rappelons à ce titre que dans le champ du soin que sur plus de 500 essais-contrôlés et randomisés publiés dans la revue <em>Anaesthesia</em> sous l’égide de l’éditeur en chef John Carlisle, seules 150 données individuelles ont pu être obtenues par ce dernier pour vérification. Sur ces 150, 44% contenaient des erreurs et 26% pouvaient être considérés comme non fiables à cause d’erreurs massives ou de données fabriquées <span class="citation" data-cites="vannoordenMedicinePlaguedUntrustworthy2023">[@vannoordenMedicinePlaguedUntrustworthy2023]</span>. Pour les recherches dont les données n’étaient pas accessibles, seuls 3% pouvaient être considérés comme problématiques à partir des articles publiés. Ce décalage interroge sur la solidité des données sur laquelle la science se fonde, mais également sur sa capacité à identifier et à corriger ses erreurs. La situation en psychologie ne semble pas échapper à ces problématiques. En effet, une étude a sélectionné un échantillon aléatoire de 250 études publiées entre 2014 et 2017 (dont 57 en psychologie clinique et 10 en neuropsychologie) et indique également un très faible nombre de données disponibles <span class="citation" data-cites="hardwickeEstimatingPrevalenceTransparency2022">[@hardwickeEstimatingPrevalenceTransparency2022]</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Hardwicke_Psycho_Reproduc2022.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Transparence et reproductibilité en psychologie (Crédit : Hardwick et al, 2022)</figcaption>
+</figure>
+</div>
+</section>
+<section id="science-ouverte-hal-et-ça-ne-concerne-que-les-approches-quanti" class="level3">
+<h3 class="anchored" data-anchor-id="science-ouverte-hal-et-ça-ne-concerne-que-les-approches-quanti">Science ouverte “=HAL et ça ne concerne que les approches quanti” ?</h3>
+<p>Le terme de science ouverte dans son caractère “slogan” agrège différents aspects [<span class="citation" data-cites="Yarkoni2019">@Yarkoni2019</span>]<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>. Si l’accessibilité aux productions de la science (comme les répertoires publics de dépôt des publications tels que <a href="https://hal.science/">HAL</a> ou de dépôt de pre-print/pré-publication comme <a href="https://psyarxiv.com/">PsyArXiv</a>) occupe une place importante de la science ouverte, elle ne saurait la résumer <span class="citation" data-cites="morvanScienceOuvertePardela2023">[@morvanScienceOuvertePardela2023]</span>. En effet, on observe parfois une confusion voire une réduction des pratiques de science ouverte à la simple mise à disposition sans barrière d’accès des manuscrits de recherche dans HAL ou PsyArXiv<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>.</p>
+<p>Il est important de considérer cinq autres “piliers” (en plus de l’accès aux publications) qui soutiennent la science ouverte . Il s’agit&nbsp;:</p>
+<ol type="1">
+<li><p>des données ouvertes et des résultats reproductibles&nbsp;;</p></li>
+<li><p>de l’ouverture des évaluations, des opinions et des critiques (exemple de l’<a href="https://openscience.pasteur.fr/2020/06/04/open-peer-review-un-mouvement-qui-prend-de-lampleur/">Open Peer Review</a> ou “évaluation par les pairs ouverte” et des plateformes de post-publications comme <a href="https://pubpeer.com/static/about">PubPeer</a>)&nbsp;;</p></li>
+<li><p>des politiques incitatives et de reconnaissances pour favoriser le changement (comme les initiatives de type <a href="https://sfdora.org/read/read-the-declaration-french/">DORA</a> et de leurs conséquences sur les <a href="https://www.cnrs.fr/fr/cnrsinfo/reforme-de-levaluation-des-scientifiques-le-cnrs-parmi-les-premiers-signataires">institutions et organismes de recherche</a>)<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> ;</p></li>
+<li><p>des technologies qui facilitent l’adoption des pratiques de science ouverte ( à l’aide d’outils tels que <a href="https://osf.io/94y3c/">OSF</a> et <a href="https://github.com/yannickmorvan">GitHub</a>) ;</p></li>
+<li><p>d’une plus grande implication de la société dans la science et ses productions (à l’image du mouvement dit de <a href="https://www.inserm.fr/nos-recherches/recherche-participative/">la science participative</a><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> ou du label “<a href="https://www.enseignementsup-recherche.gouv.fr/fr/criteres-du-label-science-avec-et-pour-la-societe-saps-49490">Science avec et pour la Société</a>”).</p></li>
+</ol>
+<p>Cette diversité des “piliers”, qui soutiennent la science ouverte, est ce qui permet aux différents acteurs (des chercheurs aux cliniciens de terrain jusqu’aux patients et à leurs proches) d’investir ce champ avec des compétences diverses et complémentaires. Par ailleurs, et dans ce cadre, il serait fort dommageable de vouloir réduire la question de la reproductibilité comme relevant de disciplines autres que la psychologie <span class="citation" data-cites="Vazire2018">[@Vazire2018]</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://commons.wikimedia.org/wiki/File:OpenScienceScience_ouverte_taxonomyTaxonomie.png?uselang=fr"><img src="images/OpenScienceScience_Taxonomy.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Les différentes facettes de la science ouverte. Crédit: Petr Knoth &amp; Nancy Pontika</figcaption>
+</figure>
+</div>
+<p>D’autres a priori ont davantage avoir avec le fait que ces pratiques favoriseraient des profils hyper-spécialisés en statistiques ou en approches quantitatives et ne concerneraient donc que les sciences dites “dures” ou les sciences sociales quantitatives, mais pas la psychologie, ni les approches qualitatives. Et dans le cas où l’on se laisserait convaincre que la reproductibilité puisse en effet concerner la psychologie, mais que les approches qualitatives en soient exemptes me semble relever également de l’erreur d’appréciation <span class="citation" data-cites="WhatDoesReproducibility2019 humaOneSizeDoesn2022">[@WhatDoesReproducibility2019 ; @humaOneSizeDoesn2022]</span>.</p>
+<blockquote class="blockquote">
+<p>“<em>Taken together, these three lessons hopefully demonstrate the potential of qualitative social psychological researchers not only to embrace, but also to drive innovation within OS [Open Science]</em><a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a><em>.</em></p>
+<p><em>While it may appear at times that qualitative methodologies are incompatible with OS, we have aimed to highlight that these are cases of specific qualitative approaches being at odds with specific OS practices, but not with underlying OS principles.</em></p>
+<p><em>Finally, we have shown that some qualitative social psychologists – those who have been using interaction analytic methods – have already been practicing OS for several decades. We hope this will inspire social psychologists working with other methodological approaches to identify OS practices within their own field.</em>” Conclusion de <span class="citation" data-cites="humaOneSizeDoesn2022">@humaOneSizeDoesn2022</span></p>
+</blockquote>
+</section>
+<section id="réflexion-personnelle-clinicien-et-méthodologiste" class="level3">
+<h3 class="anchored" data-anchor-id="réflexion-personnelle-clinicien-et-méthodologiste">Réflexion personnelle : clinicien et méthodologiste !</h3>
+<p>Mon sentiment général vis-à-vis de ces derniers a priori est double. Tout d’abord, s’il est évident que la clinique ou le soin constitue un objectif premier, les moyens d’y parvenir tant dans la formation que la recherche nécessite une grande pluralité d’acteurs et de compétences qui permet de servir au mieux cet objectif (également cohérent avec “l’evidence based practice”). Cela n’est pas sans rappeler également un des principes organisateurs de la thérapie d’Acceptation et d’Engagement (ACT) à laquelle nos étudiants en TCC sont initiés : la variabilité du répertoire comportemental et cognitif. En effet, si l’on s’autorise un instant de regarder la question de la formation des futurs psychologues cliniciens sous l’angle du contextualisme fonctionnel, la “<em>variation</em>” est ce qui permet de réagir de manière engagée en visant une adaptation fonctionnelle face aux problèmes rencontrés <span class="citation" data-cites="monestesEvolutionaryPrinciplesPsychotherapy2022">[@monestesEvolutionaryPrinciplesPsychotherapy2022]</span>.</p>
+<blockquote class="blockquote">
+<p>“<em>Les contextualistes, quant à eux, croient qu’il est impossible de connaître la réalité objective de façon définitive (la vérité avec un grand ”V”), car la réalité est indissociable de celui qui l’observe et, par le fait même, nécessairement empreinte de subjectivité. Selon cette conception, le psy, le chercheur ou le client ne cherche pas à savoir si un comportement (ou une pensée) est vrai, mais plutôt s’il est efficace (workability) et utile pour atteindre les buts qu’il s’est fixés. Une action est dite efficace si elle permet à l’individu de progresser vers ses valeurs personnelles afin d’améliorer sa qualité de vie, et cela, malgré la présence de la douleur. À quel point des actions comme ruminer, se distraire, éviter des situations pouvant engendrer la douleur rapprochent ou éloignent le client de ses valeurs personnelles, de ses objectifs de vie&nbsp;? Cette vision s’inscrit dans une approche foncièrement pragmatique.</em>”</p>
+<p>Extrait de <span class="citation" data-cites="dionneChapitreModeleFlexibilite2021">@dionneChapitreModeleFlexibilite2021</span>.</p>
+</blockquote>
+<p>Personnellement, il m’arrive régulièrement d’éprouver, au contact de collègues, le syndrome de l’imposteur en considérant être à la fois le pire des cliniciens et le pire des méthodologistes. Pour autant, et dès lors que j’ai la capacité de questionner cette idée, il m’arrive aussi de considérer être simplement un des acteurs de cette multiplicité des profils au service de la clinique. Mon rôle et mon engagement constituent, peut-être, à faciliter et mettre en lien recherche clinique et pratique clinique. Cette capacité à faire le pont “bridge”) me parle tout particulièrement dans la mesure où je porte un grand intérêt scientifique aux approches/modèles en réseau et en systèmes complexes pour la psychologie clinique et la psychopathologie <span class="citation" data-cites="kaiserUnravelingComorbidityDepression2021 morvanNetworkModelingPsychopathology2020">[@kaiserUnravelingComorbidityDepression2021; @morvanNetworkModelingPsychopathology2020]</span>.</p>
+<p>La question d’une double considération de clinicien et de méthodologiste pourrait paraître prétentieuse surtout sur la seconde partie. En effet l’enseignement en méthodologies quantitatives et statistiques ne constitue pas nécessairement une partie importante de la formation des cliniciens, et ce, malgré l’intérêt que je porte sur ces questions ainsi que les formations complémentaires que j’ai pu suivre. J’ai donc tout particulièrement apprécié l’intervention d’un “quantitativiste” reconnu <a href="https://education.umd.edu/directory/gregory-r-hancock">Greg Hancock</a> dans le podcast <a href="https://quantitudepod.org/">Quantitude</a> réalisé avec son collègue Patrick Curran (qui a une <a href="https://centerstat.org/about/">formation en psychologie clinique à l’origine</a>) à ce sujet.</p>
+<blockquote class="blockquote">
+<p>“<em>I’ll tell you when I’m not ok when people being fooled, and that is when they take statistics classes and they think that they can’t do it. And even more, they think that they couldn’t possibly be a quantitative methodologist. Quantitative methodologists exist in all fields. They are not people who specialize in quantitative methodology. In fact, some of the best quantitative methodologists in history are people who came from substantive disciplines. Everybody out there who says: yeah I’m not really a quantitative methodologist, you are fooling yourself, you are part of a chain of fools […] If you are a psychologist, you can do methodological research. If you are a corpus linguist, you can be doing methodological research. If you are someone who does mental health research, you can be a quantitative researcher. A lot of times what quantitative research involves is bringing new methodologies in your particular discipline or adapting those methodologies to be able to deal with the special kind of data that you have. You might just be the ambassador that your field needs to be able to kick their methods up a notch, to be able to help them think about problems more creatively. And I hate it when people of sort of fool themselves into thinking that because they haven’t taken a ton of math classes or because they haven’t taken statistics with a capital S that they cannot contribute to the methodological literature. Nonsense, you absolutely can, and I want people to be able to ask themselves not if they can contribute to their own domain methodologically but how they can do it.</em>”</p>
+<p>Greg Hancock, Quantitude Saison 4 Episode 22 (minute 40,43) “<a href="https://quantitudepod.org/s4e22-quantitative-things-that-fool-us/">April Fools! Quantitative Things That Fools Us</a>”.</p>
+</blockquote>
+<p>Le second sentiment a trait à l’idée que, là encore, la pluralité des approches et le dialogue entre différentes disciplines scientifiques constituent une des voies de progrès à poursuivre. Cet engagement me semble également être au service de la psychologie clinique en tant que discipline, au service des patients et plus globalement au service de la société dans son ensemble&nbsp;<span class="citation" data-cites="borsboomSystemsbasedApproachesMental2022">[@borsboomSystemsbasedApproachesMental2022]</span>. Même s’il convient de rester humble quant à nos capacités de compréhension, de modélisation et d’intervention, il demeure essentiel de continuer à faire progresser, sans arrogance ni scientisme bien évidemment, la psychologie clinique scientifique. Ce regard épistémologique sur notre discipline est, pour moi, très important et retrouve un juste écho par rapport aux derniers standards internationaux attendus quant à la formation des psychologue thérapeute en TCC comme le rappellent <span class="citation" data-cites="Hofmann2018">@Hofmann2018</span>.</p>
+<blockquote class="blockquote">
+<p>“<em>In addition, there has been an increased recognition within CBT of the importance of philosophical assumptions that give rise to methods of intervention and their investigation. For science to evolve, we need preanalytic assumptions about the nature of data, truth, and the questions of importance. Some of the differences between the waves and generations of CBT were philosophical rather than empirical. To this point, the InterOrganizational Task Force on Cognitive and Behavioral Psychology Doctoral Education (Klepac et al., 2012) concluded that all CBT training programs going forward should place more emphasis on philosophy of science training in order to increase the progressivity and coherence of research programs.</em>”</p>
+<p>Extrait de Hofmann, S. G., &amp; Hayes, S. C. (2018). The Future of Intervention Science : Process-Based Therapy. <em>Clinical Psychological Science</em>. <a href="https://doi.org/10.1177/2167702618772296" class="uri">https://doi.org/10.1177/2167702618772296</a></p>
+</blockquote>
+<p>Enfin, si les progrès ainsi que l’adoption de bonnes pratiques semblent encore lents, nous devons continuer à convaincre et à rallier progressivement les chercheurs et les cliniciens à la science ouverte <span class="citation" data-cites="kowalczykWhatSeniorAcademics watersEnhancementQualityPublication2020">[@kowalczykWhatSeniorAcademics; @watersEnhancementQualityPublication2020]</span>. À ce titre je peux m’estimer fier d’être dans un environnement pédagogique et de recherche qui en permet l’expression et dont le mot Open Science peut être présent tant dans les descriptifs d’enseignement que dans un profil de poste d’enseignant-chercheur en psychologie<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>.</p>
+<p>Si ces perspectives sont présentées dans une partie plus pédagogique, elles ne me semblent pas pour autant si nécessairement éloignées des questions de formation à la recherche et d’encadrement des futurs cliniciens chercheurs. Ces perspectives ne sont pas pour moi dissociables dans la mesure où la pratique clinique nourrit tant l’enseignement que la recherche comme la recherche nourrit tant l’enseignement que la réflexion et la pratique clinique<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>. La question du dialogue entre clinique et recherche demeure fondamentale. En ce sens, tendre vers des compétences et pratiques, tant cliniques que recherche, déjà largement présentes à l’international me semble un objectif important à tous les niveaux en tant qu’universitaire : que cela concerne les premiers niveaux de la formation en licence qu’au master pour les futurs praticiens jusqu’au doctorat et post-doctorat pour les chercheurs dont un certain nombre sont et seront aussi des praticiens dans le champ de la clinique.</p>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Voir <strong>?@sec-Peda</strong>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>On se méfiera toutefois du terme de science ouverte qui est un terme “slogan” ou “fourre-tout” regroupant divers aspects. On se référera à l’excellent <a href="https://www.talyarkoni.org/blog/2019/07/13/i-hate-open-science/">billet de blog de Tal Yarkoni intilué “I hate open science” à ce sujet.</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Je remercie au passage mon collègue en psychologie sociale à l’Université Paris Nanterre Jean-Baptiste Legal qui m’a sollicité pour illustrer la place de la science ouverte en psychologie clinique, écrit qui a également toute sa place ici ; ainsi que deux anciens étudiants, Quentin Facon-Barillot et Laurent Cruchet, qui ont eu la gentillesse de me faire des retours sur une première version du texte.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Voir également le <strong>?@sec-PerspPub</strong>. Je suis actif sur <a href="https://osf.io/94y3c/">OSF</a> et <a href="https://github.com/yannickmorvan">GitHub</a> depuis 2018.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Même si j’y accorderais de la prudence et de l’humilité au regard de nos difficultés tant lié à nos théories, nos modèles et nos mesures. Le terme de vérisimilitude prend ici, à nouveau, tout son sens.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Le fait que la plupart des études publiées dans le monde sont réalisées dans les pays dits “développés” voir aux Etats-Unis et et les initiatives de type “<a href="https://forrt.org/glossary/many-labs/">Many Labs</a>” ou “<a href="https://psysciacc.org/">PsySciAcc</a>” pour s’ssurer de la reproductibilité et de la replicabilité des résultats sont très encore récentes<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Dont, parfois, je m’interroge s’il ne serait pas également partagé de manière compréhensible par des collègues.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Cet enseingement est fait sous R avec un f<a href="https://github.com/yannickmorvan/MetStatPsyCli">ichier compagnon Rmarkdown disponible en ligne publiquement sur GitHub</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Il est d’ailleurs intéressant de préciser que l’intitulé initiale que j’avais proposé était “Psychométrie Statistique” afin de proposer un éclairage sur les fondements statistiques ainsi que leurs limites à l’enseignement de classique de <a href="https://formations.parisnanterre.fr/fr/catalogue-des-formations/master-lmd-05/psychologie-clinique-psychopathologie-et-psychologie-de-la-sante-master-JWQGPN21/psychologie-clinique-et-psychopathologie-empirique-et-cognitivo-comportementale-JXBIB06Q/ue-maitriser-un-domaine-et-ses-methodes-K233DXWB/ue-pratique-de-l-evaluation-clinique-K233I161/utiliser-les-mesures-et-les-tests-psychometriques-K233UVZK.html">“Psychométrie” en Master de Psychologie Clinique</a> qui repose davantage sur l’apprentissage, fort utile, de la passation, de la cotation et de l’interprétation des tests (la partie sur les fondements théoriques reposant sur les aspect de distribution et de standardisation des scores aux test, le fondement clinique reposant sur une présentation du modèle théorique sous-jacent à la construction du test). Le terme de Mesures et Statistiques pour Psychologues Clinicien ayant été proposé par les collègues afin de le rendre plus attractif par rapport à l’intitulé initial.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Voir à titre d’exemple la présentation de David Condon au congrès 2023 de l’Association for Research in Personality : <a href="#0">https://twitter.com/JessieSunPsych/status/1682794801643634689?s=20</a> diapo disponilble ici : <a href="#0">https://osf.io/uy4s2?view_only=a683621d9dec4caf9a257462699f81f9</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>On y retrouve l’importance de l’évidence based practice déjà décrit pour l’enseignement <a href="https://formations.parisnanterre.fr/fr/catalogue-des-formations/master-lmd-05/psychologie-clinique-psychopathologie-et-psychologie-de-la-sante-master-JWQGPN21/psychologie-clinique-et-psychopathologie-empirique-et-cognitivo-comportementale-JXBIB06Q/ue-developper-ses-competences-linguistiques-K23COW1K/ue-research-seminar-in-clinical-psychology-science-K23D9B9J/research-seminar-in-clinical-psychology-science-K23DA7L0.html">Research Seminar in Clinical Psychology Science</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>A titre d’exemple <a href="https://twitter.com/tkaiser_science/status/1681652075535519745">un échange Twitter avec des collègues sur ce sujet</a>. La théorie ainsi que la formalisation de ces dernières sera abordé dans une autre partie.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><a href="https://www.talyarkoni.org/blog/2019/07/13/i-hate-open-science/">Dans son billet de blog, Tal Yarkoni</a> recense : la reproductibilité, l’accessibilité, les mesures d’incitations, l’ouverture des opinions et des critiques, la diversité, la méta-science et l’informatique. Sa liste est non exhaustive et il ajoute également la transparence, la collaboration comme dimensions de la science qui pourraient etre ajoutées à sa liste.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>voir à titre d’exemple <a href="https://twitter.com/sci_psy/status/1616369804775985154">cet excellent fil Twitter</a>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Il est également intéressant de s’interroger, <a href="https://www.talyarkoni.org/blog/2018/10/02/no-its-not-the-incentives-its-you/">comme le suggère Tal Yarkoni dans un autre billet de blog</a>, sur l’utilisation des incitations “néfastes” dénoncées par les initiatives comme DORA à fins d’excuses pour éviter un changement des pratiques de recherche discutables vers des pratiques plus vertueuses <span class="citation" data-cites="yarkoniNoItNot2018">[@yarkoniNoItNot2018]</span>.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Il existe un <a href="https://www.ouvrirlascience.fr/donnees-et-recherches-participatives-enjeux-et-recommandations-issues-dexemples-de-projets-de-recherches-participatives/">rapport sur la science participative</a> qui présente des recommandations pratiques pour les chercheurs qui souhaitent se lancer dans ce mouvement <span class="citation" data-cites="badolatoDonneesRecherchesParticipatives2023">[@badolatoDonneesRecherchesParticipatives2023]</span>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Ajout du détail de l’acronyme dans la citation pour en faciliter la lecture.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Même si je n’ai pas encore réussi à faire suffisamment oeuvre de pédagogie, en dehors des enseignements, pour que les termes modèle et reproductibilité computationelle y soient également associés pour le moment.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>J’ai été très touché du remerciement qui m’a été adressé par le Dr Marion Chirio-Espitalier à mon attention dans sa thèse intitulé “L<em>e rétablissement personnel dans les troubles bipolaires : définition du concept et outils de mesure. L’éducation thérapeutique du patient comme levier de rétablissement</em>” sous la direction du Pr. Marie Grall-Bronnec. En effet, après avoir écrit cette réflexion personnelle, j’ai retrouvé dans ses mots une très belle résonance : “<em>A Monsieur le Docteur Yannick Morvan. Merci de tes précieux conseils lors des comités de suivi, et de l’acuité de ton regard tant méthodologique que clinique. Merci d’avoir accepté de juger ce travail.</em>”<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Site construit avec du <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://quarto.org/">Quarto</a> et l’aide de Csik [Samantha (https://samanthacsik.github.io/talks_workshops/2022-08-05-creating-your-personal-website-using-quarto/index.html)</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./LICENSE-CC-BY-4.0.html">
+<p>Licence CC-BY-4.0</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

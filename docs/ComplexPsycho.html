@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.288">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Yannick Morvan – complexpsycho</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Yannick Morvan</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Acceuil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">A propos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mon-hdr" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Mon HDR</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mon-hdr">    
+        <li>
+    <a class="dropdown-item" href="./peda.html" rel="" target="">
+ <span class="dropdown-text">Activités universitaires et d’enseignement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publi.html" rel="" target="">
+ <span class="dropdown-text">Activités scientifiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pedaPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Pédagogiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publiPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexSystems.html" rel="" target="">
+ <span class="dropdown-text">Les approches en systèmes complexes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexPsycho.html" rel="" target="">
+ <span class="dropdown-text">Les systèmes complexes en psychologie : la question psychométrique</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf" rel="" target="">
+ <span class="menu-text">cv</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html" rel="" target="">
+ <span class="menu-text">Références</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/yannickmorvan/yannickmorvan.github.io" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/yannick_morvan" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ymorvan@parisnanterre.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-ComplexPsycho" id="toc-sec-ComplexPsycho" class="nav-link active" data-scroll-target="#sec-ComplexPsycho">Les systèmes complexes en psychologie : la question psychométrique</a>
+  <ul class="collapse">
+  <li><a href="#les-approches-en-réseau-une-brève-histoire-des-premiers-pas-en-psychologie" id="toc-les-approches-en-réseau-une-brève-histoire-des-premiers-pas-en-psychologie" class="nav-link" data-scroll-target="#les-approches-en-réseau-une-brève-histoire-des-premiers-pas-en-psychologie">Les approches en réseau, une brève histoire des premiers pas en psychologie</a></li>
+  <li><a href="#critiques-du-modèle-latent" id="toc-critiques-du-modèle-latent" class="nav-link" data-scroll-target="#critiques-du-modèle-latent">Critiques du modèle latent</a></li>
+  <li><a href="#la-question-des-indicateurs" id="toc-la-question-des-indicateurs" class="nav-link" data-scroll-target="#la-question-des-indicateurs">La question des indicateurs</a>
+  <ul class="collapse">
+  <li><a href="#de-la-variabilité-des-indicateurs" id="toc-de-la-variabilité-des-indicateurs" class="nav-link" data-scroll-target="#de-la-variabilité-des-indicateurs">De la variabilité des indicateurs</a></li>
+  <li><a href="#du-choix-des-indicateurs" id="toc-du-choix-des-indicateurs" class="nav-link" data-scroll-target="#du-choix-des-indicateurs">Du choix des indicateurs</a></li>
+  <li><a href="#des-effets-dindicateurs-manquants" id="toc-des-effets-dindicateurs-manquants" class="nav-link" data-scroll-target="#des-effets-dindicateurs-manquants">Des effets d’indicateurs manquants</a></li>
+  </ul></li>
+  <li><a href="#nomothétique-et-idiographique" id="toc-nomothétique-et-idiographique" class="nav-link" data-scroll-target="#nomothétique-et-idiographique">Nomothétique et idiographique</a>
+  <ul class="collapse">
+  <li><a href="#type-de-données-en-psychologie" id="toc-type-de-données-en-psychologie" class="nav-link" data-scroll-target="#type-de-données-en-psychologie">Type de données en psychologie</a></li>
+  <li><a href="#ergodicité" id="toc-ergodicité" class="nav-link" data-scroll-target="#ergodicité">Ergodicité</a></li>
+  <li><a href="#mise-en-perspective" id="toc-mise-en-perspective" class="nav-link" data-scroll-target="#mise-en-perspective">Mise en perspective</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+
+<section id="sec-ComplexPsycho" class="level1">
+<h1>Les systèmes complexes en psychologie : la question psychométrique</h1>
+<p>L’objectif est de décrire ici l’origine de l’utilisation des approches en systèmes complexes en psychologie et notamment à partir de questions de psychométrie, c’est-à-dire de mesure des phénomènes psychologiques.</p>
+<p>Les termes de complexité et de systèmes semblent communs et applicables en psychologie, et ce plus particulièrement dans le champ des troubles psychiques <span class="citation" data-cites="friedSystemsAllWay2020">[@friedSystemsAllWay2020]</span>. En revanche, le terme de systèmes complexes est mis à l’arrière-plan d’un autre terme, qu’il soit employé avec approche, théorie, modèle ou analyse, celui de réseau. Une des raisons est que les “<em>modèles en réseau représentent de la manière la plus claire les divers processus sous-jacents aux systèmes auto-organisés, par lesquels l’ordre, l’autorégulation et la dynamique à la limite du chaos tendent à émerger avec un nombre suffisant de nœuds et de connectivités nodales</em>” [<span class="citation" data-cites="pincusNonlinearDynamicsBiopsychosocial2010">@pincusNonlinearDynamicsBiopsychosocial2010</span>]<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<section id="les-approches-en-réseau-une-brève-histoire-des-premiers-pas-en-psychologie" class="level2">
+<h2 class="anchored" data-anchor-id="les-approches-en-réseau-une-brève-histoire-des-premiers-pas-en-psychologie">Les approches en réseau, une brève histoire des premiers pas en psychologie</h2>
+<p>Comme le soulignent <span class="citation" data-cites="golinoExploratoryGraphAnalysis2022a">@golinoExploratoryGraphAnalysis2022a</span> en introduction de leur article, 2022 marque une décennie de nouvelles possibilités méthodologiques pour la psychologie avec les techniques de modélisations en réseau disponibles grâce au package R qgraph qui permet de les estimer et de les visualiser <span class="citation" data-cites="epskampQgraphNetworkVisualizations2012">[@epskampQgraphNetworkVisualizations2012]</span>. Et les auteurs de rappeler également que cela a donné naissance à un nouveau sous-domaine de la psychologie quantitative intitulé en anglais “<em>network psychometrics</em>” <span class="citation" data-cites="isvoranuNetworkPsychometricsGuide2022 borsboomPossibleFuturesNetwork2022">[@isvoranuNetworkPsychometricsGuide2022; @borsboomPossibleFuturesNetwork2022]</span>.</p>
+<p>Pourtant, les auteurs nous indiquent également que l’histoire d’une approche en réseau en psychologie est plus ancienne qu’il n’y parait et remontrait aux travaux de Cattell. Ce dernier est connu en psychologie pour sa théorie de la décomposition du facteur général d’intelligence en une intelligence dite “<em>cristallisée</em>” (dépendante des connaissances et “verbale”), une dite “<em>fluide</em>” (indépendante des connaissances et “non verbale”) <span class="citation" data-cites="andreValiditePsychometriqueRegard2016">[@andreValiditePsychometriqueRegard2016]</span>. Selon <span class="citation" data-cites="golinoExploratoryGraphAnalysis2022a">@golinoExploratoryGraphAnalysis2022a</span>, citant <span class="citation" data-cites="bokerReticularActionModel2018">@bokerReticularActionModel2018</span>, Cattell concevait les relations entre les variables latentes comme des relations en réseau. C’est ce que le terme “reticular” dans “Reticular Action Model” doit être compris selon <span class="citation" data-cites="bokerReticularActionModel2018">@bokerReticularActionModel2018</span> comme soulignant le fait que “l<em>a modélisation par équations structurelles doit être comprise comme étant un modèle de réseau</em>”. <span class="citation" data-cites="golinoExploratoryGraphAnalysis2022a">@golinoExploratoryGraphAnalysis2022a</span> indiquent que les travaux de <span class="citation" data-cites="guttmanImageTheoryStructure1953">@guttmanImageTheoryStructure1953</span> ont proposé une technique répondant à la méthode factorielle de Spearman &amp; Thurstone<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> mais capable d’inclure d’autres types de structures que la structure factorielle. Selon les auteurs, cette technique (<em>image structure analysis</em>) est très fortement similaire à la technique de régression (<em>node-wise regression)</em> utilisée dans les méthodes d’analyses en réseau.</p>
+<p>D’un point de vue historique, d’autres éléments confirment que le développement, à partir des années 1930, des méthodes d’analyses factorielles a offert de nouvelles perspectives de modélisation des données psychologiques. Cependant, très tôt, les chercheurs prenaient bien garde de distinguer ce que permettait la méthode en tant que reflet résumé d’un phénomène et de ce qui relevait d’une “réalité” théorique différente et probablement d’une nature plus complexe de ce phénomène.</p>
+<p>Dans un pre-print <span class="citation" data-cites="beckWithinPersonVariability2019">@beckWithinPersonVariability2019</span> citent Cattell mais également Allport sur la question des modélisations et mesures de la personnalité, un autre domaine de la psychologie qui utilise très fréquemment les modélisations par analyses factorielles. <span class="citation" data-cites="beckWithinPersonVariability2019">@beckWithinPersonVariability2019</span> rappellent que par delà la modélisation factorielle qui permet une analyse et un résumé au niveau du fonctionnement nomothétique (ce qui permet de décrire un phénomène au niveau d’un ensemble de sujets ou d’une population, parfois appelée inter-sujets), ce niveau est constitué d’une pluralité et d’une complexité idiographique (ce qui permet de décrire un phénomène au niveau individuel, parfois appelé intra-sujet). Ils rappellent également une vision de la complexité des phénomènes envisagés, et ici de la personnalité en rappelant le caractère “<em>dynamique</em>”, “<em>systémique</em>” et “<em>contextuel</em>” de cette dernière.</p>
+<blockquote class="blockquote">
+<p>“<em>In addition to the rise of factor analysis contributing to the adoption of personality traits as the key units of personality psychology, two founding fathers of personality, Gordon W. Allport and Raymond B. Cattell, adopted traits into their theoretical and empirical studies of personality. Understanding personality in terms of trait units opened up many new questions regarding the number of traits, the nature of those traits, and the organization of traits.</em> […]</p>
+<p><em>However, Allport was a reluctant adopter of nomothetic approaches to personality, which he termed “common traits.” What common traits do capture are the measurable aspects of complex, individual (or idiographic) traits.</em></p>
+<p><em>The task for those interested in common traits, Allport argued, was to employ the methodological and statistical tools that made the measurement as precise and “serviceable” (Allport, 1937, p.&nbsp;300) as possible. In other words, although Allport was a staunch advocate of an idiographic conceptualization of personality, he recognized that such assessment could, in some cases, be more detailed and intensive than was necessary. In such cases, it would be useful to reduce complex sets of data into simpler sets that allowed for simpler measurement.</em></p>
+<p><em>To this end, he was a staunch advocate of (1) the use of factor analysis as an aid when a priori specification (i.e., the structure, number, or content of the common trait was not known beforehand) was insufficient and (2) of the use of profiles that place common trait measurements in the context of one another</em>.</p>
+<p><em>Nomothetic approaches contained inherent error in the sense that, within an individual, each trait was unique as it was based on an individual’s “unique hereditary endowment, the different developmental history, and the never-repeated external influences that determine each personality”. Nomothetic traits could not capture all of those unique components. Indeed, in his seminal book Personality, A Psychological Interpretation, Allport defined personality as “the dynamic organization within the individual of those psychophysical systems that determine his unique adjustments to his environment” “.</em></p>
+<p>Extraits de <span class="citation" data-cites="beckWithinPersonVariability2019">@beckWithinPersonVariability2019</span></p>
+</blockquote>
+<p>Selon <span class="citation" data-cites="golinoExploratoryGraphAnalysis2022a">@golinoExploratoryGraphAnalysis2022a</span>, les approches en réseau en psychologie ont gagné en importance à partir des travaux publiés en 2006-2008 à l’université d’Amsterdam au sein du groupe Psychological Methods avec deux articles princeps de <span class="citation" data-cites="vandermaasDynamicalModelGeneral2006">@vandermaasDynamicalModelGeneral2006</span> et <span class="citation" data-cites="borsboomPsychometricPerspectivesDiagnostic2008">@borsboomPsychometricPerspectivesDiagnostic2008</span>. Ces deux articles sont également présentés comme à l’origine de l’essor de la modélisation en réseau dans l’éditorial du numéro spécial “<em>Network psychometrics in action</em>” de la revue <em>Psychometrika</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Dans cet article, <span class="citation" data-cites="marsmanGuestEditorsIntroduction2022">@marsmanGuestEditorsIntroduction2022</span>, après avoir rappelé les développements du modèle factoriel après les travaux de Spearman, citent la conclusion de l’article de <span class="citation" data-cites="borsboomPsychometricPerspectivesDiagnostic2008">@borsboomPsychometricPerspectivesDiagnostic2008</span> indiquant qu’ “<em>il n’y avait actuellement aucune théorie psychométrique élaborée pour accompagner la perspective [en réseau]</em>”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.uva.nl/en/profile/m/a/h.l.j.vandermaas/h.l.j.vandermaas.html"><img src="figures/Maas-Borsboom-UvA.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Hans van der Mass &amp; Denny Borsboom. Credit University of Amsterdam website: https://www.uva.nl/en</figcaption>
+</figure>
+</div>
+<p>Il est intéressant de constater que ces deux articles reposent fortement sur des aspects psychométriques et de modélisation des relations entre variables dites “observées”<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. Afin de mieux comprendre les implications de ces travaux, nous utiliserons la très claire explication schématique présentée par <span class="citation" data-cites="friedWhatArePsychological2017">@friedWhatArePsychological2017</span> sur trois types différents de modélisations statistiques pour les construits psychologiques que l’on <a href="https://eiko-fried.com/new-paper-what-are-psychological-constructs/">retrouve également sur son excellent blog</a> ainsi que sur <a href="https://psyarxiv.com/xpu4z/">PsyArXiv</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://eiko-fried.com/new-paper-what-are-psychological-constructs/"><img src="figures/Fried_3construct_2017.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Trois types de modélisations statistiques pour les construits psychologiques d’après Fried (2017)</figcaption>
+</figure>
+</div>
+<p>D’un point de vue psychométrique, les trois modèles présentés par <span class="citation" data-cites="friedWhatArePsychological2017">@friedWhatArePsychological2017</span> présentent des différences. Le premier modèle, dit modèle “latent” autrement appelé “modèle de la cause commune” ou de “facteur commun” consiste à considérer que les 10 signes ou mesures sont des indicateurs indirects d’une cause commune, latente donc non directement observable. Le second modèle est appelé modèle “formatif” ou “d’effet commun”, c’est-à-dire qu’il s’agit d’un construit formé par des indicateurs ou d’une conséquence commune de variables. Ici les 10 signes ou mesures construisent l’indicateur au même titre par exemple que le statut économique et social peut être composé à partir (ou être une conséquence) de la connaissance de la catégorie professionnelle, du niveau de revenu etc<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Enfin, le troisième modèle est dit “en réseau” et suppose que les 10 signes ou mesures interagissent et s’influencent mutuellement faisant ainsi “émerger” une ou des propriétés nouvelles qui ne peuvent se résumer à la somme des parties (voir <strong>?@sec-ComplexSystems</strong>).</p>
+</section>
+<section id="critiques-du-modèle-latent" class="level2">
+<h2 class="anchored" data-anchor-id="critiques-du-modèle-latent">Critiques du modèle latent</h2>
+<p>Afin d’introduire les approches en réseau, nous allons tout d’abord nous intéresser au premier modèle et présenter quelques critiques de ce dernier qui ont amené au développement des approches en réseau en psychologie. Pour ce premier modèle, du point de vue classique dit de “modèle de mesure”, il s’agit d’un modèle factoriel où chaque item est régressé sur (expliqué par) la variable latente. Nous n’évoquerons pas le modèle formatif, cependant les lecteurs intéressés pourront se référer l’article de <span class="citation" data-cites="friedWhatArePsychological2017">@friedWhatArePsychological2017</span> ou à ce <a href="https://aliquote.org/post/formative-vs-reflective-measurement/">billet de blog</a>.</p>
+<p>Pour revenir au modèle factoriel et à titre d’exemple, si l’on considère la dépression comme une entité latente, c’est parce que l’on considère que c’est la présence de la dépression qui explique l’apparition de symptômes tels que l’insomnie, la fatigue où encore la tristesse. Si l’on développe une échelle de mesure de la dépression, c’est en utilisant des questions qui portent sur l’insomnie, la fatigue, des pensées de dévalorisation et la tristesse qu’il nous est possible d’identifier la présence de la variable latente dépression. Cette relation “d’indication” est possible dans la mesure où l’on suppose que la dépression vient justement influencer la manière de répondre aux questions. Ainsi, c’est parce que je souffre de dépression que je vais répondre oui à des questions sur la présence de signes tels que l’insomnie, la fatigue, des pensées de dévalorisation et de la tristesse. Autrement dit, la présence de ces signes s’explique par la présence de la dépression.</p>
+<p>Le modèle factoriel, dans un modèle de mesure, traduit cette relation mathématiquement par des coefficients de régressions entre les items et la variable latente ou facteur<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. Ces derniers sont appelés “loadings” (ou poids factoriel en français) et traduisent numériquement l’importance relative (lorsqu’ils sont standardisés) des indicateurs de la variable latente<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>. Il traduit également une autre propriété importante qui est moins souvent considérée, il s’agit de l’indépendance locale. Elle se signifie par l’absence de toutes connexions directes entre les items indicateurs de la variable latente. Autrement dit, dans le cadre de notre exemple sur la dépression, l’indépendance locale interdit explicitement les relations causales directes entre les signes tels que le fait de souffrir d’insomnie et en conséquence d’être fatigué, puis en conséquence d’avoir des pensées de dévalorisation et en conséquence d’éprouver de la tristesse. Cette indépendance locale est une condition au modèle factoriel qui postule que le facteur est l’unique élément explicatif ou “cause” de la covariation positive entre les items<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. Ces deux approches, latente et en réseaux, sont très élégamment discutées d’un point de vue épistémologique par <span class="citation" data-cites="Guyon2017">@Guyon2017</span>. Dans leur article les auteurs utilisent également la dépression pour illustrer la différence de modélisation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00798/full"><img src="figures/Guyon2017adapted-1.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Représentation d'un modèle latent de la dépression. Adapté de Guyon et al.&nbsp;(2017).</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00798/full"><img src="figures/Guyon2017adapted-2.png" class="img-fluid figure-img" style="width:8.7cm"></a></p>
+<figcaption class="figure-caption">Représentation d'un modèle en réseau de la dépression. Adapté de Guyon et al.&nbsp;(2017).</figcaption>
+</figure>
+</div>
+<p>Si les modèles sont équivalent mathématiquement et qu’un modèle latent correspond a à un réseau complètement connecté <span class="citation" data-cites="VanBork2019a">[@VanBork2019a]</span> tel que présenté dans les figures de <span class="citation" data-cites="Guyon2017">@Guyon2017</span>, ils ont en revanche des implications théoriques différentes (cause commune ou phénomène émergent). La difficulté repose donc ici sur la nature même de ce qui est modélisé : est-ce le modèle latent ou le modèle en réseau qui décrit le mieux le mécanisme qui “génère” les données que l’on observe <span class="citation" data-cites="friedLackTheoryBuilding2020">[@friedLackTheoryBuilding2020]</span> ?</p>
+<blockquote class="blockquote">
+<p>“<em>In data where columns are variables and rows are participants, I can usually estimate network and factor models without problems. Even if I know that the data generating mechanism is a network—for instance, because I simulated the data myself—I will not get arrested by the psychometrics police for fitting the ‘wrong’ model (i.e.&nbsp;a factor model) to the data, and vice versa</em>.”</p>
+<p>Extrait de <em>Lack of Theory Building and Testing Impedes Progress in The Factor and Network Literature</em> de <span class="citation" data-cites="friedLackTheoryBuilding2020">@friedLackTheoryBuilding2020</span></p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://twitter.com/EikoFried/status/1679460772890529795?s=20"><img src="images/DataGenMechanism1.jpeg" class="img-fluid figure-img" width="500"></a></p>
+<figcaption class="figure-caption">Tweet d'Eiko Fried illustrant la question du mécanisme générateur des données (1)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://twitter.com/EikoFried/status/1679460775767728133?s=20"><img src="images/DataGenMechanism2.jpeg" class="img-fluid figure-img" width="500"></a></p>
+<figcaption class="figure-caption">Tweet d'Eiko Fried illustrant la question du mécanisme générateur des données (2)</figcaption>
+</figure>
+</div>
+<p>Cette question est d’autant plus pertinente, si les phénomènes que l’on observe relèvent d’une nature massivement multifactoriels plutôt que d’une cause commune <span class="citation" data-cites="Borsboom2019">[@Borsboom2019]</span>. Les modélisations latentes constitueront dans ce cas un modèle qui impose des contraintes sur les données qui ne sont probablement en accord avec la verisimilitude du modèle théorique supposé.</p>
+<blockquote class="blockquote">
+<p>“<em>I argue that the empirical implications of reflective and formative models will often be violated by data since the causally relevant constituents will generally be multivariate, not univariate.</em></p>
+<p><em>These empirical implications can be formally tested but factor analysis is not adequate to do so. I argue that formative models misconstrue the relation between the constructed measures and the underlying reality by which causal processes operate, but that reflective models misconstrue the nature of the underlying reality itself by typically presuming that the constituents of it that are causally efficacious are unidimensional. […]</em></p>
+<p><em>There is no underlying univariate latent variable that corresponds to our construct, say, of intelligence, such that “true intelligence” gives rise to the measured indicators. The underlying reality corresponding to our constructs is far more complex than a univariate variable.</em>”</p>
+<p>Extraits de <span class="citation" data-cites="vanderweeleConstructedMeasuresCausal2022">[@vanderweeleConstructedMeasuresCausal2022]</span></p>
+</blockquote>
+<p>C’est un des points importants qui amène Eiko Fried à considérer l’importance de la réflexion théorique et à ne pas confondre modélisation théorique et modélisation statistique.</p>
+<blockquote class="blockquote">
+<p>“<em>My take now is that one of the biggest challenges is to try to bring your data to bear on your theory. When I explain this to students, I always use linear regression. I learned as a student that linear regression has an assumption, namely that variables need to be related linearly. But I never really got my head around truly what&nbsp;it means that a model has an assumption.</em></p>
+<p><em>How I think about this now is that if your theory predicts a linear relationship, then you should use a model that imposes a linear relationship on your data that you can then try to bring the data to bear on the theory. That’s sort of the circle, but we don’t have theories to impose assumptions on data to then bring them to bear on our theory so that people just use statistical models. We use linear regression. There’s no justification for it.</em></p>
+<p><em>That’s not easy, but I think it’s indeed a challenge that we use models. And in my paper, I talk about a couple of areas of psychology, like factor models, for example, that everybody uses, but I rarely see the rationale for why these models are the right models to bring the data to bear on your theory. And if that step isn’t taken, things get tricky very quickly.</em>”&nbsp;</p>
+<p>Extrait d’une <a href="https://every.to/chain-of-thought/can-ai-and-ml-predict-depression-and-figure-out-how-to-help">interview d’Eiko Fried</a> réalisé par <span class="citation" data-cites="shipperCanAIML2023">@shipperCanAIML2023</span></p>
+</blockquote>
+<p>Bien évidemment, il ne s’agit pas de rejeter “en bloc” les modélisations latentes qui s’avèrent tout particulièrement pertinentes dans les questions de mesure ou pour modéliser certains phénomènes en psychologie (ceux qui impliquent une cause commune). Dans leur article <span class="citation" data-cites="Guyon2017">@Guyon2017</span> défendent une vision pragmatique-réaliste (proche du concept de verisimilitude) qui ne nient pas, par exemple, l’existence de phénomènes tels que la dépression, mais considèrent en même temps qu’il n’existe pas une chose telle que “la vraie dépression”). Ils reconnaissent une pertinence aux modélisations en réseau tout en soulignant une citation de <span class="citation" data-cites="Epskamp2017b">@Epskamp2017b</span> “<em>network modeling and latent variable modeling can complement — rather than exclude — one another. . . we think the assumption of no underlying latent traits . . . may often be too strict.</em>”. <span class="citation" data-cites="Guyon2017">@Guyon2017</span> soulignent donc l’intérêt de modélisations qui permettent de combiner ces deux techniques (lmodélisation latente et en réseau) comme les Latent Network Models et Network Residuals<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
+<blockquote class="blockquote">
+<p>“<em>Latent Network Models and Network Residuals, as proposed by Epskamp et al.&nbsp;(2017), are certainly a promising new way to infer psychological attributes, combining latent attributes and dynamic systems of manifestations</em>.”</p>
+<p>Extrait de <em>Modeling Psychological Attributes in Psychology – An Epistemological Discussion: Network Analysis vs.&nbsp;Latent Variables</em> de <span class="citation" data-cites="Guyon2017">@Guyon2017</span></p>
+</blockquote>
+<p>Si l’on s’accorde sur la complexité des phénomènes en psychologie et que la modélisation en réseau semble pertinente ou “approcher” avec un autre outil cette question, alors il s’avère important de s’intéresser aux constituants ou indicateurs de ces modèles.</p>
+</section>
+<section id="la-question-des-indicateurs" class="level2">
+<h2 class="anchored" data-anchor-id="la-question-des-indicateurs">La question des indicateurs</h2>
+<section id="de-la-variabilité-des-indicateurs" class="level3">
+<h3 class="anchored" data-anchor-id="de-la-variabilité-des-indicateurs">De la variabilité des indicateurs</h3>
+<p>Dans le cadre des analyses en réseau (et aussi pour analyses en équations structurelles), la sélection des variables à inclure dans les modèles est une étape primordiale et constitue “<em>un choix principalement motivé par des considérations de fond plutôt que méthodologiques […] Il est important de noter que les inférences tirées des résultats des méthodes d’analyse de réseau nécessitent à la fois une connaissance substantielle du domaine et des considérations méthodologiques générales concernant la stabilité et la robustesse du réseau estimé afin d’informer de manière optimale les inférences scientifiques.</em>”<span class="citation" data-cites="borsboomNetworkAnalysisMultivariate2021">[@borsboomNetworkAnalysisMultivariate2021]</span>.</p>
+<p>Il convient à nouveau de souligner que, quelle que soit la modélisation, la variabilité des indicateurs choisis du construit, facteur ou système pose question <span class="citation" data-cites="heinzeVariableSelectionReview2018">[@heinzeVariableSelectionReview2018]</span>. Nous avons précédemment évoqué le travail en cours sur flexibilité dans la construction des indicateurs du niveau socio-économique et sociale (SES) <span class="citation" data-cites="chuan-pengAssessmentFlexibilityMeasurement2022">[@chuan-pengAssessmentFlexibilityMeasurement2022]</span>. Les premières analyses ont pu mettre en évidence qu’à partir de 53 articles incluant des mesures du SES en lien avec des données d’imageries, correspondant à 38 “jeux de données” différentes, il y avait 45 manières différentes de construire cet indicateur <a href="https://twitter.com/eikofried/status/1324008129974198281" class="uri">https://twitter.com/eikofried/status/1324008129974198281</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://osf.io/hpfmb"><img src="figures/SESvariability.jpg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Variabilité du modèle formatif “SES” par Chuan-Peng et al.</figcaption>
+</figure>
+</div>
+<p>En ce qui concerne les modèles factoriels ou en réseau, une des problématiques, comme pour de nombreux modèles, concerne celui de l’absence de variables cachées qui pourraient exercer une influence (par exemple modératrice) sur les modèles <span class="citation" data-cites="westreichTableFallacyPresenting2013">[@westreichTableFallacyPresenting2013]</span>. Ainsi l’absence de certaines variables ou la variabilité quant à leur présence ou absence dans certaines analyses pose question quant à la reproductibilité et la généralisabilité de leurs résultats <span class="citation" data-cites="friedLackTheoryBuilding2020">[@friedLackTheoryBuilding2020]</span>. A titre d’exemple, parmi 280 instruments de mesure des symptômes dépressifs recensés, Fried a analysé sept instruments très largement utilisés en recherche. Il a pu mettre en évidence qu’ils mesuraient 52 symptômes différents dont seulement 12% étaient commun entre ces sept échelles et 40 % des symptômes étaient présent dans une seule échelle, la CES-D <span class="citation" data-cites="Fried2017c">[@Fried2017c]</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://psyarxiv.com/vbk59/"><img src="figures/Fried2017-52symptomsDepression.jpg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Les 52 symptômes de la dépression par Fried (2017), accessible librement sur PsyArXiv</figcaption>
+</figure>
+</div>
+<p>Cela crée une situation purement tautologique que nous avons illustrée dans une publication comme un “piège épistémologique de perpétuelle codétermination en boucle entre la définition d’une entité clinique et sa mesure”<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> <span class="citation" data-cites="morvanNetworkModelingPsychopathology2020">[@morvanNetworkModelingPsychopathology2020]</span>. Une manière plus simple de présenter ce raisonnement “tautologique” pourrait se faire de la manière suivante : “Comment savons-nous que ce patient souffre de dépression ? Parce que ce patient présente tous les symptômes de la dépression. Comment savons-nous qu’il présente tous les symptômes de la dépression ? Parce que ce patient souffre de dépression”<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>.</p>
+</section>
+<section id="du-choix-des-indicateurs" class="level3">
+<h3 class="anchored" data-anchor-id="du-choix-des-indicateurs">Du choix des indicateurs</h3>
+<p>Une autre difficulté relève du choix des indicateurs. Toujours concernant la dépression, Eiko Fried dans son <a href="https://eiko-fried.com/measurement-schmeasurement/">billet de blog résumant un symposium sur la mesure au congrès de l’APS en 2018</a> rappelle notamment les travaux de <span class="citation" data-cites="kendlerDevelopmentFeighnerCriteria2010">@kendlerDevelopmentFeighnerCriteria2010</span> sur l’origine des indicateurs symptomatologique retenu pour la dépression dans le DSM à partir de 1980. Ces derniers sont en effet largement basé sur des choix historiques qui ont constitué des paramètres initiaux sur lesquels les travaux ultérieurs se sont appuyés. Le chemin évolutif des critères est donc dépendant pricipalement de ces paramètres initiaux plutôt que des travaux psychométriques. Dans un <a href="https://eiko-fried.com/is-seasonal-affective-disorder-really-just-a-folk-construct/">autre billet de blog</a>, Eiko Fried, considère que ces décisions sont le résultat de décisions historiques plutôt que scientifiques (au sens d’une réflexion psychométrique sur la validité de la mesure).</p>
+<p>Ces éléments pourraient être considérés comme une variabilité des indicateurs acceptable dans la définition d’un construit et ce, d’autant plus si l’on considère la pratique courante dans les analyses factorielles exploratoires de réduction d’items pour la construction d’échelle de mesure. Cela devient beaucoup plus délicat si l’on regarde d’une perspective en réseau. En effet, comme le rappelle également <span class="citation" data-cites="friedLackTheoryBuilding2020">@friedLackTheoryBuilding2020</span>, “<em>l’idée d’une cause commune est profondément ancrée dans la manière dont les chercheurs mesurent les concepts psychologiques</em>” si bien que des indicateurs ayant de faibles capacités à être expliqué par une variable latente (un poids factoriel faible expliqué par une faible corrélation avec les autres indicateurs) sont considérés comme “<em>de mauvais indicateurs et sont supprimés</em>”. Pourtant les indicateurs qui sont considérés comme mauvais dans une perspective latente ne le sont pas nécessairement dans une perspective en réseau. A l’aide d’une simulation où le mécanisme générateur des données est connu (car défini par l’expérimentateur) un indicateur ayant un faible poids dans une représentation factorielle est en réalité l’élément déclencheur d’une chaîne causale (cf.&nbsp;schéma de <span class="citation" data-cites="friedLackTheoryBuilding2020">@friedLackTheoryBuilding2020</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://osf.io/mvd92/"><img src="figures/Fried_Lack-Theory-Building.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Indicateur généré avec un modèle en réseau selon le modèle latent. Crédit : Fried (2020).</figcaption>
+</figure>
+</div>
+</section>
+<section id="des-effets-dindicateurs-manquants" class="level3">
+<h3 class="anchored" data-anchor-id="des-effets-dindicateurs-manquants">Des effets d’indicateurs manquants</h3>
+<p>Une des particularités des modélisations en réseau réside dans l’estimation des paramètres globaux du système. Cependant, comme le rappellent <span class="citation" data-cites="borsboomNetworkAnalysisMultivariate2021">@borsboomNetworkAnalysisMultivariate2021</span> si des “indicateurs” du réseau (on parlera ici préférentiellement d’éléments ou de composants du réseau/système) sont manquants cela peut affecter la structure du réseau. En effet, cela peut produire une augmentation de la relation en certains éléments du système qui représente en réalité l’effet d’une cause commune qui n’est pas prise en compte ou mesurée. Par ailleurs, si des éléments du système sont en réalité redondants (ils représentent ou mesurent plus ou moins le même construit) cela influencera aussi l’architecture du réseau modélisé.</p>
+<p>Les auteurs enjoignent donc les lecteurs à une interprétation prudente des modélisations en réseau, ces derniers étant fortement dépendant des choix opérés par les chercheurs sur les composants qu’ils souhaitent inclure dans la modélisation en réseau. Ils considèrent que des davantage de recherches sont nécessaires afin de “d<em>évelopper des cadres théoriques qui permettent d’orienter ces choix</em>”. Dans un article ultérieur, <span class="citation" data-cites="borsboomPossibleFuturesNetwork2022a">@borsboomPossibleFuturesNetwork2022a</span> renouvelle cette prudence sur le degré de confiance des propriétés statiques des modélisations en réseau alors qu’il est fort probable que “<em>presque tous les réseaux sont susceptibles de présenter des nœuds [éléments] manquants</em>”.</p>
+<p>Si l’on s’interroge sur l’utilisation de ces techniques (ou pour toutes autres techniques, quelles qu’elles soient) en recherche clinique ou pour les cliniciens, <span class="citation" data-cites="bringmannPsychopathologicalNetworksTheory2022">@bringmannPsychopathologicalNetworksTheory2022</span> indiquent également qu’une des premières étapes est donc de choisir judicieusement les variables à inclure dans le modèle. Ils rappellent que “<em>dans la pratique clinique, un point de départ consiste souvent à discuter avec le patient des principales raisons qui le poussent à chercher de l’aide et des symptômes et problèmes qu’il considère comme les plus pesants”.</em> Cependant, comment choisir les éléments qui éclaireront le mieux les processus psychopathologiques ? Les auteurs considèrent que pour valider le choix des éléments, il convient :</p>
+<ul>
+<li><p>de justifier théoriquement ou cliniquement ces choix et</p></li>
+<li><p>d’évaluer leur caractère unique (par exemple à l’aide de techniques statistiques telles que celles développées par <span class="citation" data-cites="christensenUniqueVariableAnalysis2023">@christensenUniqueVariableAnalysis2023</span>).</p></li>
+</ul>
+</section>
+</section>
+<section id="nomothétique-et-idiographique" class="level2">
+<h2 class="anchored" data-anchor-id="nomothétique-et-idiographique">Nomothétique et idiographique</h2>
+<section id="type-de-données-en-psychologie" class="level3">
+<h3 class="anchored" data-anchor-id="type-de-données-en-psychologie">Type de données en psychologie</h3>
+<p>Une des particularités des approches en réseau, telles qu’elles ont été présentées jusqu’à présent, relève de leur caractère nomothétique. Cela signifie qu’il s’agit de modélisations principalement réalisées sur des données transversales où un grand nombre d’individus sont interrogés (en général sur un nombre potentiellement important de variables), mais à un seul instant donné du temps. On rencontre plus fréquemment ce type de “design” par exemple dans des études épidémiologiques (de mesure de prévalences et de variables associées).</p>
+<p>Exemple de visualisation d’analyses en réseau sur des données transversales (deux temps du programme Profamille) <span class="citation" data-cites="valladierEvaluationImpactProgramme2020">[@valladierEvaluationImpactProgramme2020]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Valladier2020NetProfam.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Exemple de visualisation d’analyses en réseau sur des données transversales.</figcaption>
+</figure>
+</div>
+<p>D’autres types de données sont possibles comme des données en séries temporelles où il s’agit de suivre un ou plusieurs individus interrogés (en général sur un nombre potentiellement moindre de variables) sur plusieurs instants du temps (en général un nombre potentiellement important). Ce type de “design” d’étude est retrouvé dans les études d’évaluation écologique momentanée (EMA en anglais) ou méthode d’échantillonnage d’expériences (ESM en anglais).</p>
+<p>Exemple de visualisation d’analyses en réseau sur des données transversales (deux temps du programme Profamille) <span class="citation" data-cites="valladierEvaluationImpactProgramme2020">[@valladierEvaluationImpactProgramme2020]</span></p>
+<p>Enfin, un troisième type de donnée concerne des données dites de panel où un grand nombre d’individus sont interrogés (en général sur un nombre potentiellement important de variables) également sur plusieurs instants du temps (en général un nombre nettement moindre de temps). On rencontre ce type d’étude notamment dans le cadre de suivi de cohorte.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
+<p>Exemple de visualisation d’analyses en réseau sur des données de panel (trois temps du programme Profamille <span class="citation" data-cites="valladierEvaluationImpactProgramme2020">[@valladierEvaluationImpactProgramme2020]</span>, communication personnelle lors du Network Amsterdam Summer School 2020). Pour information, les visualisations de modélisations sur des données de séries temporelles sont identiques s’il y a plusieurs individus interrogés. Si un seul individu est suivi dans le temps alors la partie “between-subject” n’est, logiquement, pas présente dans les résultats de la modélisation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Morvan2020NetPanelProfam.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Exemple de visualisation d’analyse en réseau sur des données de panel.</figcaption>
+</figure>
+</div>
+</section>
+<section id="ergodicité" class="level3">
+<h3 class="anchored" data-anchor-id="ergodicité">Ergodicité</h3>
+<p>Une des critiques des approches nomothétiques en psychologie consiste à considérer que les résultats de ces études qui apportent des informations issues de variations inter-individuelles sont généralisés de manière abusive pour comprendre et expliquer le niveau idiographique constitué de variations intra-individuelles. Cette critique en psychologie, n’est pas nouvelle et <span class="citation" data-cites="barbotNewDirectionsStudy2015">@barbotNewDirectionsStudy2015</span> rappellent que Catell, dès les années 1952, faisait déjà la distinction entre approche nomothétique et idiographique. Catell employait les modélisations par analyses factorielles sur des séries de données temporelles individuelles (appelée P-technique en différence à R-technique qui utilisait l’analyse factorielle sur des données nomothétiques). Dans un pre-print récent <span class="citation" data-cites="beckNetworkApproachesRepresenting2023">@beckNetworkApproachesRepresenting2023</span> précise que cette question était présente dès 1946 chez Catell dans la manière dont ont pouvait organiser les données entre sujets, variables et temps de mesures.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://psyarxiv.com/8qws9/"><img src="images/Beck2023-Catell_P-R_Techniques.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Illustration du cube de données de Catell. Crédit Beck &amp; Jackson (2023)</figcaption>
+</figure>
+</div>
+<p>Cette critique a pris une nouvelle dimension au début des années 2000 grâce à Peter Molenaar qui a utilisé le concept d’ergodicité présent en physique statistique <span class="citation" data-cites="molenaarManifestoPsychologyIdiographic2004a">[@molenaarManifestoPsychologyIdiographic2004a]</span>.</p>
+<p>La particularité du concept d’ergodicité est que celui-ci est requis afin de permettre justement de généraliser des résultats nomothétiques au niveau idiographique. La difficulté réside dans le fait que la plupart des phénomènes étudiés en psychologie semblent non-ergodique. <span class="citation" data-cites="barbotNewDirectionsStudy2015">@barbotNewDirectionsStudy2015</span>, rappellent que pour qu’un phénomène soit ergodique, au minimum deux conditions sont requises :</p>
+<ol type="1">
+<li><p>que le phénomène évalué ne change pas au cours du temps par exemple qu’il fluctue autour d’une moyenne stable (stationnarité)</p></li>
+<li><p>que chaque composant du phénomène évalué se comporte exactement de la même manière et suive la même dynamique au cours du temps (homogénéité)</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>“<em>Such inferences are theoretically possible only when the process under study is”ergodic,” that is, when (a) the process is stationary over time and (b) each individual in the population obeys to the same dynamics (Molenaar &amp; Newell, 2010). These conditions are rarely met in group-level studies of developmental processes, leading many to focus on idiographic approaches.”</em></p>
+<p>Extrait de <span class="citation" data-cites="barbotNewDirectionsStudy2015">@barbotNewDirectionsStudy2015</span></p>
+</blockquote>
+<p>Une autre manière d’illustrer la problématique (de non-ergodicité) est d’utiliser la métaphore de la photo<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>. Il s’agit de considérer que le système nomothétique est comme un instantané pris d’un groupe de personnes qui sont en réalité en mouvement. S’il est possible de se représenter hypothétiquement une trajectoire moyenne des individus présents sur l’instantané on comprend aisément que cette trajectoire moyenne risque ne ne pas correspondre à une trajectoire moyenne de l’ensemble de ces mêmes individus si l’on prend en compte “le film” c’est-à-dire si l’on dispose de données temporelles.</p>
+<p>Cela correspond <a href="https://fr.wikipedia.org/wiki/Th%C3%A9orie_ergodique">au théorème ergodique de Birkhoff</a> qui suppose qu’un système est ergodique lorsque les moyennes spatiale et temporelle sont égales presque partout.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://osf.io/5m3xd"><img src="figures/Facon-Barillot2022-Ergodicity.png" class="img-fluid figure-img" style="width:80.0%"></a></p>
+<figcaption class="figure-caption">Nomothétique et Idiographique : illustration de la non-ergodicité Facon-Barillot, Romo &amp; Morvan (2022)</figcaption>
+</figure>
+</div>
+<p>Cette métaphore permet de bien comprendre la critique présente en psychologie sur l’abus de généralisabilité des résultats nomothétiques sur des processus idiographiques. En effet, on comprend bien ici que la trajectoire moyenne que l’on pourrait inférer à partir de l’instantané s’appliquera très bien à un individu moyen, mais que cet individu moyen ne correspondra peut-être a aucun individu présent sur le cliché. De même, sa trajectoire moyenne ne correspondra pas, non plus, aux trajectoires observées sur le film.</p>
+<p>Si ce point fait référence au second principe d’homogénéité, en ce qui concerne le principe de stationnarité, on peut aisément imaginer que les personnes présentes dans le film peuvent aussi par exemple :</p>
+<ul>
+<li><p>s’arrêter brutalement devant une vitrine pour observer quelque chose</p></li>
+<li><p>changer de direction de manière abrupte pour se diriger vers un autre magasin</p></li>
+<li><p>ralentir pour converser avec la personne qui les accompagne</p></li>
+<li><p>accélérer pour rentrer chez soi plus rapidement</p></li>
+</ul>
+<p>L’idée que des phénomènes puissent être non stationnaires est justement ce que l’on cherche à produire en psychologie dans le cadre d’interventions cliniques où il s’agit, par exemple, de faire diminuer au cours du temps l’intensité de tel symptôme, la fréquence d’apparition de tel comportement ou cognition.</p>
+</section>
+<section id="mise-en-perspective" class="level3">
+<h3 class="anchored" data-anchor-id="mise-en-perspective">Mise en perspective</h3>
+<p>Cette critique et opposition entre approche nomothétique et idiographique doit cependant être pondérée dans la mesure où il convient de distinguer les techniques de modélisation (data model) appliquées sur les données (data) des inférences causales que l’on cherche à identifier (causal assumptions)<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>.</p>
+<p>Ce point de vue est extrêmement bien expliqué par Payton Jones dans un billet de blog intitulé “<em>Why idiography can’t save us</em>” où il explique que l’enjeu réside justement dans la compréhension causale des phénomènes individuels qui sont à différencier de la mesure de la variance intra-individuelle <span class="citation" data-cites="jonesWhyIdiographyCan2019">[@jonesWhyIdiographyCan2019]</span>. Justement les variances intra (“<em>within</em>”) et inter-individuelles (“<em>beetwen subject</em>s”) sont <em>in fine</em> le résultat de causes intra-individuelles. Dit autrement, les informations que l’on obtient à partir de données nomothétiques sont le produit de (et donc contiennent des) données idiographiques.</p>
+<blockquote class="blockquote">
+<p>“<em>Moreover, within-person variance is not any closer to a within-person causal model than between-person variance is! Both within- and between-person variance are ultimately the result of within-person causes.&nbsp;This becomes easier to understand in the context of human development. If differences exist between-persons, that difference is resultant from some within-person causal process at some point in time. Differences between people are caused by differences within those people.</em></p>
+<p><em>Another way to think of this is to realize that in a random sample, there is no such thing as “between-person causes”— these would only exist if the members of the sample were interacting with one another.&nbsp;This leaves only within-person causes.</em></p>
+<p><em>Both between- and within-person variance tell you different things and each come with their own limitations. It’s difficult, but possible, to come up with sets of reasonable causal hypotheses from either type of data. […]</em></p>
+<p><em>Now I don’t mean to imply that within-persons analyses aren’t valuable or important, or that you shouldn’t do them just because they are difficult to get right. I actually think they are pretty cool and I’m glad people do them. They capture some really interesting data that has been ignored for many, many years. What I do mean to imply is that <strong>within-persons analyses are not a straightforward path to understanding within-persons causality</strong>. […]</em></p>
+<p><em>I don’t think there is anything wrong with within-persons data. But I also don’t think it makes sense to stomp on between-subjects analyses in a misguided attempt to promote within-persons analyses. I truly think we’ve generated some important ideas using hypothesis-generating methods like between-subjects psychometric networks. I hope we make even more progress with within-person hypothesis generating networks! But if it’s theory and causality that we’re after, I don’t think within-persons analyses can get us there without some serious help.</em>”</p>
+<p>Extraits de <em>Why idiography can’t save us</em> de <span class="citation" data-cites="jonesWhyIdiographyCan2019">@jonesWhyIdiographyCan2019</span></p>
+</blockquote>
+<p>L’important consiste à considérer qu’à partir de ces deux types de données nomothétique ou idiographique, les inférences causales proposées peuvent s’avérer tout autant éclairante (et complémentaires) du phénomène que l’on cherche à expliquer.</p>
+<p>Après avoir présenté le développement des approches en réseau en psychologie, principalement au travers du prisme de la psychométrie, il convient de d’illustrer comment ces techniques peuvent être utilisées concrètement et notamment en psychologie clinique.</p>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Il s’agit d’une traduction, la citation originale étant “<em>Network models represent in the most clear-cut manner the various processes underlying self-organizing systems, whereby order, self-regulation, and edge of chaos dynamics tend to emerge with sufficient numbers of nodes and nodal connectivity</em>”.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Charles Spearman est connu pour la proposition en 1904 d’un facteur commun <em>g</em> qui expliquent la corrélations positives entre les différentes épreuves d’intelligence. Louis Leon Thurstone proposera en 1936 une modélisation statistique utilisant les régressions linéaires multiples et l’utilisation de la rotation d’axes factoriels dans le cadre de calcul matriciel pour identifier plusieurs facteurs qui expliquent ces corrélations positives <span class="citation" data-cites="briggsHistoricalConceptualFoundations2022">[@briggsHistoricalConceptualFoundations2022, 239-243, 247-252]</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Il est intéressant de noter que le développement des approches en réseau en psychologie est inspirée de la recherche en écologie et des écosystèmes[<span class="citation" data-cites="vandermaasDynamicalModelGeneral2006">@vandermaasDynamicalModelGeneral2006</span>; <span class="citation" data-cites="maierComparingTheoriesIsing2023">[@maierComparingTheoriesIsing2023]</span>. L’idée de base repose sur la qualité de l’eau d’un lac qui est diifcilement explicable par un facteur ou une variable latente “lac”. C’est, en revanche, à partir de l’interaction des composants du système “lac” qu’il est plus pertinent d’expliquer la qualité de l’eau. “<em>Whether a lake is clean or turbid results from interactions of interdependent elements, such as oxygen levels, sunlight exposure, fish, pollution, and so on</em>”<span class="citation" data-cites="friedStudyingMentalHealth2022a">[@friedStudyingMentalHealth2022a]</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>A noter toutefois que la perspectives<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>On notera toutefois qu’une flexibilité importante peut se manifester aussi dans la construction de ce type d’indicateur formatif avec <a href="https://twitter.com/EikoFried/status/1324013375886708739">l’identification de 45 manières différentes de mesurer le statut économique et social dans 38 jeux de données différents</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Ces techniques ont une histoire importante en psychologie notamment avec le développement des tests de mesures de l’intelligence et des théories associées avec la théorisation du facteur (commun) général de l’intelligence ou facteur g proposé par Spearman en 1904 à Louis Leon Thustone qui a proposé une modélisation par régressions linéaires permettant de d’identifier des facteurs expliquant (comme le facteur g) les corréaltions positive (positive manifold en anglais) entre les différents tests ou indicateurs de mesure de l’intelligence.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Cela signifie en effet que des items d’une échelle dans le cadre d’une analyse factorielle ne représentent pas la variable latente selon la même intensité ce qui peut avoir des conséquences dans la pratique communément admise de calcul d’un score total. Cela peut revenir à comparer une somme brut (la somme des notes au bac) à une somme pondéré (la somme des notes au bac en prenant en compte les coefficient en fonction du type de bac). Pour une discussion plus approfondie sur cette question dans le cadre des analyse factorielles voir <span class="citation" data-cites="mcneishThinkingTwiceSum2020">@mcneishThinkingTwiceSum2020</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>On pourra lire un autre exemple intéressant donnée par <span class="citation" data-cites="cramerDimensionsNormalPersonality2012">@cramerDimensionsNormalPersonality2012</span> sur la personnalité.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Proposé par <span class="citation" data-cites="Epskamp2017b">@Epskamp2017b</span> et implémenté dans le package R <a href="http://psychonetrics.org/">psychonetrics</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Le citation dans le texte est “epistemological trap is the perpetual loop of codetermination between the definition of a clinical entity and its measurement” dont le crédit de l’inspiration revient à Astrid Chevance.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Le souvenir de cet exemple me semble provenir d’une intervention d’Eiko Fried mais je confesse que malgré le re-visonnage de diverses communications présentes <a href="https://eiko-fried.com/talks/">sur son blog personnel</a> (Mental health: studying systems instead of syndromes ; Measurement matters: challenges to assessing mental health problems pose a substantial barrier to clinical progress ; Lack of theory building and testing impedes progress in the factor and network literature ; Depression is a problematic phenotype: The potential benefits of studying symptoms over syndromes), il m’est difficile de retrouver la référence exact. Je citerais donc, a défaut, un court extrait de sa thèse sur ce sujet : “<em>the field needs to obtain a good picture of the symptoms that individuals classified as depressed suffer from. However, since classifications are defined by the presence of symptoms, we find ourselves in a tautological quandary</em>” <span class="citation" data-cites="friedCovertHeterogeneityMajor2014">[@friedCovertHeterogeneityMajor2014]</span>.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Pour une représentation visuelle de ce type de données (dans la mesure où il a été difficile de trouver des illustrations en licence creative commons) on recommandera les articles de <span class="citation" data-cites="barbotNewDirectionsStudy2015">@barbotNewDirectionsStudy2015</span> et de <span class="citation" data-cites="borsboomNetworkAnalysisMultivariate2021">@borsboomNetworkAnalysisMultivariate2021</span>. Egalement dans les <a href="https://osf.io/kvytm">matériels disponible en ligne du Psychological Networks Amsterdam Winter School 2020</a> <span class="citation" data-cites="isvoranuPsychologicalNetworksAmsterdam2022">[@isvoranuPsychologicalNetworksAmsterdam2022]</span>. Evidemment, nous ne mentionnons pas ici d’autre types de données qui peuvent combiner plusieurs aspects des types de données présentées, à savoir les données obtenus dans des protocoles “expérimentaux” en psychologie.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Il convient de créditer Ellen Hamaker pour cette métaphore, lors d’une <a href="https://www.facebook.com/groups/PsychologicalDynamics/permalink/2752596784998366/">discussion extrêmement intéressante (et de très haut niveau) sur le groupe d’échange Psychological Dynamics</a>. J’ai pu réutiliser cette métaphore lors d’une présentation de la semaine Data SHS de la PUDN de Paris Nanterre intitulée <em>Quelques exemples d’analyses incluant la variable temporelle en psychologie : des modèles latents aux network analysis</em> <span class="citation" data-cites="morvanQuelquesExemplesAnalyses2020">[@morvanQuelquesExemplesAnalyses2020]</span> et avec d’autres collègues lors d’une présentation à l’AFTCC intitulée I<em>dentifier les cibles d’interventions par modélisations en réseau et par simulations, Application sur la détresse psychologique des étudiants en 2021</em> <span class="citation" data-cites="facon-barillotIdentifierCiblesInterventions2022">[@facon-barillotIdentifierCiblesInterventions2022]</span>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Il est fait ici référence à la m<a href="https://www.facebook.com/groups/PsychologicalDynamics/permalink/2752596784998366/">ême discussion du groupe psychological dynamics</a> dans laquelle Eiko Fried rappelle que “<em>causal inference follows from data + data model + causal assumptions</em>”.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Site construit avec du <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://quarto.org/">Quarto</a> et l’aide de Csik [Samantha (https://samanthacsik.github.io/talks_workshops/2022-08-05-creating-your-personal-website-using-quarto/index.html)</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./LICENSE-CC-BY-4.0.html">
+<p>Licence CC-BY-4.0</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

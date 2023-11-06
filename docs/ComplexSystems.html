@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.288">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Yannick Morvan – complexsystems</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Yannick Morvan</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Acceuil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">A propos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mon-hdr" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Mon HDR</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mon-hdr">    
+        <li>
+    <a class="dropdown-item" href="./peda.html" rel="" target="">
+ <span class="dropdown-text">Activités universitaires et d’enseignement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publi.html" rel="" target="">
+ <span class="dropdown-text">Activités scientifiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pedaPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Pédagogiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publiPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexSystems.html" rel="" target="">
+ <span class="dropdown-text">Les approches en systèmes complexes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexPsycho.html" rel="" target="">
+ <span class="dropdown-text">Les systèmes complexes en psychologie : la question psychométrique</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf" rel="" target="">
+ <span class="menu-text">cv</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html" rel="" target="">
+ <span class="menu-text">Références</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/yannickmorvan/yannickmorvan.github.io" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/yannick_morvan" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ymorvan@parisnanterre.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-ComplexSystems" id="toc-sec-ComplexSystems" class="nav-link active" data-scroll-target="#sec-ComplexSystems">Les approches en systèmes complexes</a>
+  <ul class="collapse">
+  <li><a href="#quelles-origines-des-systèmes-complexes" id="toc-quelles-origines-des-systèmes-complexes" class="nav-link" data-scroll-target="#quelles-origines-des-systèmes-complexes">Quelles origines des systèmes complexes</a></li>
+  <li><a href="#comment-définir-les-systèmes-complexes" id="toc-comment-définir-les-systèmes-complexes" class="nav-link" data-scroll-target="#comment-définir-les-systèmes-complexes">Comment définir les systèmes complexes</a></li>
+  <li><a href="#une-caractérisation-plus-exhaustive-des-systèmes-complexes" id="toc-une-caractérisation-plus-exhaustive-des-systèmes-complexes" class="nav-link" data-scroll-target="#une-caractérisation-plus-exhaustive-des-systèmes-complexes">Une caractérisation plus exhaustive des systèmes complexes</a></li>
+  <li><a href="#des-propriétés-pertinentes-pour-la-psychologie" id="toc-des-propriétés-pertinentes-pour-la-psychologie" class="nav-link" data-scroll-target="#des-propriétés-pertinentes-pour-la-psychologie">Des propriétés pertinentes pour la psychologie ?</a>
+  <ul class="collapse">
+  <li><a href="#attracteurs" id="toc-attracteurs" class="nav-link" data-scroll-target="#attracteurs">Attracteurs</a></li>
+  <li><a href="#hystérèse" id="toc-hystérèse" class="nav-link" data-scroll-target="#hystérèse">Hystérèse</a></li>
+  <li><a href="#auto-organisation" id="toc-auto-organisation" class="nav-link" data-scroll-target="#auto-organisation">Auto-organisation</a></li>
+  <li><a href="#dynamique-non-linéaire-et-bifurcation" id="toc-dynamique-non-linéaire-et-bifurcation" class="nav-link" data-scroll-target="#dynamique-non-linéaire-et-bifurcation">Dynamique non linéaire et bifurcation</a></li>
+  <li><a href="#émergence-et-réalisation-multiple" id="toc-émergence-et-réalisation-multiple" class="nav-link" data-scroll-target="#émergence-et-réalisation-multiple">Émergence et réalisation multiple</a></li>
+  <li><a href="#difficultés-des-modèles-constructionnistes-et-réductionnistes" id="toc-difficultés-des-modèles-constructionnistes-et-réductionnistes" class="nav-link" data-scroll-target="#difficultés-des-modèles-constructionnistes-et-réductionnistes">Difficultés des modèles constructionnistes et réductionnistes</a></li>
+  <li><a href="#un-intérêt-pour-la-psychologie-qui-nest-pas-nouveau" id="toc-un-intérêt-pour-la-psychologie-qui-nest-pas-nouveau" class="nav-link" data-scroll-target="#un-intérêt-pour-la-psychologie-qui-nest-pas-nouveau">Un intérêt pour la psychologie qui n’est pas nouveau</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+
+<section id="sec-ComplexSystems" class="level1">
+<h1>Les approches en systèmes complexes</h1>
+<p>L’objectif est de présenter ici les approches en systèmes complexes et en quoi les caractéristiques de ces systèmes font qu’elles semblent tout particulièrement pertinentes pour la psychologie. Il s’agit ici de synthétiser ce que j’ai pu en comprendre, en ne perdant pas de vue une humilité nécessaire quant à ma capacité limitée de compréhension et de synthèse de “ces complexités”. Cette précaution s’appliquera également aux trois prochaines parties à venir qui tenteront d’illustrer leur développement en psychologie.</p>
+<section id="quelles-origines-des-systèmes-complexes" class="level2">
+<h2 class="anchored" data-anchor-id="quelles-origines-des-systèmes-complexes">Quelles origines des systèmes complexes</h2>
+<p>Si l’on s’intéresse aux approches en systèmes complexes, il apparaît pertinent de s’interroger sur son histoire pour mieux en dessiner les contours et comprendre son intérêt pour la psychologie en général et la psychologie clinique/psychopathologie en particulier. Dans son ouvrage Histoire et sociologie des sciences de la complexité, <span class="citation" data-cites="livigniHistoireSociologieSciences2021">@livigniHistoireSociologieSciences2021</span>, présente différentes approches de la complexité<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> dont deux courants fondateurs importants sont apparus dans les années 1960-1970.</p>
+<ul>
+<li><p>Les approches cybernétique et systémique, probablement les plus connues en sciences humaines et sociales. La cybernétique est décrite comme “<em>La science des systèmes à circuit fermé dont l’action produit un changement dans l’environnement qui à son tour, rétroagit sur le système par le biais d’un feedback</em>” et pour la systémique “<em>une approche holiste (le tout est plus que la somme de ses parties) [abordant] mathématiquement les systèmes naturels et humains, sans les considérer comme à l’équilibre mais comme ouvert</em>”.</p></li>
+<li><p>Les systèmes dynamiques du champ des mathématiques et dont un exemple le plus connu est la théorie du chaos “<em>il s’agit d’un ensemble intégré composé d’un grand nombre d’éléments en interaction, résultat de processus d’évolution et doués de propriétés émergentes au sens où le niveau microscopique engendre une organisation macroscopique qui n’est pas prévisible à partir de ces constituants</em>”.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://complexity-methods.github.io/book/index.html"><img src="figures/foundationsComplexityScience.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Représentation des fondations disciplinaires des sciences de la complexité présentée sur le site web de formation de Fred Hasselman. Préalablement issu du rapport de la Netherlands Organisation for Scientific Research (“Redrawn with permission from Jeffrey Goldstein”)</figcaption>
+</figure>
+</div>
+<p>Toutefois, comme l’illustre les différentes fondations disciplinaires des sciences de la complexité <span class="citation" data-cites="hasselmanComplexSystemsApproach2022">[@hasselmanComplexSystemsApproach2022]</span> et comme le rappelle le rapport de la Netherlands Organisation for Scientific Research qui s’intitule <em>Grip on complexity. How manageable are complex systems? Directions for future complexity research</em> <span class="citation" data-cites="henribalGripComplexityHow2014">[@henribalGripComplexityHow2014]</span>, une certaine confusion existe sur ce que l’on entend par science de la complexité.</p>
+<blockquote class="blockquote">
+<p>“<em>Complexity scientists use a range of methodologies to study a broad array of problems across the sciences. There is currently a vast and often confusing instrumentation for complexity scientists.</em></p>
+<p><em>It includes mathematical theories of dynamical systems, bifurcations, chaotic attractors, Prigogine’s dissipative systems, graph theory and work by Barabási and others on the theories of networks, control and systems.</em></p>
+<p><em>There is statistical physics. There are computer science constructs such as cybernetics, cellular automata, and agent-based models.</em></p>
+<p><em>There are discipline-originated theories such as genetic algorithms, Lotka-Volterra predator-prey models, and May’s work on mathematical ecology.</em></p>
+<p><em>How does the complexity researcher resolve this confusion? We need to work on developing, testing and validating fundamental theories and methods.</em></p>
+<p><em>Which ones have universal applicability to complex systems? What analytical and computational tools belong in the standard toolbox of a complexity scientist? How do we begin to model a new complex system? What techniques of data analysis are available?</em>”</p>
+<p>Extrait de <span class="citation" data-cites="henribalGripComplexityHow2014">@henribalGripComplexityHow2014</span></p>
+</blockquote>
+<p>Cette confusion étant en regard d’un nombre d’approches variées tant du point disciplinaire, théorique et méthodologique, essayons de synthétiser certains aspects des systèmes complexes qui semblent intéressants pour la psychologie.</p>
+</section>
+<section id="comment-définir-les-systèmes-complexes" class="level2">
+<h2 class="anchored" data-anchor-id="comment-définir-les-systèmes-complexes">Comment définir les systèmes complexes</h2>
+<p>Pour mieux cerner la notion de système complexe, il convient de mieux définir les notions qui composent ce terme. Tout d’abord la notion de système que l’on peut définir simplement par le fait que ce dernier est composé d’éléments et de leurs relations. La définition proposée par <span class="citation" data-cites="meadowsThinkingSystemsPrimer2008">@meadowsThinkingSystemsPrimer2008 [p. 11]</span> y inclut une composante supplémentaire dans le cas de systèmes dits “complexes”, l’idée d’une cohérence afin de réaliser un objectif : “<em>un ensemble d’éléments interconnectés et organisés de manière cohérente afin de réaliser quelque chose</em>”. Tandis que le terme de complexité renvoie bien à la notion d’un comportement du dit système comme “<em>non linéaire et implique un grand nombre d’éléments ou de composants en interaction</em>” <span class="citation" data-cites="richardsonComplexDynamicalSystems2014">[@richardsonComplexDynamicalSystems2014]</span>.</p>
+<p>Si ces éléments de définition sont en cohérence avec les aspects épistémologiques évoqués ci-dessus, il n’en demeure pas moins que les caractéristiques des systèmes complexes sont bien plus importantes et plus surprenantes qu’il n’y parait. Une précaution importante à ce sujet est apportée par <span class="citation" data-cites="meadowsThinkingSystemsPrimer2008">@meadowsThinkingSystemsPrimer2008 [p. 87]</span> :</p>
+<blockquote class="blockquote">
+<p><em>“You can’t navigate well in an interconnected, feedback-dominated world unless you take your eyes off short-term events and look for long-term behavior and structure; unless you are aware of false boundaries and bounded rationality; unless you take into account limiting factors, nonlinearities and delays. You are likely to mistreat, misdesign, or misread systems if you don’t respect their properties of resilience, self-organization, and hierarchy. The bad news, or the good news, depending on your need to control the world and your willingness to be delighted by its surprises, is that even if you do understand all these system characteristics, you may be surprised less often, but you will still be surprised.”</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://twitter.com/vb_jens/status/1372251931444350976?s=21"><img src="figures/Twitter_ExpGrowth.png" class="img-fluid figure-img" width="337"></a></p>
+<figcaption class="figure-caption">De la difficulté à se représenter une trajectoire non linéaire</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p><a href="https://www.youtube.com/watch?v=P3e8Yb4YopE">DS9, Series 7, Episode 26 - What you leave behind. “It’s difficult to explain it’s not linear”</a></p>
+</blockquote>
+<p>De manière résumée les systèmes complexes possèdent trois caractéristiques principales selon <span class="citation" data-cites="richardsonComplexDynamicalSystems2014">@richardsonComplexDynamicalSystems2014</span> :</p>
+<ol type="1">
+<li><p>ils consistent en un grand nombre d’éléments ou agents interagissant ;</p></li>
+<li><p>ils ont des propriétés émergentes (le comportement collectif est difficile à anticiper à partir de la connaissance des éléments individuels qui composent le système) ;</p></li>
+<li><p>ces propriétés émergentes sont auto-organisées et ne se résultent pas d’un processus ou d’un agent de contrôle central ou externe<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p><a href="https://www.youtube.com/watch?v=iH9eMLXl_3U" title="Exemple de comportement auto-organisé">Illustration d’un comportement auto-organisé en réponse à l’environnement, non réductible à un poisson-pilote “général” donnant des directives</a></p>
+</blockquote>
+</section>
+<section id="une-caractérisation-plus-exhaustive-des-systèmes-complexes" class="level2">
+<h2 class="anchored" data-anchor-id="une-caractérisation-plus-exhaustive-des-systèmes-complexes">Une caractérisation plus exhaustive des systèmes complexes</h2>
+<p>Mais en réalité, il est possible de caractériser avec plus de précisions encore les systèmes complexes. C’est notamment le travail qui a été réalisé par <span class="citation" data-cites="boehnertVisualRepresentationComplexity2018">@boehnertVisualRepresentationComplexity2018</span> qui a permis de recenser et de représenter visuellement 16 propriétés des systèmes complexes, dont nous proposons une traduction ci-après.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.cecan.ac.uk/news/the-visual-representation-of-complexity/"><img src="figures/The-Visual-Communication-of-Complexity.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Une représentation visuelle de la complexité par le Dr.&nbsp;Joanna Boehnert</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<ol type="1">
+<li><em>Feedback (rétroaction) : Lorsqu’un résultat ou une sortie d’un processus influence l’entrée directement ou indirectement. Ceux-ci peuvent accélérer ou supprimer le changement.</em></li>
+<li><em>Émergence : Des propriétés nouvelles et inattendues de niveau supérieur peuvent résulter de l’interaction de composants. Ces propriétés sont dites émergentes si elles ne peuvent pas être facilement décrites, expliquées ou prédites à partir des propriétés des composants de niveau inférieur.</em></li>
+<li><em>Auto-organisation : Des régularités ou des modèles de niveau supérieur peuvent naître de l’interaction locale de composants autonomes de niveau inférieur.</em></li>
+<li><em>Leviers et pivots : Certains éléments d’un système peuvent avoir une influence disproportionnée en raison de la structure de leurs connexions. Le comportement de ces éléments peut contribuer à mobiliser le changement, mais il peut également rendre le système vulnérable aux perturbations.</em></li>
+<li><em>Non-linéarité : Un système est non linéaire lorsque l’effet des entrées sur les résultats n’est pas proportionnel. Le comportement d’un système peut présenter des changements exponentiels ou des changements de direction (c’est-à-dire que des augmentations de certaines mesures deviennent des diminutions), malgré des changements faibles ou constants des entrées.</em></li>
+<li><em>Domaines de stabilité : Les systèmes complexes peuvent avoir plusieurs états stables qui peuvent changer en fonction de l’évolution du contexte. Les systèmes gravitent vers de tels états et y restent à moins d’être fortement perturbés. Si le changement dans un système dépasse un seuil, il peut glisser rapidement vers un autre état stable, rendant le changement très difficile à inverser</em><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a><em>.</em></li>
+<li><em>Adaptation : Les composants ou les acteurs du système sont capables d’apprendre ou d’évoluer, en modifiant le comportement du système en réponse aux interventions au fur et à mesure qu’elles sont appliquées. Par exemple, dans les systèmes sociaux, les gens peuvent communiquer, interpréter et se comporter de manière stratégique pour anticiper les situations futures. Dans les systèmes biologiques, les espèces évolueront en réponse au changement.</em></li>
+<li><em>Dépendance de la trajectoire : Les états, actions ou décisions actuels et futurs dépendent de la séquence d’états, d’actions ou de décisions qui les ont précédés, c’est-à-dire de leur trajectoire (typiquement temporelle).</em></li>
+<li><em>Points de basculement : Le point au-delà duquel les devenirs du système changent radicalement. Le changement peut se faire lentement au départ, puis s’accélérer soudainement. Un seuil est le point au-delà duquel le comportement du système change soudainement.</em></li>
+<li><em>Changement au cours du temps : Les systèmes complexes se développent inévitablement et modifient leur comportement au cours du temps. Cela est dû à leur ouverture et à l’adaptation de leurs composants, mais aussi au fait que ces systèmes sont généralement en déséquilibre et évoluent en permanence.</em></li>
+<li><em>Système ouvert : Un système ouvert est un système qui a des interactions externes. Celles-ci peuvent prendre la forme de transferts d’informations, d’énergie ou de matériaux à l’intérieur ou en dehors des limites du système. Dans les sciences sociales, un système ouvert est un processus qui échange des matériaux, de l’énergie, des personnes, des capitaux et des informations avec son environnement.</em></li>
+<li><em>Imprévisibilité : Un système complexe est fondamentalement imprévisible. Le nombre et l’interaction des entrées, des causes, des mécanismes et des rétroactions signifient qu’il est impossible de faire des prévisions avec précision. Le bruit aléatoire peut avoir un effet important. Les systèmes complexes sont fondamentalement non connaissables à n’importe quel moment du temps ; c’est-à-dire qu’il est impossible de rassembler, de stocker et d’utiliser toutes les informations sur l’état d’un système complexe.</em></li>
+<li><em>Inconnus : En raison de leur structure causale complexe et de leur ouverture, de nombreux facteurs dont nous n’avons pas connaissance influencent (ou peuvent influencer) un système. L’existence inévitable de ces inconnues signifie que nous observons souvent des effets indirects inattendus de nos interventions.</em></li>
+<li><em>Contrôle distribué : Le contrôle d’un système est distribué entre de nombreux acteurs. Aucun acteur ne dispose d’un contrôle total. Chaque acteur ne peut avoir accès qu’à des informations locales.</em></li>
+<li><em>Systèmes imbriqués/emboîtés : Les systèmes complexes sont souvent des hiérarchies imbriquées/emboîtées de systèmes complexes (appelés “systèmes de systèmes”).</em></li>
+<li><em>Échelles et niveaux multiples : Les acteurs et les interactions dans les systèmes complexes peuvent opérer à travers plusieurs échelles et niveaux. Pour cette raison, les systèmes doivent être étudiés et compris à partir de plusieurs perspectives simultanément.</em></li>
+</ol>
+<p>Extraits et traduction de la présentation de <span class="citation" data-cites="boehnertVisualRepresentationComplexity2018">@boehnertVisualRepresentationComplexity2018</span>.</p>
+</blockquote>
+<p>Certaines de ces propriétés sont étudiées dans le domaine des sciences de vie et combinent l’observation à des modélisations/formalisations mathématiques des systèmes complexes en interactions avec l’environnement. On pourra à titre d’exemple présenter les travaux réalisés sur des embryons d’étoiles de mer <span class="citation" data-cites="tanOddDynamicsLiving2022">[@tanOddDynamicsLiving2022]</span>. En effet, les chercheurs ont pu observer que des milliers d’embryons en train de nager s’assemblent spontanément (auto-organisation). Ils forment ainsi un matériau macroscopique (émergence) dans un état de non-équilibre qui présente un comportement de réponse (contrôle distribué) à la déformation (système ouvert) non conventionnel (adaptation) récemment prédit pour les matériaux élastiques bizarres.</p>
+<p><a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04889-6/MediaObjects/41586_2022_4889_MOESM2_ESM.mp4">Exemple de Comportement d’auto-organisation d’embryons d’étoile de mer de Tan et al.&nbsp;2022</a></p>
+<p><a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04889-6/MediaObjects/41586_2022_4889_MOESM5_ESM.mp4">Simulation mathématique du comportement d’auto-organisation Tan et al.&nbsp;2022</a></p>
+</section>
+<section id="des-propriétés-pertinentes-pour-la-psychologie" class="level2">
+<h2 class="anchored" data-anchor-id="des-propriétés-pertinentes-pour-la-psychologie">Des propriétés pertinentes pour la psychologie ?</h2>
+<section id="attracteurs" class="level3">
+<h3 class="anchored" data-anchor-id="attracteurs">Attracteurs</h3>
+<p>Une particularité des états en non-équilibre est qu’ils peuvent basculer (points de basculements ou “tipping point” en anglais) d’un état de stabilité à un autre état de stabilité (domaines de stabilité) sous l’influence de bassins d’attracteurs comme cela est très bien décrit schématiquement par <span class="citation" data-cites="lunanskyBouncingBackLife2022">@lunanskyBouncingBackLife2022</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://psyarxiv.com/ftx4j/"><img src="figures/Lunansky2022-landscape.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Représentation visuelle des domaines de stabilité. Crédit Lunasky et al.&nbsp;(2022)</figcaption>
+</figure>
+</div>
+</section>
+<section id="hystérèse" class="level3">
+<h3 class="anchored" data-anchor-id="hystérèse">Hystérèse</h3>
+<p>Un autre élément très intéressant si l’on s’intéresse à ces points de basculements est la notion d’hystérèse (ou hystérésis). Pour la comprendre, il faut se représenter qu’une certaine quantité d’énergie introduite dans un système peut venir perturber ce dernier et le faire basculer dans un nouvel état (au niveau de son bassin d’attracteur). Cependant si l’on souhaite revenir à l’état antérieur (au précédent point de stabilité), il est fréquent que la quantité d’énergie nécessaire ne soit pas la même. Elle n’est donc pas nécessaire “symétrique” et peut être plus élevé ou plus faible selon le bassin d’attracteur (voir <span class="citation" data-cites="heinoAttractorLandscapesUnifying2022">@heinoAttractorLandscapesUnifying2022</span> pour une revue de ces questions et notamment la figure 4 de l’article librement accessible sur <a href="https://psyarxiv.com/3rxyd/">PsyArXiv</a>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://psyarxiv.com/3rxyd/"><img src="figures/Heino2022_Tippingpoint.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Attracteurs et hystérèse, illustration avec la métaphore du paysage. Crédit Heino et al.&nbsp;(2022)</figcaption>
+</figure>
+</div>
+<p>Un exemple fréquemment donné pour illustrer ce phénomène est celui de la carte de crédit que l’on pli entre ces deux doigts <span class="citation" data-cites="VanDerMaas2017">[@VanDerMaas2017]</span>. Jusqu’à un certain point, le système est dit “résilient” aux perturbations : le fait que l’on introduise une certaine quantité d’énergie dans le système (le fait de plier la carte) ne change pas l’état du système, ce dernier revenant à l’équilibre (son état stable). En revanche, si l’on augmente trop fortement la pression (on augmente ainsi la quantité d’énergie que l’on introduit dans le système) alors on peut atteindre un point de bascule (certains paramètres du système dépassent leurs limites) et le système change alors d’état (il s’auto-organise dans un nouvel ordre ou état de stabilité). La carte est alors cassée. Le principe d’hystérèse est alors assez intuitif à comprendre, c’est que la quantité d’énergie nécessaire pour revenir à l’état antérieur (réparer la carte ou en obtenir une nouvelle) n’est pas égale (et probablement supérieure) à celle qui a été nécessaire pour suffisamment perturber le système et le faire changer d’état.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.preprints.org/manuscript/201701.0107/v1"><img src="figures/VanDerMass2017-Card.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Hystérèse , illustration avec la carte de crédit. Crédit : Van Der Mass et al.&nbsp;(2017)</figcaption>
+</figure>
+</div>
+</section>
+<section id="auto-organisation" class="level3">
+<h3 class="anchored" data-anchor-id="auto-organisation">Auto-organisation</h3>
+<p>C’est cette particularité d’auto-organisation ou de réorganisation du système lorsque ce dernier a été perturbé (que les sources de perturbations soient biologiques, psychologiques, environnementales où un mélange/interaction des trois) et contraint donc de se ré-agencer topologiquement de manière différente qui fait tout l’intérêt pour la psychologie clinique. En effet, cette propriété permet de concilier approches continuiste et discontinuiste des troubles psychiques d’une part, mais également de considérer que les troubles ne constituent pas nécessairement un “<em>désordre</em>” (une dysfonction) mais au contraire un nouvel “<em>ordre</em>” ou état d’équilibre d’autre part <span class="citation" data-cites="olthofComplexityTheoryPsychopathology2023">[@olthofComplexityTheoryPsychopathology2023]</span>.</p>
+<blockquote class="blockquote">
+<p>“<em>Psychopathology is not the disruption of a healthy pattern (e.g., a disbalance in humors, neurotransmitters, hormones, or personality traits), but a pattern in itself. In other words, pathology is not a disorder, but another kind of order</em>”</p>
+<p>Extrait de <em>Complexity Theory of Psychopathology</em> de <span class="citation" data-cites="olthofComplexityTheoryPsychopathology2023">@olthofComplexityTheoryPsychopathology2023</span></p>
+</blockquote>
+</section>
+<section id="dynamique-non-linéaire-et-bifurcation" class="level3">
+<h3 class="anchored" data-anchor-id="dynamique-non-linéaire-et-bifurcation">Dynamique non linéaire et bifurcation</h3>
+<p>Si l’on considère que ces points de basculement s’inscrivent dans une dynamique temporelle, où les paramètres du système sont soumis à des évolutions, alors ils constituent de possibles bifurcations du système <span class="citation" data-cites="gauldDynamicalSystemsComputational2023">[@gauldDynamicalSystemsComputational2023]</span> qui renvoie également à la théorie des catastrophes<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> <span class="citation" data-cites="VanDerMaas2017">[@VanDerMaas2017]</span>.</p>
+<p>Il convient ici également de s’intéresser au terme “dynamique”. Si celui-ci semble être facilement compréhensible dans l’idée d’une évolution temporelle, il semble que le terme puisse revêtir différentes définitions pour les chercheurs comme le souligne Patrick Curran dans l’excellent podcast Quantitude<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. Ellen Hamaker, une spécialiste des modélisations longitudinales intenses, lui propose la définition suivante :</p>
+<blockquote class="blockquote">
+<p>“<em>Dynamic is really about the current state being predictable from the previous state rather than being a linear curve or a quadratic curve that is describing the repeated measures of an individual. It’s the part when you say ok you have those lag relationships between the same variable or across different variables or from the perturbation at different moments: that is where you have the dynamic part. Whereas if you have linear trends or other kind of trends that is just a deterministic component in your model. And you can add that but still have a dynamic structure around this</em>.”</p>
+</blockquote>
+<p>Dans son livre U<em>nsimple truths: science, complexity, and policy,</em> <span class="citation" data-cites="mitchellUnsimpleTruthsScience2012">@mitchellUnsimpleTruthsScience2012</span> explique que la non-linéarité qui constitue la complexité dynamique de certains systèmes implique qu’ils ne sont pas prédictibles malgré le fait qu’ils puissent être déterminés. Cela s’explique par une extrême sensibilité à de petites variations non mesurables dans les conditions initiales du système<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> ou dans les “frontières” évolutives du systèmes<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. Ainsi, ces systèmes peuvent évoluer selon des trajectoires non linéaires dans la mesure où le nombre d’éléments interdépendants qui s’influencent mutuellement produit une évolution non linéaire du système<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. Cette évolution peut être difficilement prédictible du fait des petites variations évoquées ci-dessus qui vont amener à des évolutions potentiellement très différentes du système. Il s’agit de transitions de phases et de bifurcations du système. Selon <span class="citation" data-cites="mitchellUnsimpleTruthsScience2012">@mitchellUnsimpleTruthsScience2012 [p.40]</span>, c’est justement cette caractéristique qui a amené le météorologue Edward Lorenz à utiliser la métaphore de “l’effet papillon”<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>.</p>
+<p>Les aspects relatifs aux points de basculements et de bifurcation ou encore d’imprévisibilité, d’emboîtement et de niveaux multiples sont magnifiquement évoqués par Jean-Claude Ameisen dans une émission de S<em>ur les épaules de Darwin</em> avec l’épisode intitulé <a href="https://www.radiofrance.fr/franceinter/podcasts/sur-les-epaules-de-darwin/sur-les-epaules-de-darwin-du-samedi-14-mai-2022-9047656">Les battements du temps (18). « More is different » sur France Inter.</a></p>
+<p>Nous nous permettons de reprendre ici la citation de <span class="citation" data-cites="andersonMoreDifferentBroken1972">@andersonMoreDifferentBroken1972</span> <em>More Is Different: Broken symmetry and the nature of the hierarchical structure of science,</em> présentée sur la page de l’émission à laquelle nous ajouterons une traduction que nous pensons pertinente.</p>
+<blockquote class="blockquote">
+<p><em>Il peut sembler inévitable&nbsp;de penser que, si tout obéit aux mêmes lois fondamentales qui régissent la matière, alors les scientifiques qui travaillent sur ces lois fondamentales sont les seuls qui étudient quelque chose de vraiment fondamental. En pratique, cela se limiterait à quelques astrophysiciens, à quelques physiciens qui travaillent sur les particules élémentaires, à quelques logiciens et mathématiciens, et à peu d’autres.</em></p>
+<p><em>La démarche réductionniste, qui nous permet de tout réduire à des lois fondamentales, a une limite importante&nbsp;: elle ne nous permet pas de faire le chemin inverse, elle ne nous permet pas de partir de ces lois et de reconstruire l’univers. Le comportement d’un grand ensemble complexe de particules élémentaires ne peut être compris si on ne tient compte que des seules propriétés de ces particules.</em></p>
+<p><em>L’hypothèse constructionniste s’effondre lorsqu’elle est confrontée à la double difficulté de l’échelle et de la complexité. Il s’avère que le comportement de grands et complexes agrégats de particules élémentaires ne peut être compris en termes de simple extrapolation des propriétés de quelques particules. Au contraire, à chaque niveau de complexité, des propriétés entièrement nouvelles apparaissent, et la compréhension de ces nouveaux comportements nécessite une recherche qui, à mon avis, est aussi fondamentale dans sa nature que toute autre.</em><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<p><em>A certains seuils, un plus grand nombre des mêmes éléments et un plus grand nombre d’interactions entre ces éléments transforment soudain l’ensemble – le rendent différent, autre. Et de nouvelles lois, de nouveaux concepts, de nouvelles généralisations sont nécessaires – qui nécessitent autant d’inspiration et de créativité qu’il en fallait au niveau précédent pour les comprendre, pour les imaginer. Le tout devient non seulement plus que la somme de ses parties, mais aussi très différent de la somme de ses parties.</em></p>
+</blockquote>
+</section>
+<section id="émergence-et-réalisation-multiple" class="level3">
+<h3 class="anchored" data-anchor-id="émergence-et-réalisation-multiple">Émergence et réalisation multiple</h3>
+<p>Mais cette bifurcation fait appel à une autre notion, celle d’émergence. Il s’agit de l’idée que de nouvelles propriétés du système émergent à partir des interactions des composants tels que <span class="citation" data-cites="andersonMoreDifferentBroken1972">@andersonMoreDifferentBroken1972</span> le décrit. Si les aspects de rupture de symétrie sont intéressants, il convient d’y ajouter l’idée que ces nouvelles propriétés qui apparaissent au niveau du système (à partir de l’interaction complexe des composants) influencent en retour les composants du système. Cette boucle de rétroaction entre différents niveaux micro (composants) et macro (système) ajoutent une complexité supplémentaire au niveau du système. Dans ce cas le statut “causal” du système au niveau “macro” peut être complètement indépendant et donc non réductible au niveau “micro”. Dans son ouvrage, <span class="citation" data-cites="mitchellUnsimpleTruthsScience2012">@mitchellUnsimpleTruthsScience2012 [pp.43-44]</span> donne l’exemple du miel comme propriété émergente (niveau macro) du système “nid d’abeille”. Le miel n’est pas présent comme une propriété au niveau des composants (les abeilles) mais, en tant que propriété macro, il va exercer une influence sur le comportement des abeilles (niveau micro) en fonction de son statut (niveau de remplissage du miel dans la ruche).</p>
+<p>Un autre élément important (non présenté dans la synthèse de <span class="citation" data-cites="boehnertVisualRepresentationComplexity2018">@boehnertVisualRepresentationComplexity2018</span>) est le concept de “réalisation multiple”. Il s’agit de l’idée que des propriétés émergentes au niveau macro peuvent être le produit (“causé” ?) par un grand nombre différent de composants du système (niveau micro). Ainsi “peu importe” la “composition spécifique” des éléments tant que ces derniers “produisent” la propriété émergente <span class="citation" data-cites="ellisDynamicalEmergenceBiology2019">[@ellisDynamicalEmergenceBiology2019]</span>. Ainsi en psychologie clinique l’analogie relative serait la formation de troubles en tant que propriétés émergentes (niveau macro) d’une topologie spécifique d’organisation de différents symptômes (niveau micro). Pourtant, en psychopathologie développementale, le principe que certains symptômes “conduisent” a des troubles de nature différente est connue sous le terme de “<em>multifinalité</em>” et que des symptômes de nature diverse “conduisent” à un trouble unique est connue sous le terme de “equifinalité” <span class="citation" data-cites="cicchettiEquifinalityMultifinalityDevelopmental1996">[@cicchettiEquifinalityMultifinalityDevelopmental1996]</span>. C’est d’ailleurs cette caractéristique d’évolution développementale et “non-déterministe” des troubles qui amènera à penser les phénomènes de transitions (et donc de prévention et d’intervention précoce pour prévenir ces transitions) dans la psychopathologie sous l’angle du “staging model” ou approche par stades/paliers tel qu’on le rencontre en oncologie <span class="citation" data-cites="Patel2018 mcgorryRiskMentalState2018">[@Patel2018; @mcgorryRiskMentalState2018]</span>. Cette approche considère les frontières entre catégories diagnostiques comme étant de nature “floue” et donc d’une nature des “potentielles causes” comme plus “transdiagnostique”. Elle promeut ainsi la conceptualisation d’une catégorie “d’état mental à risque” qui se fonde davantage sur le risque de vulnérabilité (antécédents personnels et familiaux) ainsi que sur le degré (évolutif) de sévérité et d’impact sur le fonctionnement des manifestations psychopathologiques (“auto-organisation”des composants symptomatologiques).</p>
+</section>
+<section id="difficultés-des-modèles-constructionnistes-et-réductionnistes" class="level3">
+<h3 class="anchored" data-anchor-id="difficultés-des-modèles-constructionnistes-et-réductionnistes">Difficultés des modèles constructionnistes et réductionnistes</h3>
+<p>Les particularités d’émergence et de réalisation multiples font qu’il devient difficile de considérer l’approche constructionniste (c’est-à-dire qu’un système est composé d’éléments et de leurs relations) comme suffisante pour la psychologie surtout si on la considère comme “<em>massivement multifactoriel</em>” et dont la compréhension nécessite une approche souvent dite “bio-psycho-sociale” <span class="citation" data-cites="Borsboom2019 borsboomSystemsbasedApproachesMental2022">[@Borsboom2019; @borsboomSystemsbasedApproachesMental2022]</span>. Pour comprendre le système, dans le cadre constructionniste, il suffirait de décomposer les éléments et d’identifier la nature de leurs relations.</p>
+<p>Une autre manière de regarder cette particularité est le réductionnisme. Il s’agit de s’intéresser aux composants (micro) pour comprendre ou définir des lois qui vont expliquer le fonctionnement de l’ensemble du système (macro). <span class="citation" data-cites="friedStudyingMentalHealth2022a">@friedStudyingMentalHealth2022a</span> présente cette approche dans le cadre des troubles psychiques et utilise également <a href="https://www.youtube.com/watch?v=DZf8VHM1pHI">la métaphore du vélo pour l’illustrer</a>. Il s’agit pour lui d’un outil fondamental de la démarche scientifique qui a beaucoup apporté, mais qui se trouve effectivement limité lorsqu’il s’agit de comprendre et modéliser des systèmes de nature complexes.</p>
+<p>Toujours selon <span class="citation" data-cites="mitchellUnsimpleTruthsScience2012">@mitchellUnsimpleTruthsScience2012 [p.41]</span>, ces propriétés émergentes, qui peuvent donc se réaliser de multiples manières au niveau macro, sont stabilisées au moyen de boucles de rétroactions et des propriétés d’auto-organisation. Cela a pour conséquences, selon elle, que “<em>le contexte, l’histoire et la dynamique</em>” occupent une place explicative centrale des systèmes complexes. De ce fait, davantage qu’un unique mécanisme causal à l’œuvre est requis pour comprendre le comportement du système que l’on souhaite expliquer.</p>
+</section>
+<section id="un-intérêt-pour-la-psychologie-qui-nest-pas-nouveau" class="level3">
+<h3 class="anchored" data-anchor-id="un-intérêt-pour-la-psychologie-qui-nest-pas-nouveau">Un intérêt pour la psychologie qui n’est pas nouveau</h3>
+<p>Les caractéristiques des systèmes complexes présentés ici semblent tout particulièrement pertinentes pour la psychologie, car elles permettent de décrire et de comprendre des phénomènes complexes rencontrés dans les situations cliniques. Cet intérêt n’est pourtant pas nouveau, dans la mesure où l’on retrouve des travaux notamment dans le champ de la psychologie cognitive et développementale <span class="citation" data-cites="smithDynamicSystemsApproach1993">[@smithDynamicSystemsApproach1993]</span>. En 1994, dans un article de l’American psychologist, <span class="citation" data-cites="bartonChaosSelforganizationPsychology1994">@bartonChaosSelforganizationPsychology1994</span> indiquait tout l’intérêt des systèmes complexes en psychologie clinique tout en alertant sur la difficulté de la mettre en œuvre dans ce champ disciplinaire.</p>
+<blockquote class="blockquote">
+<p>“<em>There is perhaps no other area in which chaos theory, nonlinear dynamics, and self-organizing systems are so intuitively appealing yet so analytically difficult as in clinical psychology. With a few notable exceptions, their application to clinical issues are metaphorical and qualitative in nature.</em>”</p>
+<p>Extrait de l’article <em>Chaos, Self-Organization, and Psychology</em> <span class="citation" data-cites="bartonChaosSelforganizationPsychology1994">[@bartonChaosSelforganizationPsychology1994]</span></p>
+</blockquote>
+<p>Dans le champ de la psychologie clinique, un article a été publié en français au début des années 2000 et s’intitulait P<em>aradigme dynamique en psychopathologie: la “Théorie du chaos”, de la physique à la psychiatrie</em> <span class="citation" data-cites="pezardParadigmeDynamiquePsychopathologie2001">[@pezardParadigmeDynamiquePsychopathologie2001]</span> en s’intéressant plus particulièrement aux données d’EEG comme paradigme d’identification de trajectoires dynamiques et non-linéaires permettant potentiellement de distinguer des patients souffrant de dépression de sujet “normaux”. Les auteurs, dans leur introduction, alertaient également le lecteur sur la prudence a utiliser des concepts issus de la physique aux domaines des sciences humaines.</p>
+<blockquote class="blockquote">
+<p>“<em>L’utilisation, en biologie ou en sciences humaines, de concepts issus de la physique est toujours un exercice qui nécessite une grande prudence épistémologique. En effet, l’importation de concepts d’un domaine vers un autre, pour lequel ils n’ont généralement pas été construits, laisse planer le risque de la métaphore plutôt que de favoriser d’emblée une construction scientifique productive.</em>”</p>
+<p>Extrait de <span class="citation" data-cites="pezardParadigmeDynamiquePsychopathologie2001">@pezardParadigmeDynamiquePsychopathologie2001</span></p>
+</blockquote>
+<p>Il convient maintenant de s’intéresser à la manière dont les systèmes complexes ont été introduits et appliqués en psychologie et plus particulièrement les développements que de nouvelles techniques d’analyse disponibles depuis un peu plus de 10 ans ont permis.</p>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Dans son ouvrage <span class="citation" data-cites="livigniHistoireSociologieSciences2021">@livigniHistoireSociologieSciences2021</span> présente au total 7 grands courants. En plus des deux premiers que nous avons présenté, il s’agit de : 3) la tradition de la complexité computationelle ; 4) la théorie de la complexité de Kolmogorov ; 5) La théorie de la complexité intégrative ; 6) La théorie de l’ingénierie des systèmes ; 7) La théorie des systèmes adaptatifs en médecine. D’après l’auteur, le dernier s’est développé à partie de 2009. Il semble d’intérêt tout particulier pour notre objet et reprend une définition des systèmes complexes comme “*des ensembles ouverts sur l’environnement, auto-organisés et composés de nombreux éléments en interaction non linéaire et récursive”. Un autre élément intéressant concerne la variabilité des outils d’analyses et leurs cibles multiples “<em>l’analyse philosophique, les mathématiques des systèmes dynamiques, la recherche narrative et l’évaluation économique</em>”. Pour des éléments plus détaillés sur les théories voir l’ouvrage et pour plus de précisions sur la définition ainsi qu’une illustration de la complémentarité entre l’observation et la formalisation mathématique des systèmes dynamiques voir les parties ci-après.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Nous proposons la traduction suivante : ““<em>Vous ne pouvez pas bien naviguer dans un monde interconnecté et dominé par la rétroaction à moins de quitter des yeux les évènements à court terme et de chercher le comportement et la structure à long terme ; à moins d’être conscient des fausses limites et de la rationalité limitée ; à moins de prendre en compte des facteurs limitatifs, des non-linéarités et des délais. Vous risquez probablement de mal traiter, de mal concevoir ou de mal interpréter les systèmes si vous ne respectez pas leurs propriétés de résilience, d’auto-organisation et de hiérarchie. La mauvaise nouvelle, ou la bonne nouvelle, selon votre besoin de contrôler le monde et votre volonté de vous réjouir de ses surprises, est que même si vous comprenez toutes ces caractéristiques des systèmes, vous serez peut-être moins souvent surpris, mais vous le serez toujours.</em>”<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>On retrouve ici le sens du terme auto-organisation dans l’idée d’un ordre spontanné qui se produit à partir de l’interaction des composants du système qui s’organisent “<em>de manière cohérente afin de réaliser quelque chose”</em> <span class="citation" data-cites="meadowsThinkingSystemsPrimer2008">[@meadowsThinkingSystemsPrimer2008, p. 87]</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>On parle alors de point de basculement (tipping point voir point 9) pour décrire le seuil de changement d’état et d’hystérèse ou hystérésis (hysteresis) pour expliciter le fait que face à une perturbation le système ait changé d’état mais que davantage d’énergie (par rapport à celle de la perturbation) soit nécessaire pour faire revenir le système à l’état antérieur. Cette caractéristique est souvent présenté à l’aide de schéma de type paysage (landscape) paysage comme c’est le cas dans la présentation de <span class="citation" data-cites="boehnertVisualRepresentationComplexity2018">@boehnertVisualRepresentationComplexity2018</span>. On peut également retrouver également une représentation intéressante contextualisé dans le cadre du déclenchement d’un trouble mental voir <span class="citation" data-cites="Nelson2017">@Nelson2017</span><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Fondé par René Thom, il s’agit d’une théorie mathématique qui cherche a identifier mathématiquement les différentes formes possible de changement d’état d’une système à partir d’un nombre défini de paramètres au sein d’équations.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Voir l’<a href="https://quantitudepod.org/s4e20-dsem/">épisode 20 de la saison 4</a> à la minute 14’19<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Des paramètres initiaux peuvent être par exemple des ordonnées à l’origine, un niveau d’activation initial des éléments d’un système et de leurs relations ou encore le nombre d’éléments présents dans le système.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Un type de frontière du système pourrait être par exemple les valeurs minimales et maximales que pourraient atteindre les paramètres initiaux. Une autre possibilité est également de considérer a quel point le système est ouvert c’est-à-dire que des éléments peuvent entrer et sortir du système. En thermodynamique un système fermé peut avoir des échanges d’énergie avec l’extérieur du système mais pas d’échanges d’éléments ou de matière.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Et ce même si les relations entre les composant pourraient être de nature linéaire.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Métaphore célèbre où le battement d’aile d’un papillon à un endroit du globe puisse être l’élément déclencheur (la cause ?) d’une d’une tempête à un autre endroit du globe.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Traduction que nous proposons de “<em>The constructionist hypothesis breaks down when confronted with the twin difficulties of scale and complexity. The behavior of large and complex aggregates of elementary particles, it turns out, is not to be understood in terms of a simple extrapolation of the properties of a few particles. Instead, at each level of complexity entirely new properties appear, and the understanding of the new behaviors requires research which I think is as fundamental in its nature as any other.</em>” <span class="citation" data-cites="andersonMoreDifferentBroken1972">@andersonMoreDifferentBroken1972 [p. 393]</span>. Nous avons également extrait <a href="https://twitter.com/yannick_morvan/status/1553082677351292928?s=20&amp;t=Z2iHksxhVJKV37gJKlz3BA">d’autres citations intéressantes de cet article sur ce fil Twitter</a>.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Site construit avec du <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://quarto.org/">Quarto</a> et l’aide de Csik [Samantha (https://samanthacsik.github.io/talks_workshops/2022-08-05-creating-your-personal-website-using-quarto/index.html)</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./LICENSE-CC-BY-4.0.html">
+<p>Licence CC-BY-4.0</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.288">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Yannick Morvan – publiperspectives</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Yannick Morvan</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Acceuil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">A propos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mon-hdr" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Mon HDR</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mon-hdr">    
+        <li>
+    <a class="dropdown-item" href="./peda.html" rel="" target="">
+ <span class="dropdown-text">Activités universitaires et d’enseignement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publi.html" rel="" target="">
+ <span class="dropdown-text">Activités scientifiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pedaPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Pédagogiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publiPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexSystems.html" rel="" target="">
+ <span class="dropdown-text">Les approches en systèmes complexes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexPsycho.html" rel="" target="">
+ <span class="dropdown-text">Les systèmes complexes en psychologie : la question psychométrique</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf" rel="" target="">
+ <span class="menu-text">cv</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html" rel="" target="">
+ <span class="menu-text">Références</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/yannickmorvan/yannickmorvan.github.io" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/yannick_morvan" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ymorvan@parisnanterre.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-PerspPub" id="toc-sec-PerspPub" class="nav-link active" data-scroll-target="#sec-PerspPub">Publications</a>
+  <ul class="collapse">
+  <li><a href="#revues-cibles" id="toc-revues-cibles" class="nav-link" data-scroll-target="#revues-cibles">Revues cibles</a></li>
+  <li><a href="#activité-de-reviewing" id="toc-activité-de-reviewing" class="nav-link" data-scroll-target="#activité-de-reviewing">Activité de reviewing</a></li>
+  <li><a href="#appliquer-les-principes-de-science-ouverte" id="toc-appliquer-les-principes-de-science-ouverte" class="nav-link" data-scroll-target="#appliquer-les-principes-de-science-ouverte">Appliquer les principes de science ouverte</a></li>
+  <li><a href="#une-science-qui-peut-se-corriger" id="toc-une-science-qui-peut-se-corriger" class="nav-link" data-scroll-target="#une-science-qui-peut-se-corriger">Une science qui peut se corriger</a></li>
+  <li><a href="#principe-dhumilité" id="toc-principe-dhumilité" class="nav-link" data-scroll-target="#principe-dhumilité">Principe d’humilité</a></li>
+  <li><a href="#promouvoir-la-diversité-des-acteurs-et-des-parcours" id="toc-promouvoir-la-diversité-des-acteurs-et-des-parcours" class="nav-link" data-scroll-target="#promouvoir-la-diversité-des-acteurs-et-des-parcours">Promouvoir la diversité des acteurs et des parcours</a></li>
+  <li><a href="#incarner-de-meilleures-pratiques" id="toc-incarner-de-meilleures-pratiques" class="nav-link" data-scroll-target="#incarner-de-meilleures-pratiques">Incarner de meilleures pratiques</a></li>
+  <li><a href="#pour-une-meilleure-évaluation-de-la-recherche" id="toc-pour-une-meilleure-évaluation-de-la-recherche" class="nav-link" data-scroll-target="#pour-une-meilleure-évaluation-de-la-recherche">Pour une meilleure évaluation de la recherche</a></li>
+  <li><a href="#sciences-et-société-pluridisciplinarité" id="toc-sciences-et-société-pluridisciplinarité" class="nav-link" data-scroll-target="#sciences-et-société-pluridisciplinarité">Sciences et société, pluridisciplinarité</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+
+<section id="sec-PerspPub" class="level1">
+<h1>Publications</h1>
+<p>Il s’agit ici de présenter, en tant qu’enseignant-chercheur, quelles sont mes perspectives de publication. Il s’agit ici également de proposer, par delà les indicateurs, un éclairage narratif plus particulièrement focalisé sur ma démarche de recherche et ce qu’elle engendre vis-à-vis de mes perspectives de publications.</p>
+<section id="revues-cibles" class="level2">
+<h2 class="anchored" data-anchor-id="revues-cibles">Revues cibles</h2>
+<p>ll convient également de préciser ici que, pour ma part, j’essaie depuis plusieurs années d’éviter le plus possible de publier dans des revues du type MDPI ou Frontiers pour des questions d’économie des coûts publics <span class="citation" data-cites="FraisPublicationNous2023">[@FraisPublicationNous2023]</span>, mais également vis-à-vis de potentielles pratiques discutables (voir à ce titre les interrogations des sites <a href="https://predatory-publishing.com/is-mdpi-a-predatory-publisher/">Predatory Publishing</a> et <a href="https://predatoryreports.org/news/f/is-frontiers-media-a-predatory-publisher">Predatory Reports</a> ainsi que le site francophone d’<a href="https://www.redactionmedicale.fr/predateurs">Hervé Maisonneuve Revues et Intégrité</a>). En effet, je suis sensible aux problèmes des pratiques de publications discutables et de <a href="http://bjoern.brembs.net/2023/06/the-beginning-of-the-end-for-academic-publishers/">l’environnement parfois étrange du système de publication scientifique</a> [<span class="citation" data-cites="brembsReplacingAcademicJournals2023a">@brembsReplacingAcademicJournals2023a</span>]<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Pour plus de précisions, car ce n’est pas ici l’objet de cette partie, il est intéressant de lire le billet de blog d’Eiko Fried intitulé “<a href="https://eiko-fried.com/academia-in-the-upside-down-of-publishing/"><em>Academia: trapped in the upside down of publishing</em></a>” et différents liens que j’ai pu indiquer <a href="https://twitter.com/yannick_morvan/status/1648214247900413954?s=12&amp;t=-BaOHKSmB_k0eSWxiAakSA">dans ce tweet</a>. On recommandera également les excellentes vidéos humoristiques du Dr.&nbsp;Glaucomflecken que je montre aux étudiants dans le cours de méthodologie de la recherche de première année de Master (voir chapitre concernant mes activités pédagogiques) : <a href="https://www.youtube.com/watch?v=8F9gzQz1Pms">Academic Journals Doing Crime</a> ; <a href="https://www.youtube.com/watch?v=ukAkG6c_N4M">Academic Publishing</a> ; <a href="https://www.youtube.com/watch?v=lt_b4VKBDhI">Nature Needs a Reviewer</a> &amp; <a href="https://youtu.be/hoUGiS1LeKU">Editors Quit Academic Publishing Company</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://zenodo.org/record/7974116"><img src="images/PublicationsSystem.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Une illustration des difficultés actuelles de la publication scientifique (d'après le blog de Björn Brembs &amp; Brembs et al., 2023).</figcaption>
+</figure>
+</div>
+<p>Bien évidemment, il ne s’agit pas de jeter l’opprobre sur des revues et/ou des collègues, dans la mesure où 1) je suis également concerné par la publication dans ce type de revues<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> et 2) il y a d’excellents articles (que je cite) publiés dans ces revues. A nouveau, il ne s’agit pas d’avoir un regard “clivant”, mais d’accéder à de la nuance et surtout de penser à long terme. Comme pour la question de la “science ouverte”, il convient de contribuer à implémenter de meilleures pratiques avec bienveillance. Ces dernières, pour ma part, se doivent donc d’être incarnées tant par la capacité à influencer et d’évoluer petit à petit le plus possible vers des pratiques de publications (et de reviewing) plus responsables pour l’ensemble de notre communauté scientifique. De manière plus globale, le système de publication scientifique est, je l’espère, amené à évoluer dans la mesure où il ne semble plus tenable. Parmi les propositions, l’idée d’une plateforme gérée par la communauté fait de plus en plus sens [<span class="citation" data-cites="brembsReplacingAcademicJournals2023a">@brembsReplacingAcademicJournals2023a</span>]<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://zenodo.org/record/7974116"><img src="images/PublicationsSystem2.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Un futur possible de l'écosystème de la publication scientifique (d'après le blog de Björn Brembs &amp; Brembs et al., 2023).</figcaption>
+</figure>
+</div>
+</section>
+<section id="activité-de-reviewing" class="level2">
+<h2 class="anchored" data-anchor-id="activité-de-reviewing">Activité de reviewing</h2>
+<p>Concernant l’activité de reviewing des travaux scientifiques, cette dernière me semble extrêmement importante et nécessite un investissement important en termes de temps qui n’est pas nécessairement visible pour notre communauté. J’ai récemment décidé, à l’exemple d’autres collègues, de signer des mes review pour des raisons de transparence et de responsabilité et de valoriser cette activité sur ORCID. Une reconnaissance importante pour moi est celle donnée par les auteurs en retour des commentaires que l’on peut faire dans un esprit bienveillant et, si possible, d’amélioration des travaux qui nous sont soumis. Parmi les remerciements deux m’ont fait plaisir au regard de la qualité de reviewing que j’ai essayé de donner vis-à-vis des travaux soumis à mon évaluation. Le premier est en anglais et reste dans les échanges du reviewing : “<em>We thank the reviewer for constructive and thorough comments which have aided in improving our manuscript.</em>” Si ce commentaire pourrait ressembler à un commentaire général de politesse, il faut le mettre en regard à un reviewing de 3 pages d’un article qui était déjà de grande qualité et qui a permis, je le crois, d’améliorer le manuscrit final dans une revue internationale ayant un facteur d’impact supérieur à 7. Le second est en français et a été inclus dans la section “remerciements” publiée de l’article : “<em>Les auteurs expriment leur reconnaissance à toutes les personnes sans lesquelles cette étude n’aurait pas été possible : […] Ils expriment également leur gratitude à un membre anonyme du comité de lecture de l’European Review of Applied Psychology, dont les critiques constructives et les recommandations leur ont permis d’améliorer leur manuscrit.</em>”</p>
+</section>
+<section id="appliquer-les-principes-de-science-ouverte" class="level2">
+<h2 class="anchored" data-anchor-id="appliquer-les-principes-de-science-ouverte">Appliquer les principes de science ouverte</h2>
+<p>Toujours en lien avec l’évolution vers de meilleures pratiques de publications, <a href="https://twitter.com/yannick_morvan/status/1293172012584665089?s=12&amp;t=-BaOHKSmB_k0eSWxiAakSA">un de mes objectifs depuis plusieurs années</a> consiste à publier en accord avec les principes de la “science ouverte”. Cela signifie de tendre vers une plus grande transparence et reproductibilité <span class="citation" data-cites="vanlissaWORCSWorkflowOpen2021 nosekReplicabilityRobustnessReproducibility2022">[@vanlissaWORCSWorkflowOpen2021; @nosekReplicabilityRobustnessReproducibility2022]</span> de <a href="https://twitter.com/yannick_morvan/status/1292918539398123520?s=12&amp;t=-BaOHKSmB_k0eSWxiAakSA">mes travaux</a> et de ceux auxquels je participe. Les principaux outils que j’utilise sont R, Rstudio, <a href="https://github.com/yannickmorvan">GitHub</a> et <a href="https://osf.io/94y3c">OSF</a> dans une démarche dite de <a href="https://lakens.github.io/statistical_inferences/14-computationalreproducibility.html">reproductibilité computationnelle</a>.</p>
+<p>En regard de cette démarche, quatre aspects sont importants pour moi. Le premier relève du fait de prendre le temps d’améliorer chaque jour un peu plus une démarche de science ouverte, transparente et reproductible dans mes productions scientifiques (“<a href="https://twitter.com/SlowpenScience"><em>slowpen science</em></a>”, <span class="citation" data-cites="stoevenbeltRewardPhDsHighquality2019">@stoevenbeltRewardPhDsHighquality2019</span>) malgré le fait que cela <a href="https://twitter.com/yannick_morvan/status/1312132599020625920?s=12&amp;t=-BaOHKSmB_k0eSWxiAakSA">puisse être considéré comme une forme de désavantage dans le système académique actuel</a>. Il s’agit, là encore, d’investir et d’incarner des pratiques qui, à long terme, seront des normes au bénéfice de notre communauté scientifique <span class="citation" data-cites="SupportEuropeBold2022a leisingTenStepsBetter2022 cristeaCommentPsychologieAborde2022 kowalczykWhatSeniorAcademics2022a">[@SupportEuropeBold2022a; @leisingTenStepsBetter2022; @cristeaCommentPsychologieAborde2022; @kowalczykWhatSeniorAcademics2022a]</span>. Cela permet également un bénéfice au plan individuel avec un travail d’une plus grande reproductibilité facilitant ainsi la collaboration (incluant “le futur soi”) et ce avec une plus grande efficience sur “l’économie du temps” (pour une illustration, voir <a href="https://www.nature.com/articles/s41559-017-0160/figures/1">la figure 1</a> de <span class="citation" data-cites="lowndesOurPathBetter2017">@lowndesOurPathBetter2017</span>).</p>
+</section>
+<section id="une-science-qui-peut-se-corriger" class="level2">
+<h2 class="anchored" data-anchor-id="une-science-qui-peut-se-corriger">Une science qui peut se corriger</h2>
+<p>A cela s’ajoute le fait de pouvoir être responsable de ses productions aussi du point de vue des erreurs comme j’ai pu le rencontrer. Le manque de transparence rend impossible la détection de cette typologie de problème et peut conduire tant à des difficultés de reproductibilité et de réplicabilité (et donc de solidité des résultats scientifiques) que de production d’attentes irréalistes vis-à-vis de la communauté scientifique. Sur ce dernier point, deux citations du chercheur Eiko Fried me paraissent extrêmement pertinentes :</p>
+<blockquote class="blockquote">
+<p>“<em>We all grew up in a research culture where successes are communicated, and we pimp our CVs, but we don’t really talk about failures. This is a pretty horrible climate for young researchers to grow up in: Everything always shines and is perfect, things go well for everybody, and if you make a mistake, you think you’re the only one ever, and that you’re a failure. So I wanted to suggest to also share things that didn’t work out, and I’ll start today with my failure of the week: Someone found a small coding error I made in a paper published in 2017, and notified me about it yesterday. I will issue a correction, it doesn’t impact on the results a lot, so it’s not the end of the world, but of course that’s not a pleasant experience. “</em> Eiko Fried, billet de blog <span class="citation" data-cites="friedFailureWeek2018">@friedFailureWeek2018</span>.</p>
+<p>“<em>I think we also need a better culture around mistakes: it’s okay to make those, and we should talk about them more. You shouldn’t be proud to make mistakes, but you should be proud if you can correct the scientific record. This includes, if necessary, retracting your work. I published a correction a few years ago, based on a statistical mistake I made. Oddly enough, I had to fight the journal editor for two years to publish the correction, I suspect because corrections don’t look good for journals</em>.” Eiko Fried, interview dans le cadre de la mise en œuvre d’un cours sur l’intégrité scientifique à l’université de Leiden <span class="citation" data-cites="RethinkingResponsibleScholarship2023">[@RethinkingResponsibleScholarship2023]</span>.</p>
+</blockquote>
+</section>
+<section id="principe-dhumilité" class="level2">
+<h2 class="anchored" data-anchor-id="principe-dhumilité">Principe d’humilité</h2>
+<p>Un second point reste l’humilité relative à nos recherches<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> sur ce qu’elle permette de faire comme inférences qui sont parfois “prescriptives” du point de vue des pratiques. Les dégrée de liberté des chercheurs, les problèmes de mesures, les modélisations incitent à beaucoup de prudence et de bienveillance quant à la capacité de nos résultats a avoir une action efficace sur les problèmes que l’on cherche à définir et à affronter <span class="citation" data-cites="rohrerThinkingClearlyCorrelations2018">[@rohrerThinkingClearlyCorrelations2018]</span>. Cela ne signifie pas qu’il ne faille pas faire de recherche, au contraire, elle constitue à mon sens l’outil le moins imparfait pour tenter d’appréhender ce qui nous entoure. Il s’agit là encore de progresser et d’accéder à une forme “d’ambivalence” que m’évoque souvent ces deux citations : “<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">Tous les modèles sont faux, mais certains sont utiles</a>” de George Box<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> et le titre d’un chapitre de Paul Smaldino “Models are stupid, and we need more of them” <span class="citation" data-cites="smaldinoModelsAreStupid2017">[@smaldinoModelsAreStupid2017]</span>. Cette approche retrouve, à l’évidence, le concept de vérisimilitude utilisé en épistémologie.</p>
+</section>
+<section id="promouvoir-la-diversité-des-acteurs-et-des-parcours" class="level2">
+<h2 class="anchored" data-anchor-id="promouvoir-la-diversité-des-acteurs-et-des-parcours">Promouvoir la diversité des acteurs et des parcours</h2>
+<p>Un troisième point concerne le respect de la juste promotion et valorisation des différents acteurs de la production scientifique, ce qui peut s’avérer une tâche difficile compte-tenu des différents rôles et positions pouvant exister dans le milieu académique. Par ailleurs, cette juste reconnaissance est parfois prise dans des enjeux de <a href="https://elephantinthelab.org/manifestations-of-power-abuse-in-academia-and-how-to-prevent-them/">pouvoir existant dans le milieu académique</a> et il convient d’être vigilant à protéger et aider les personnes qui se retrouvent dans des positions de faiblesse ou minoritaires afin d’y promouvoir une plus grande diversité et justice <span class="citation" data-cites="elsherifBridgingNeurodiversityOpen2022 azevedoNavigatingAcademiaNeurodivergent2022">[@elsherifBridgingNeurodiversityOpen2022 ; @azevedoNavigatingAcademiaNeurodivergent2022]</span>. Il ne s’agit pas, ici, de prôner une attitude prescriptive ou une volonté de légiférer n’étant un spécialiste de recherche en politiques publiques sur ce point particulier mais tout du moins d’être sensible à ce type de questions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://osf.io/preprints/metaarxiv/k7a9p"><img src="images/AcademicWheelofPrivilege.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Academic wheel of privilege publié dans l'APS Observer et repris de Elsherif et al.&nbsp;(2022).</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>“<em>Furthermore, the hidden curriculum (Parsons et al., 2022) and current academic infrastructure focused on metrics and closed scientific systems perpetuate global inequalities and stereotypes reinforcing hierarchies that silence marginalised voices and reinforce their subordination. This justification is further perpetuated by science being misused as a weapon to socially oppress minoritised voices by clinging to the assumption that scientific practice is rational, impartial, and objective, when in fact it is not (e.g.&nbsp;Eagly et al., 2012). In turn, these so-called ‘facts’ are used to justify the claim that under-represented minorities are unable to ascend to positions of power, thus limiting their freedom, opportunities to succeed, and opportunities to participate equally in society.</em>” <span class="citation" data-cites="elsherifBridgingNeurodiversityOpen2022">@elsherifBridgingNeurodiversityOpen2022</span></p>
+</blockquote>
+</section>
+<section id="incarner-de-meilleures-pratiques" class="level2">
+<h2 class="anchored" data-anchor-id="incarner-de-meilleures-pratiques">Incarner de meilleures pratiques</h2>
+<p>A nouveau, il s’agit de faire oeuvre de bienveillance et d’implémenter concrètement de meilleures pratiques au fur et à mesure en utilisant les principes de la science ouverte, mais aussi en utilisant le système <a href="https://info.orcid.org/credit-for-research-contribution/">CRediT</a> <span class="citation" data-cites="allenPublishingCreditWhere2014">[@allenPublishingCreditWhere2014]</span> de manière plus systématisée (je me dois également de progresser au-delà de la simple traçabilité du déroulement d’un travail de recherche et d’un manuscrit à l’aide de Rstudio et Github). Concernant l’incarnation de meilleures pratiques, à titre d’illustration, je suis actif sur <a href="https://osf.io/94y3c/">OSF</a> et <a href="https://github.com/yannickmorvan">GitHub</a> depuis 2018 où j’essaie le plus systématiquement possible de mettre à disposition pour mes publications (articles, chapitre d’ouvrages, communications orales et affichées), les scripts R d’analyses des données, le matériel (questionnaires, figures et tableaux) et les données simulées (qui permettent de reproduire les données et leurs relations sans partager le jeu de données réel. Cela permet de lever des problématiques de sécurité des données<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> tout en mettant à disposition un jeu de données avec les mêmes variables afin de reproduire les analyses avec les scripts également mis à disposition). Un dernier point concernant les meilleures pratiques qu’il me faut encore développer concerne les pratiques de pré-enregistrement d’études <span class="citation" data-cites="nosekPreregistrationRevolution2018">[@nosekPreregistrationRevolution2018]</span>.</p>
+<p>Avec cela s’accompagne également pour moi la revalorisation de la catégorie remerciements dans les articles. En effet, je pense important de valoriser l’activité qui consiste à aider et aiguiller d’autres collègues dans leurs recherches, incluant même la relecture d’un manuscrit sans nécessairement que cela implique une position de co-auteur. Je suis également heureux d’avoir pu incarner cette position<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</p>
+</section>
+<section id="pour-une-meilleure-évaluation-de-la-recherche" class="level2">
+<h2 class="anchored" data-anchor-id="pour-une-meilleure-évaluation-de-la-recherche">Pour une meilleure évaluation de la recherche</h2>
+<p>Enfin, ces différents indicateurs bibliométriques en tant que mesure imparfaite de l’activité de recherche<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> ne doivent pas prendre le pas sur l’évaluation qualitative de ces activités et du rapport qu’elles entretiennent avec la communauté scientifique et la société ainsi que l’investissement concret vers une science plus ouverte, transparente et reproductible <span class="citation" data-cites="knechtReshapingAcademicSelf2021">[@knechtReshapingAcademicSelf2021]</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/OpenScienceFuture_Utrecht2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Une évaluation plus moderne de l’activité de recherche d’après l’université d’Utrecht.</figcaption>
+</figure>
+</div>
+</section>
+<section id="sciences-et-société-pluridisciplinarité" class="level2">
+<h2 class="anchored" data-anchor-id="sciences-et-société-pluridisciplinarité">Sciences et société, pluridisciplinarité</h2>
+<p>A ce titre une expérience très formatrice pour moi a été mon rôle actif au sein du Collège Scientifique (CS) de l’Observatoire National de la Vie Etudiante (OVE). Cette institution dépend du Ministère de l’Enseignement Supérieur et de la Recherche (MESR) et est rattachée opérationnellement au Conseil National des Œuvres Universitaires et Scolaires (CNOUS). <a href="https://www.ove-national.education.fr/organisation-de-love/">L’OVE est une structure très intéressante</a> dans la mesure où son conseil d’administration est composé de scientifiques (CS), mais aussi de représentants des organisations étudiantes nationales représentatives (“usagers”), des représentants des mutuelles étudiantes, des représentants de l’Association des Villes Universitaires de France (AFUV), de France Université (anciennement Conférence des Présidents d’Université-CPU) et de l’Association des Université Européenne (EUA). L’OVE a une mission importante qui suppose l’implication d’acteurs multiples et divers vers un but commun d’amélioration des conditions de vie étudiante. Cela illustre son implication sociétale qui dépasse l’objectif d’éclairage des politiques publiques.</p>
+<p>Un autre aspect intéressant réside dans la collaboration avec des chercheurs de diverses disciplines telles que l’économie, la géographie, la démographie, la sociologie, les statistiques et la psychologie. En ce sens les standards de publications (et de promotion) peuvent varier selon les disciplines et la culture dominante de l’OVE reste la publication dans des ouvrages en français au détriment de la publication internationale dans des revues à comité de lecture. Il ne s’agit pas ici de critiquer cet état de fait, mais au contraire de reconnaître aussi cette pluralité dans l’expression de la valorisation scientifique. Un des enjeux devient alors de trouver les solutions qui permettent de répondre le plus largement possible aux besoins. A nouveau, la science ouverte et l’organisation du travail qu’elle permet constituent pour ma part une réponse à ces enjeux de diffusion et de valorisation scientifique des travaux de l’OVE<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/OpenScienceFuture_Utrecht1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">L’activité de recherche ouverte dans son écosystème impliquant la société d’après l’université d’Utrecht.</figcaption>
+</figure>
+</div>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Les figures sont librement accessibles dans <a href="https://zenodo.org/record/7974116">cette version de l’article</a> de <span class="citation" data-cites="brembsReplacingAcademicJournals2023">@brembsReplacingAcademicJournals2023</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>La difficulté relève du fait de collaborations où tous les chercheurs n’ont pas nécessairement les mêmes standards aux mêmes moment, ce qui est tout à fait entendable ! De plus tous les chercheurs n’ont pas la même position, certains étant en position plus précaire et pris dans un contexte de pression à la publication cela favorise ce type de support ce que l’on peut aussi comprendre. Enfin, le coût économique parfois élevé de ce type de publications peut lui aussi interroger sur les intérêts à long terme de la communauté scientifique et de la société. Mais il demeure important de progresser avec bienveillance petit à petit et collectivement dans une direction plus positive pour tous les acteurs à long terme.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Voir l’excellent <a href="https://www.redactionmedicale.fr/2023/07/repenser-totalement-le-systeme-des-publications-les-derives-nous-menent-a-des-catastrophes">billet de blog</a> de <span class="citation" data-cites="maisonneuveRepenserTotalementSysteme2023">@maisonneuveRepenserTotalementSysteme2023</span> ainsi que le commentaire de <a href="https://twitter.com/BorsboomDenny/status/1539525248839831553">Denny Borsboom sur Twitter</a> à ce sujet.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Les miennes incluses ! J’essaie et je dois également m’appliquer cette vigilance car, nous venons de le voir, les chercheurs sont des êtres humains faillibles. Il apparait donc comme encore plus important d’adopter une démarche transparente et de science ouverte en complément de cette nécessaire humilité.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Cette citation est également reprise dans le premier chapitre de l’ouvrage à paraître de Paul Smaldino intitulé Doing Violence To Reality <span class="citation" data-cites="smaldinoModelingSocialBehavior2023">[@smaldinoModelingSocialBehavior2023]</span><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Il convient toutefois de rester prudent sur les croisement de variables, à ne pas mettre à disposition de données “trop fine” qui par leurs croisements permettrais d’identifier un individu (par exemple un jeune médecin, de sexe masculin, interne en psychiatrie dans un service universitaire de telle ville spécifiquement et âgée de plus de 50 ans, qui déclarerait être victime de faits de harcèlement).<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Les derniers remerciements sont “<a href="https://www.nature.com/articles/s41398-021-01624-z#Ack1"><em>We would also like to thank Yannick Morvan for his methodological input and comments</em></a>.” <span class="citation" data-cites="heInfluencePolygenicRisk2021a">[@heInfluencePolygenicRisk2021a]</span> ; “<a href="https://www.tandfonline.com/doi/full/10.1080/21568235.2023.2172443"><em>In addition, the authors would like to thank the Crous of Northern France for their collaboration in the qualitative part of this research, andPr. Yannick Morvan, for his valuable insights on the psychological distress indicator and literature</em></a><em>“</em> <span class="citation" data-cites="alamelItNotSame2023">[@alamelItNotSame2023]</span> <em>et “<a href="https://www.tandfonline.com/doi/full/10.1080/07347332.2023.2246126">We want to thank Yannick Morvan, Camille Vansimaeys, and Quentin Barillot for our numerous exchanges on the theoretical-methodological approach to network analysis</a>.”</em><span class="citation" data-cites="mabire-yonOrganizationPsychosocialFactors2023">[@mabire-yonOrganizationPsychosocialFactors2023]</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>L’université d’Utrecht s’est récemment retiré de certains classement internationaux considérant, entre autres, que ces classements ne reflétaient pas correctement l’activité académique dans son ensemble, que les classements favorisaient la compétition plutôt que la coopération et que les méthodologies sur lesquelles ces classements reposent sont discutables. Voir <a href="https://twitter.com/jeroenbosman/status/1708477089828004235?s=12&amp;t=-BaOHKSmB_k0eSWxiAakSA">le tweet de Jeroen Bosman qui explicite cette décision</a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Les publications et communications récentes que j’ai pu réaliser avec l’OVE en témoignent.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Site construit avec du <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://quarto.org/">Quarto</a> et l’aide de Csik [Samantha (https://samanthacsik.github.io/talks_workshops/2022-08-05-creating-your-personal-website-using-quarto/index.html)</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./LICENSE-CC-BY-4.0.html">
+<p>Licence CC-BY-4.0</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.288">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Yannick Morvan – peda</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Yannick Morvan</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Acceuil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">A propos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mon-hdr" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Mon HDR</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mon-hdr">    
+        <li>
+    <a class="dropdown-item" href="./peda.html" rel="" target="">
+ <span class="dropdown-text">Activités universitaires et d’enseignement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publi.html" rel="" target="">
+ <span class="dropdown-text">Activités scientifiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pedaPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Pédagogiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publiPerspectives.html" rel="" target="">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexSystems.html" rel="" target="">
+ <span class="dropdown-text">Les approches en systèmes complexes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ComplexPsycho.html" rel="" target="">
+ <span class="dropdown-text">Les systèmes complexes en psychologie : la question psychométrique</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf" rel="" target="">
+ <span class="menu-text">cv</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html" rel="" target="">
+ <span class="menu-text">Références</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/yannickmorvan/yannickmorvan.github.io" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/yannick_morvan" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ymorvan@parisnanterre.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-Peda" id="toc-sec-Peda" class="nav-link active" data-scroll-target="#sec-Peda">Activités universitaires et d’enseignement</a>
+  <ul class="collapse">
+  <li><a href="#comités-de-sélection" id="toc-comités-de-sélection" class="nav-link" data-scroll-target="#comités-de-sélection">Comités de sélection</a></li>
+  <li><a href="#jury-de-thèse" id="toc-jury-de-thèse" class="nav-link" data-scroll-target="#jury-de-thèse">Jury de thèse</a></li>
+  <li><a href="#comité-de-suivi-de-thèse" id="toc-comité-de-suivi-de-thèse" class="nav-link" data-scroll-target="#comité-de-suivi-de-thèse">Comité de suivi de thèse</a></li>
+  <li><a href="#encadrement-doctoral-et-scientifique" id="toc-encadrement-doctoral-et-scientifique" class="nav-link" data-scroll-target="#encadrement-doctoral-et-scientifique">Encadrement doctoral et scientifique</a>
+  <ul class="collapse">
+  <li><a href="#contributions-principales-à-des-travaux-doctoraux" id="toc-contributions-principales-à-des-travaux-doctoraux" class="nav-link" data-scroll-target="#contributions-principales-à-des-travaux-doctoraux">Contributions principales à des travaux doctoraux</a></li>
+  <li><a href="#contributions-annexes-à-des-travaux-doctoraux" id="toc-contributions-annexes-à-des-travaux-doctoraux" class="nav-link" data-scroll-target="#contributions-annexes-à-des-travaux-doctoraux">Contributions annexes à des travaux doctoraux</a></li>
+  <li><a href="#encadrement-de-thèses-dexercice-de-médecine" id="toc-encadrement-de-thèses-dexercice-de-médecine" class="nav-link" data-scroll-target="#encadrement-de-thèses-dexercice-de-médecine">Encadrement de thèses d’exercice de médecine</a></li>
+  </ul></li>
+  <li><a href="#activités-denseignement" id="toc-activités-denseignement" class="nav-link" data-scroll-target="#activités-denseignement">Activités d’enseignement</a>
+  <ul class="collapse">
+  <li><a href="#résumé" id="toc-résumé" class="nav-link" data-scroll-target="#résumé">Résumé</a></li>
+  <li><a href="#indicateurs" id="toc-indicateurs" class="nav-link" data-scroll-target="#indicateurs">Indicateurs</a></li>
+  </ul></li>
+  <li><a href="#descriptifs-des-enseignements-livrets-pédagogiques" id="toc-descriptifs-des-enseignements-livrets-pédagogiques" class="nav-link" data-scroll-target="#descriptifs-des-enseignements-livrets-pédagogiques">Descriptifs des enseignements (livrets pédagogiques)</a>
+  <ul class="collapse">
+  <li><a href="#a.-paris-nanterre-2013-2023" id="toc-a.-paris-nanterre-2013-2023" class="nav-link" data-scroll-target="#a.-paris-nanterre-2013-2023">A. Paris Nanterre (2013-2023)</a></li>
+  <li><a href="#b.-reims-champagne-ardenne-2010-2013" id="toc-b.-reims-champagne-ardenne-2010-2013" class="nav-link" data-scroll-target="#b.-reims-champagne-ardenne-2010-2013">B. Reims Champagne Ardenne (2010-2013)</a></li>
+  <li><a href="#c.-paris-descartes---paris-cité-2007-2010" id="toc-c.-paris-descartes---paris-cité-2007-2010" class="nav-link" data-scroll-target="#c.-paris-descartes---paris-cité-2007-2010">C. Paris Descartes - Paris Cité (2007-2010)</a></li>
+  </ul></li>
+  <li><a href="#évaluation-des-enseignements-et-de-lenseignant" id="toc-évaluation-des-enseignements-et-de-lenseignant" class="nav-link" data-scroll-target="#évaluation-des-enseignements-et-de-lenseignant">Évaluation des enseignements et de l’enseignant</a>
+  <ul class="collapse">
+  <li><a href="#résultats-quantitatifs" id="toc-résultats-quantitatifs" class="nav-link" data-scroll-target="#résultats-quantitatifs">Résultats quantitatifs</a></li>
+  <li><a href="#résultats-qualitatifs" id="toc-résultats-qualitatifs" class="nav-link" data-scroll-target="#résultats-qualitatifs">Résultats qualitatifs</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+
+<section id="sec-Peda" class="level1">
+<h1>Activités universitaires et d’enseignement</h1>
+<p>Ce chapitre à pour objectif de présenter mes activités universitaires et pédagogiques en tant qu’enseignant-chercheur.</p>
+<section id="comités-de-sélection" class="level2">
+<h2 class="anchored" data-anchor-id="comités-de-sélection">Comités de sélection</h2>
+<ol type="1">
+<li>Chambéry (2023) Poste n°4377</li>
+<li>Lille (2023) Poste n°0175</li>
+<li>Paris Nanterre (2023) Poste n°4834</li>
+<li>Caen (2022) Poste n°4549</li>
+<li>Paris Nanterre (2021) Poste n°4644</li>
+<li>Lille (2020) Poste n°0161</li>
+<li>Paris Descartes (2019) Poste n°0114</li>
+<li>Strasbourg (2019) Poste n°0287</li>
+<li>Reims (2019) Poste n°1231</li>
+<li>Lille (2018) Poste n°0072</li>
+<li>Strasbourg (2018) Poste n°4480</li>
+<li>Paris Descartes (2018) Poste n°0078</li>
+<li>Paris 8 (2017) Poste n°0402</li>
+<li>Poitiers (2016) Poste n°1626</li>
+<li>Reims (2011) Poste n°1231</li>
+</ol>
+</section>
+<section id="jury-de-thèse" class="level2">
+<h2 class="anchored" data-anchor-id="jury-de-thèse">Jury de thèse</h2>
+<ul>
+<li><p>Education thérapeutique du patient et groupes de soutien entre pairs : des outils de soin au service du rétablissement et de la qualité de vie des personnes souffrant de troubles bipolaires par Marion Espitalier sous la direction de Marie Grall-Bronnec et de Leïla Moret-Majoube (soutenance prévue le 23/11/2023). Membre du jury avec Isabelle Amado, Nicolas Franck et Bernard Pachoud.</p></li>
+<li><p>Evaluation d’un programme de régulation émotionnelle dans une population d’étudiant.es universitaires par Clara Nardelli sous la direction de Céline Baeyens &amp; Catherine Bortolon (soutenance prévue le 13/11/2023). Membre du jury avec Pierre Phillipot, Kristin Gainey, Matthias Berking, Maya Tamir et Anna Tcherkassof .</p></li>
+<li><p>L’épuisement estudiantin : Approche clinique, psychopathologique, épidémiologique et psychothérapeutique TCC du syndrome de burnout académique. Christine Faye-Dumanget. Sous la direction de Abdel-Halim Boudoukha. Thèse soutenue à Nantes le 14/12/2018 (<strong>Rapporteur</strong>). Membre du jury avec Cyrille Bouvet et Vera Walburg.</p></li>
+<li><p>Existe-t-il un lien entre ce que je pense et ce que j’imagine ? Une approche processuelle centrée sur les pensées répétitives négatives et la perspective visuelle en imagerie mentale. Perrine Douce. Sous la direction de Céline Baeyens. Thèse soutenue à Grenoble le 18/12/2017. Membre du jury avec Martine Bouvard, Abdel-Halim Boudoukha et Pierluigi Graziani.</p></li>
+</ul>
+</section>
+<section id="comité-de-suivi-de-thèse" class="level2">
+<h2 class="anchored" data-anchor-id="comité-de-suivi-de-thèse">Comité de suivi de thèse</h2>
+<ol type="1">
+<li>Comprendre les comportements prosociaux et antisociaux à travers une approche méthodologique mixte : le cas des jeux vidéo en ligne multijoueur par Maud Lemercier sous la direction de Lucia Romo et de Charles Tijus (soutenue le 16/11/2020).</li>
+<li>Education thérapeutique du patient et groupes de soutien entre pairs : des outils de soin au service du rétablissement et de la qualité de vie des personnes souffrant de troubles bipolaires par Marion Espitalier sous la direction de Marie Grall-Bronnec et de Leïla Moret-Majoube (en préparation depuis le 18/01/2019 soutenance prévue le 23/11/2023).</li>
+<li>Place de la psychopathologie dans le lien entre le comportement parental et la dissociation par Vincent Chabasseur sous la direction de Marie-Claire Gay (en préparation depuis le 01/09/2020).</li>
+</ol>
+</section>
+<section id="encadrement-doctoral-et-scientifique" class="level2">
+<h2 class="anchored" data-anchor-id="encadrement-doctoral-et-scientifique">Encadrement doctoral et scientifique</h2>
+<section id="contributions-principales-à-des-travaux-doctoraux" class="level3">
+<h3 class="anchored" data-anchor-id="contributions-principales-à-des-travaux-doctoraux">Contributions principales à des travaux doctoraux</h3>
+<ul>
+<li><p>La santé mentale des étudiants, approche par modélisation en réseaux : des données épidémiologiques aux interventions psychologiques. Quentin Facon-Barillot sous la codirection de Lucia Romo &amp; Yannick Morvan (thèse en préparation depuis 01/09/2021). Contribution à l’utilisation des approches en réseaux comme modélisations des difficultés de santé mentale des étudiants (détresse psychologique, dépression, idéation suicidaire). Ces difficultés psychologiques sont alors considérées comme un système complexe en lien avec les caractéristiques socio-démographiques (âge, sexe, inscription académique, réussite universitaire, profil socio-économique) et le recours aux soins. Les techniques d’analyse en réseau, en se focalisant sur l’évolution des relations entre symptômes, testent les modifications d’un système au cours du temps (invariance) par exemple de la structure du réseau, du dégré de connectivité générale du réseau et des connectivités spécifiques entre symptômes. Les techniques d’analyse dites en réseaux temporels seront utilisées afin de modéliser les dynamiques complexes d’évolutions des symptômes au décours d’intervention sur la santé mentale des étudiants. Elles permettent ainsi d’identifier de manière fine les cibles d’interventions les plus pertinentes pour améliorer ces dernières.</p></li>
+<li><p>Affectivité et alimentation : étude de leurs liens au travers des concepts d’alimentation émotionnelle et d’addiction à l’alimentation. Léna Bourdier. Sous la direction de Lucia Romo et de Sylvie Berthoz. Thèse soutenue à Paris Nanterre le 06/12/2017. Contribution au design expérimental, à l’implémentation concrète du recueil des données, à la programmation de l’interface de saisie en ligne des questionnaires sous LimeSurvey avec Laurence Kern. Choix des méthodologies d’analyses de données, réalisations des analyses de données, écriture de la partie méthode et analyse des données et révisions des manuscrits (activités réalisées par mes soins propres pour l’article publié dans Appetite, et réalisées conjointement avec Christophe Lalanne et compétitivement entre R et Mplus pour l’article publié dans Frontiers). Contribution ayant donné lieu à publications d’articles.</p></li>
+<li><p>From physical inactivity to the problematic practice of physical exercise: a study of their prevalence, measures, and determinants. Gayatri Kotbagi Sous la direction de Lucia Romo et de Laurence Kern. Thèse soutenue à Paris Nanterre le 06/12/2016. Contribution au design expérimental, a l’implémentation concrète du recueil des données, à la programmation de l’interface de saisie en ligne des questionnaires sous LimeSurvey avec Laurence Kern. Participation au choix des méthodologies d’analyses de données, supervisions et relecture des analyses de données, révision des manuscrits. Contribution ayant donné lieu à publications d’articles.</p></li>
+</ul>
+</section>
+<section id="contributions-annexes-à-des-travaux-doctoraux" class="level3">
+<h3 class="anchored" data-anchor-id="contributions-annexes-à-des-travaux-doctoraux">Contributions annexes à des travaux doctoraux</h3>
+<ul>
+<li><p>Etude des lipides membranaires comme facteur de vulnérabilité à la psychose chez des patients à ultra haut risque de psychose (UHR) et dans un modèle murin. Ariel Frajerman. Sous la direction d’Oussama Kebir. Thèse soutenue à Paris Cité le 24/11/2021. Encadrement sur des travaux annexes à la thèse et plus particulièrement sur le centre d’intérêt commun de la santé mentale des étudiants. Encadrement principal sur l’ensemble des projets relatifs à cette thématique. Contribution ayant donné lieu à publications d’articles.</p></li>
+<li><p>Approche neuropsychologique des patients présentant des troubles complexes du neurodéveloppement à l’âge adulte. Charlotte Alexandre. Sous la direction de Isabelle Amado et co-encadrée par Marie-Odile Krebs. Thèse soutenue à Paris Cité le 24/09/2019. Aide dans les travaux liés à l’activité de remédiation cognitive et de réhabilitation psychosociale du C3RP. Soutien méthodologique et statistique dans la préparation d’un travail de caractérisation des facteurs associés aux profils neurodéveloppementaux complexes caractérisés à l’aide d’une approche de machine learning.</p></li>
+<li><p>Identification de facteurs biologiques de la transition psychotique. Boris Chaumette. Sous la direction de Marie-Odile Krebs et co-encadrée par Oussama Kebir. Thèse soutenue à Paris Descartes le 05/09/2016. Encadrement sur les méthodes d’analyses des données longitudinales du cortisol utilisé comme marqueur du stress dans la transition psychotique. Aide à l’identification des trajectoires et typologies de trajectoires en interaction avec des variables socio-démographiques, cliniques et méthylomiques. Encadrement sur des travaux annexes à la thèse et plus particulièrement sur le centre d’intérêt commun de la santé mentale des étudiants. Contribution ayant donné lieu à publication d’articles.</p></li>
+</ul>
+</section>
+<section id="encadrement-de-thèses-dexercice-de-médecine" class="level3">
+<h3 class="anchored" data-anchor-id="encadrement-de-thèses-dexercice-de-médecine">Encadrement de thèses d’exercice de médecine</h3>
+<ul>
+<li><p>Recours aux soins et adéquation des traitement chez les étudiants en médecine et jeunes médecins : une enquête nationale. Laure Vergeron. Sous la direction de Ariel Frajerman. Thèse en préparation. Encadrement scientifique sur les objectifs, la mise en oeuvre, l’analyse des données et la rédaction scientifique. Encadrement et co-écriture d’un article. Contribution ayant donné lieu à une soumission.</p></li>
+<li><p>La santé mentale des étudiants en médecine de France en 2021 : une enquête Nationale. Franck Rolland. Sous la direction de Ariel Frajerman. Thèse soutenue à Paris Saclay le 27/01/2023. Encadrement scientifique sur les objectifs, la mise en oeuvre, l’analyse des données et la rédaction scientifique. Contribution ayant donné lieu à publication d’articles</p></li>
+<li><p>Psychose émergente chez l’adolescent et le jeune adulte : l’accès aux soins en question : À partir des données du centre pilote français de détection et d’intervention précoces. Alice Oppetit. Sous la direction de Julie Bourgin. Thèse soutenue à Paris Descartes le 06/10/2016. Encadrement sur l’article publié à partir du dispositif de prévention et d’intervention précoce en milieu scolaire (dispositif Fil-Harmonie). Contribution, co-construction du dispositif avec le Dr Monchablon ; construction de la méthodologie d’évaluation quantitative et qualitative du dispositif. Réalisation des analyses statistiques. Encadrement et co-écriture de l’article. Contribution ayant donné lieu à publication d’article.</p></li>
+<li><p>Vers une reconceptualisation de la psychose : implications cliniques et méthodologiques. Boris Chaumette. Sous la direction de Oussama Kebir. Thèse soutenue à Paris Descartes le 05/10/2016. Contribution à cette thèse sur l’analyse lexicométrique des articles publiés sur la schizophrénie. Contribution ayant donné lieu à communication.</p></li>
+<li><p>Médecine préventive universitaire : évaluation d’un dispositif de dépistage des troubles psychologiques chez les jeunes adultes. Clotilde Kowalski. Sous la codirection de Yannick Morvan et Frédéric Urbain. Thèse soutenue à l’université Versailles St Quentin le 29/09/2016. Contribution ayant donné lieu à communication.</p></li>
+</ul>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="activités-denseignement" class="level2">
+<h2 class="anchored" data-anchor-id="activités-denseignement">Activités d’enseignement</h2>
+<section id="résumé" class="level3">
+<h3 class="anchored" data-anchor-id="résumé">Résumé</h3>
+<p>Activité d’enseignement annuelle d’environ 230h en moyenne équivalent TD depuis 2010<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> se répartissant à 36% en licence, 52% en Master et 7% en doctorat (37% des enseignements en cours magistraux)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>Concernant mes activités d’enseignement actuelles :</p>
+<ul>
+<li><p>En licence il s’agit principalement d’enseignements en 1ère année de psychologie, de PASS et de Licence santé société (pour un volume de 48hCM) où j’introduis la psychologie clinique au travers de l’histoire des classifications (du DSM en particulier) illustrée avec la dépression du 18ème siècle à nos jours. Je présente également les critiques du DSM et alternatives que représentent les Rdoc, HITOP et approches en réseau. En licence également je présente des enseignements relatifs à la santé des jeunes adultes et étudiants avec comme perspective la question de la transition dans la pathologie, de la mesure des troubles et de leurs prises en charge (pour un volume de 22h équivalent TD). Enfin j’ai assuré de 2014 à 2022 la coordination de l’enseignement de méthodologie de l’entretien (19 groupes de TD) pour lequel j’enseignais environ 48hTD par an.</p></li>
+<li><p>Pour l’enseignement de Master, une sensibilisation forte à la méthodologie de la recherche (reproductibilité, réplicabilité, science ouverte, méthodologie, p-hacking, degrés de liberté des chercheurs, théorie et formalisation) en M1 pour 12h CM, ces éléments sont poursuivis en M2 et appliqués à l’actualité de la recherche en psychothérapie et aux approches en neurocognition développementale pour 24hCM. Ce cours se prolonge également par 18hTD totalement en anglais (Research Seminar in Clinical Psychology Science) où les étudiants produisent en petits groupes des podcasts sur l’actualité scientifique vue en cours ou des travaux de questions récentes de la psychologie. Enfin un cours de méthodes et statistiques pour psychologue clinicien est proposé afin de sensibiliser les étudiants aux techniques de validation factorielle des échelles et tests cliniques pour 18hTD.</p></li>
+<li><p>Au niveau doctoral je propose des formations sur la science ouverte, les moyens techniques de la science ouverte (R, Rstudio, Github &amp; OSF), les techniques d’analyse lexicométrique avec IramuteQ, et enfin les techniques d’équations structurelles longitudinales (Latent Growth Modeling &amp; Growth Mixture Modeling) pour environ 15hTD.</p></li>
+</ul>
+<p>Par ailleurs, dans le cadre des confinements, j’ai produit environ 15h de cours asynchrones en enregistrements vidéo avec incrustation sur fond vert du diaporama et de l’enseignant (avec Open Broadcast Studio - OBS). Les cours ont été scénarisés et découpées selon la trame des cours en présentiel en capsules de temps variables (5-10-15-20-30-40-50 minutes) de manière à rendre le suivi pour les étudiants plus facile.</p>
+</section>
+<section id="indicateurs" class="level3">
+<h3 class="anchored" data-anchor-id="indicateurs">Indicateurs</h3>
+<p>Voici quelques indicateurs (tableaux et graphique) permettant de décrire de mon activité d’enseignement depuis 2007 :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Ens2tab.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignement, Tableau synthétique des activités</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Ens2stat.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements, Tableau de synthèse des activités</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Ens2graph1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements, Etablissements et responsabilités</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Ens2graph2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements , Répartition Semestre et CM/TD</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Ens2graph3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements, Niveaux LMD</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/EnsYeargraph3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements, Nombre d’heures par année</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/EnsYeargraph1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements, volume CM &amp; TD par année</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/EnsYeargraph2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements, Niveaux LMD par année</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Ens2stat2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Enseignements, Tableau de synthèse par établissement</figcaption>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="descriptifs-des-enseignements-livrets-pédagogiques" class="level2">
+<h2 class="anchored" data-anchor-id="descriptifs-des-enseignements-livrets-pédagogiques">Descriptifs des enseignements (livrets pédagogiques)</h2>
+<section id="a.-paris-nanterre-2013-2023" class="level3">
+<h3 class="anchored" data-anchor-id="a.-paris-nanterre-2013-2023">A. Paris Nanterre (2013-2023)</h3>
+<section id="niveau-licence" class="level4">
+<h4 class="anchored" data-anchor-id="niveau-licence">Niveau Licence</h4>
+<section id="introduction-psychologie-clinique-et-psychopathologie-l1-psychologie-pass-licence-santé-société" class="level5">
+<h5 class="anchored" data-anchor-id="introduction-psychologie-clinique-et-psychopathologie-l1-psychologie-pass-licence-santé-société">1.Introduction psychologie clinique et psychopathologie, L1 Psychologie + PASS + Licence Santé Société</h5>
+<p>Responsabilité &amp; volume : Oui, 24h CM (2h x 12 semaines).</p>
+<p>Descriptif : L’enseignement de psychologie clinique abordera les fondements historiques, sociaux, et politiques des systèmes de classifications diagnostiques de 1850 à nos jours (autour du DSM principalement) afin d’en éclairer les débats épistémologiques. Il fournira aux étudiants des repères en sémiologie (étude des signes et symptômes cliniques), la dépression étant utilisée comme principale illustration. Les apports des classifications comme le DSM mais aussi leurs limites seront présenté et notamment les approches alternatives davantage transdiagnostiques telles que les Rdoc, HiTOP et approches en réseaux. Enseignement de Psychopathologie psychanalytique : Face à l’étendue actuelle des perspectives de travail du psychologue clinicien, sa pratique clinique, son cadre de travail et de réflexion, évoluent et connaissent des réaménagements. La psychanalyse, au delà de ce que l’on nomme la cure type, au delà des pathologies psychiques telles que les névroses et les psychoses, s’intéresse et s’est adaptée à des patients souffrant de pathologies psychiques et somatiques pas ou peu abordées par elle jusqu’alors : les troubles du comportement, allant des comportements addictifs (troubles du comportement alimentaire, le binge drinking, la toxicomanie, les addictions aux jeux vidéos…) aux comportements violents, destructeurs nommés « pathologies de la modernité » mais aussi la prise en charge de patients dont les capacités à « se représenter » font défaut, menant à des processus de « somatisation ». Les questions du genre et des troubles de l’identité sexuelle, du handicap, du suivi des patients atteints de maladies somatiques parfois chroniques, sont, enfin, autant de perspectives d’élaborations cliniques et théoriques dans lesquelles désormais, la psychanalyse s’inscrit.</p>
+</section>
+<section id="cas-cliniques-en-thérapies-cognitivo-comportementales-l2-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="cas-cliniques-en-thérapies-cognitivo-comportementales-l2-psychologie">2.Cas cliniques en thérapies cognitivo-comportementales, L2 Psychologie</h5>
+<p>Responsabilité &amp; volume : Non,CM (2h x 12 semaines)</p>
+<p>Descriptif : Il s’agit d’étudier les fondements théoriques et techniques des méthodes d’entretien clinique (entretiens : non-directif, structuré, d’anamnèse, de conseil, de soutien), des échelles d’évaluation clinique (auto et hétéro-évaluations), des tests de niveau et des tests de personnalité. Des dossiers cliniques contenant des protocoles d’instruments présentés dans le cours seront étudiés.</p>
+</section>
+<section id="psychologie-l2-santé-et-société" class="level5">
+<h5 class="anchored" data-anchor-id="psychologie-l2-santé-et-société">3.Psychologie, L2 Santé et Société</h5>
+<p>Responsabilité &amp; volume : Non,CM (2h x 2 semaines)</p>
+<p>Descriptif : L’enseignement de psychologie du développement, de psychologie clinique et de psychopathologie abordera dans le prolongement des cours de la L1 : 1) Dans le champ de la psychologie du développement, certains concepts qui expliquent les changements qui s’opèrent chez l’enfant (de la naissance à la fin de l’adolescence) et sous-tendent des difficultés d’adaptation psychique et physique; 2) Dans le champ empirique et TCC, l’enseignement abordera les enjeux de la santé mentale des étudiants dans une perspective de prévention et d’intervention précoce et resituera le champs de la santé mentale étudiante dans la complexité des différents acteurs institutionnels ; 3) Dans le champ de la psychopathologie clinique psychanalytique, seront abordés certains concepts psychanalytiques en rapport avec la santé mentale, la précarité, la violence sociale et la psychopathologie de l’extrême en général avec la dimension clinique inhérente en différentes situations cliniques rencontrées en consultations libérales ou en institution.</p>
+</section>
+<section id="méthodologie-de-lentretien-l3-puis-l2-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="méthodologie-de-lentretien-l3-puis-l2-psychologie">4.Méthodologie de l’Entretien, L3 puis L2 Psychologie</h5>
+<p>Responsabilité &amp; volume : Oui,TD (2h x 12 semaines)</p>
+<p>Descriptif : Il s’agit de former les étudiants aux différents types d’entretien selon leurs objectifs (recherche, recueil d’informations, communication d’informations, conseil, écoute clinique, soutien, négociation, d’enquête, etc.) et aux différentes méthodes de conduite de l’entretien. Une initiation à l’analyse de contenu complètera la formation notamment au travers d’analyses de cas vidéos ou textes ainsi que d’analyses textuelles après réalisation et de transcription d’entretiens. Bibliographie : SHEA, C. La conduite de l’entretien psychiatrique. L’art de la compréhension, 2005. Broc, G &amp; Caumeil, B., Analyse des données, Partie 2, Chapitres 9-11, 2018.</p>
+</section>
+<section id="initiation-aux-méthodes-cliniques-l3-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="initiation-aux-méthodes-cliniques-l3-psychologie">5.Initiation aux Méthodes Cliniques, L3 Psychologie</h5>
+<p>Responsabilité &amp; volume : Non,TD (2h x 12 semaines)</p>
+<p>Descriptif : Il s’agit d’étudier les fondements théoriques et techniques des méthodes d’entretien clinique (entretiens : non-directif, structuré, d’anamnèse, de conseil, de soutien), des échelles d’évaluation clinique (auto et hétéro-évaluations), des tests de niveau et des tests de personnalité. Des dossiers cliniques contenant des protocoles d’instruments présentés dans le cours seront étudiés.</p>
+</section>
+<section id="entretien-dirigé-à-des-fins-diagnostiques-lpro-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="entretien-dirigé-à-des-fins-diagnostiques-lpro-psychologie">6.Entretien dirigé à des fins diagnostiques, Lpro Psychologie</h5>
+<p>Responsabilité &amp; volume : Oui,TD (5h x 1 semaines)</p>
+<p>Descriptif : L’objectif de ce cours est de donner des éléments théoriques et pratiques pour la conduite d’entretien dirigée ou semi- dirigée dans le contexte d’une exploration des besoins de la personne. Il s’agit alors de l’amener à expliciter ses attentes, mais aussi à pouvoir se servir des diﬀérents bilans, explorations, interventions qui ont eu lieu auparavant. Nous utiliserons le cas de la dépression et l’utilisation du MINI et d’échelles d’évaluations comme illustrations notamment de la conceptualisation de ce trouble, de la manière dont il est évalué ainsi que des potentielles diﬃcultés/limites inhérentes à ce type d’évaluation.</p>
+</section>
+<section id="travaux-détude-et-de-recherche-l3-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="travaux-détude-et-de-recherche-l3-psychologie-tcc">7.Travaux d’étude et de recherche, L3 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 24h TD (2h x 12 semaines).</p>
+<p>Descriptif : Au cours de cet enseignement, les étudiants apprendront à construire une problématique, à rechercher des références bibliographiques, à organiser ces références, à constituer une revue de la littérature, à rédiger des concepts théoriques, à s’initier à la méthodologie de la recherche et aux plans de recherche et à utiliser les normes bibliographiques. Ce travail sera formalisé par la réalisation d’un dossier présentant un projet de recherche élaboré par l’étudiant.</p>
+</section>
+<section id="psychologie-et-santé-la-santé-psychique-des-jeunes-adultes-l3-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="psychologie-et-santé-la-santé-psychique-des-jeunes-adultes-l3-psychologie-tcc">8.Psychologie et Santé : La Santé Psychique des Jeunes Adultes, L3 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 24h CM (2h x 12 semaines).</p>
+<p>Descriptif : Les souffrances psychiques des étudiants, encore souvent dans l’adolescence, sont trop méconnues. Elles peuvent aller du stress jusqu’aux dépressions, phobies, obsessions, conduites à risques, addictions etc. comme le soulignent les rares enquêtes épidémiologiques actuelles. Ses souffrances sont souvent insuffisamment repérées, évaluées puis traitées au vue d’un accès aux soins difficile pour une part des jeunes adultes aujourd’hui. Par ailleurs, les difficultés d’inscription dans le monde professionnel et social ; un avenir personnel et collectif incertain et imprévisible sont également à prendre en compte. Il est alors essentiel de former les futurs professionnels des différentes spécialités à une meilleure connaissance de la spécificité de la prise en charge des jeunes adultes, avec une perspective pluridisciplinaire. Des enseignants de psychologie (psychologie clinique et psychopathologique, psychologie sociale) mais aussi de STAPS et de sociologie, ainsi que des professionnels de santé interviendront dans ce cours.</p>
+</section>
+</section>
+<section id="niveau-master" class="level4">
+<h4 class="anchored" data-anchor-id="niveau-master">Niveau Master</h4>
+<section id="méthodologies-de-la-recherche-en-psychologie-clinique-m1-psychologie-tcc-psychanalyse" class="level5">
+<h5 class="anchored" data-anchor-id="méthodologies-de-la-recherche-en-psychologie-clinique-m1-psychologie-tcc-psychanalyse">9.Méthodologies de la recherche en psychologie clinique, M1 Psychologie TCC + Psychanalyse</h5>
+<p>Responsabilité &amp; volume : Oui, 24h CM (2h x 12 semaines)</p>
+<p>Descriptif : Enseignement des différentes méthodologies de la recherche en psychologie clinique. Une partie sera dédiée à la présentation de méthodes qualitatives (observation, analyses inductives : Analyse phénoménologique interprétative, Théorisation ancrée,…). Une seconde sera orientée en réponse aux préoccupations croissantes de la psychologie et des autres sciences concernant les faibles taux de reproductibilité, des résultats publiés un mouvement pour mener des recherches plus ouvertes et transparentes (Open Science). Ce cours permettra de présenter quelques outils utiles pour la reproductibilité des recherches mais qui permettent aussi de faciliter la production collaborative d’articles scientifiques (Zotero, Rstudio, Github, Markdown, OSF, PsyArxiV).</p>
+</section>
+<section id="la-santé-psychique-du-normal-au-pathologique-m1-psychologie-enseignement-douverture-master-non-tcc-ou-psychanalyse" class="level5">
+<h5 class="anchored" data-anchor-id="la-santé-psychique-du-normal-au-pathologique-m1-psychologie-enseignement-douverture-master-non-tcc-ou-psychanalyse">10.La santé psychique : du normal au pathologique, M1 Psychologie (Enseignement d’ouverture Master non TCC ou Psychanalyse)</h5>
+<p>Responsabilité &amp; volume : Oui, 18h CM (1h30 x 12 semaines)</p>
+<p>Descriptif : En psychologie clinique et en psychopathologie, il semble particulièrement délicat de distinguer ce qui relève du début d’un trouble psychique de ce qui relève des différents changements transitoires, évolutifs et normaux concernant les émotions et les représentations. Cette difficulté tient également au fait que les diverses modifications se manifestent tant au niveau intra-psychique et cognitif qu’au travers des comportements et des interactions sociales. La question se pose alors constamment dans ce cadre : comment opérer une distinction entre une personne qui éprouve simplement des difficultés, et une autre qui développe un trouble pour lequel une prise en charge semble nécessaire ?</p>
+<ol type="1">
+<li><p><strong>L’enseignement en Psychopathologie</strong> (<em>6 séances</em>) portera sur les notions même de « normal » et de « pathologique » tant au regard des débats philosophiques autour de cette question que dans leur application dans le champ de la psychopathologie.</p></li>
+<li><p><strong>L’enseignement en Clinique</strong> (<em>6 séances</em>) portera sur l’identification des facteurs de risque et de transition, chez les adolescents et les jeunes adultes, des pathologies dépressives et schizophréniques. Nous aborderons :</p></li>
+</ol>
+<ul>
+<li><p>les notions de « neurodéveloppement cognitif » et d’interaction avec l’environnement notamment dans la relation avec les groupes de pairs et les capacités de représentations à l’adolescence pour la dépression</p></li>
+<li><p>les aspects évolutifs des troubles de nature psychotique au cours du temps notamment sur les « mécanismes neurocognitifs » d’interaction avec l’environnement.</p></li>
+</ul>
+<p><strong>Bibliographie Partie Psychopathologie :</strong></p>
+<p>Canguilhem, G. (1966). <em>Le Normal et le Pathologique,</em> édit. 2010. Paris : PUF</p>
+<p><strong>Bibliographie Partie Clinique :</strong></p>
+<p>Davey, C. G., Yucel, M., &amp; Allen, N. B. (2008). The emergence of depression in adolescence: development of the prefrontal cortex and the representation of reward. Neurosci Biobehav Rev, 32(1), 1-19.</p>
+<p>Andersen, S. L., &amp; Teicher, M. H. (2008). Stress, sensitive periods and maturational events in adolescent depression. <em>Trends Neurosci, 31</em>(4), 183-191.</p>
+<p>Ernst, M., &amp; Fudge, J. L. (2009). A developmental neurobiological model of motivated behavior: anatomy, connectivity and ontogeny of the triadic nodes. <em>Neurosci Biobehav Rev, 33</em>(3), 367-382.</p>
+<p>van Os, Jim, Kenis, Gunter, &amp; Rutten, Bart P. F. (2010). The environment and schizophrenia. <em>Nature, 468</em>(7321), 203-212.</p>
+<p>Insel, Thomas R. (2010). Rethinking schizophrenia. <em>Nature, 468</em>(7321), 187-193.</p>
+<p>Tandon, R., Nasrallah, H. A., &amp; Keshavan, M. S. (2009). Schizophrenia, “just the facts” 4. Clinical features and conceptualization. <em>Schizophr Res, 110</em>(1-3), 1-23.</p>
+</section>
+<section id="psychométrie-clinique-m1-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="psychométrie-clinique-m1-psychologie-tcc">11.Psychométrie Clinique, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 24h TD (2h x 12 semaines)</p>
+<p>Descriptif : Connaissance des fondements théoriques et cliniques des tests psychométriques. Passation, cotation et interprétation des tests psychométriques d’aptitude et de personnalité (tests et batteries d’évaluation de d’intelligence et d’autres fonctions cognitives, échelles d’évaluation de la symptomatologie psychiatrique, inventaires de personnalité).</p>
+</section>
+<section id="formation-à-lentretien-clinique-m1-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="formation-à-lentretien-clinique-m1-psychologie-tcc">12.Formation à l’Entretien Clinique, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 18h TD (1h30 x 12 semaines)</p>
+<p>Descriptif : Connaissance des différents types d’entretien clinique. Le travail sur les entretiens cliniques permet de dégager leur spécificité, la relation qui s’établit entre le patient et le clinicien, les différents niveaux d’intervention. L’étudiant(e) doit acquérir les bases de la pratique de l’entretien clinique et de la pratique de l’examen clinique dans une démarche diagnostique, comprenant des tests de niveau, des tests projectifs ou toute autre technique spécifique au psychologue clinicien.</p>
+</section>
+<section id="entretien-clinique-approfondissement-m1-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="entretien-clinique-approfondissement-m1-psychologie-tcc">13.Entretien Clinique Approfondissement, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 18h TD (1h30 x 12 semaines)</p>
+<p>Descriptif : Conduite d’entretiens et pratique des tests en situation clinique. Dans le prolongement des acquis du premier semestre, l’étudiant approfondira sa connaissance du fonctionnement des institutions et de leurs règles. Conduite d’entretiens cliniques à visée diagnostique. Pratique dans une démarche diagnostique de l’examen clinique, comprenant des tests de niveau, des tests projectifs ou toute autre technique spécifique au/ à la psychologue clinicien(ne). Repérage de certains éléments de la relation, transfert ou contre-transfert. Le travail sur les entretiens cliniques permet de dégager leur spécificité, la relation qui s’établit entre le/la patient€ et le/la clinicien(ne), les différents niveaux d’intervention et d’interprétation.</p>
+</section>
+<section id="stage-clinique-analyse-et-régulation-des-pratiques-professionnelles-m1-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="stage-clinique-analyse-et-régulation-des-pratiques-professionnelles-m1-psychologie-tcc">14.Stage Clinique &amp; Analyse et régulation des pratiques professionnelles, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 18h TD (1h30 x 12 semaines)</p>
+<p>Descriptif : Observation et compréhension du fonctionnement institutionnel. Formation aux pratiques psychologiques dans un cadre clinique et approfondissement de la connaissance du fonctionnement des institutions et de leurs règles. La régulation de stage permet une élaboration de la pratique de l’étudiant(e). L’étudiant(e) doit acquérir les bases de : l’observation du fonctionnement institutionnel ; l’analyse de la relation praticien-patient, avec repérage éventuel d’éléments de transfert et de contre-transfert ; la pratique de l’observation de groupes et du fonctionnement de l’institution.</p>
+</section>
+<section id="stage-clinique-analyse-et-régulation-des-pratiques-professionnelles-m1-psychologie-tcc-1" class="level5">
+<h5 class="anchored" data-anchor-id="stage-clinique-analyse-et-régulation-des-pratiques-professionnelles-m1-psychologie-tcc-1">15.Stage Clinique &amp; Analyse et régulation des pratiques professionnelles, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 18h TD (1h30 x 12 semaines)</p>
+<p>Descriptif : Observation et compréhension du fonctionnement institutionnel. Dans le prolongement des acquis du premier semestre, l’étudiant approfondira sa connaissance du fonctionnement des institutions et de leurs règles. Théorisation de la pratique de l’étudiant, analyse des fonctionnements groupaux et institutionnels. Repérage de certains éléments de transfert et de contre-transfert.</p>
+</section>
+<section id="techniques-des-tests-projectifs-thématiques-m1-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="techniques-des-tests-projectifs-thématiques-m1-psychologie-tcc">16.Techniques des tests projectifs thématiques, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 18h TD (1h30 x 12 semaines)</p>
+<p>Descriptif : Connaissance des fondements théoriques et cliniques des tests projectifs thématiques (Test d’Aperception Thématique et Children Apperception Test). Passation et cotation des tests projectifs thématiques et identification des principales caractéristiques du contenu et de la forme des récits et leurs liens avec l’organisation de la vie psychique du sujet.</p>
+</section>
+<section id="initiation-à-la-recherche-clinique-m1-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="initiation-à-la-recherche-clinique-m1-psychologie-tcc">17.Initiation à la recherche clinique, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 18h TD (1h30 x 12 semaines)</p>
+<p>Descriptif : Recherche bibliographique. Analyse de la littérature et élaboration d’une hypothèse et d’une méthode. L’objectif principal est d’amener les étudiants à acquérir des savoir-faire (bibliographiques, méthodologiques, etc.) nécessaires à l’élaboration d’un projet de recherche : délimiter un problème de recherche clinique ; rassembler l’information pertinente par différentes méthodes de recherche bibliographique : interroger les bases de données, sélectionner les informations et les travaux pertinents ; formuler un problème de recherche et / ou une hypothèse en fonction de l’état de la question tel qu’il ressort d’une analyse de la littérature spécialisée ; déterminer la méthode (sujets, instruments, procédure) propre à mettre l’hypothèse à l’épreuve.</p>
+</section>
+<section id="initiation-à-la-recherche-clinique-approfondissement-m1-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="initiation-à-la-recherche-clinique-approfondissement-m1-psychologie-tcc">18.Initiation à la recherche clinique Approfondissement, M1 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 18h TD (1h30 x 12 semaines)</p>
+<p>Descriptif : Recueil et analyse des données cliniques. Application d’une méthode de recherche à un ou plusieurs patients. Problèmes méthodologiques, éthiques et cliniques du recrutement des patient(e)s d’une recherche clinique. Rédaction d’une étude de cas ou de la présentation de résultats quantitatifs et d’une discussion du cas ou des résultats, sous forme d’une note de recherche clinique.</p>
+</section>
+<section id="méthodes-dévaluation-des-psychothérapies-m2-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="méthodes-dévaluation-des-psychothérapies-m2-psychologie-tcc">19.Méthodes d’évaluation des psychothérapies, M2 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Oui, 20h CM (2h x 10 semaines) puis 24h TD (2h x 12 semaines).</p>
+<p>Descriptif : Facteurs communs et spécifiques d’efficacité des psychothérapies. Intégration et éclectisme en psychothérapie. Types d’évaluation des psychothérapies : études de terrain, méta-analyses, revues Cochrane. Méthodologies permettant de valider les traitements psychothérapiques : tailles d’effets et méta-analyses. Models evidenced-based et approches contextuelles. Plans expérimentaux et quasi-expérimentaux (plans à groupes « randomisés » et non « randomisés ») ; plans à séries simples et multiples ; notion de validité interne /externe ; aspects statistiques. Illustration par la présentation d’études d’efficacité de psychothérapies pour des troubles ou situations spécifiques : Prise en charge du TDAH chez l’adulte ; Prises en charge TCC de l’enfant et études d’efficacité (exemple d’un programme pour traiter l’anxiété de séparation) ; Les études de cas uniques : intérêts et limites ; Prise en charge en TCC de groupe pour la phobie sociale ; personnalité et changement au cours de la thérapie TCC ; Pleine conscience dans les addictions ; Présentation d’une étude européenne sur l’efficacité des actions de réhabilitation psychosociale en psychiatrie.</p>
+<p><strong>Bibliographie :</strong></p>
+<p>Bouvard et Cottraux : protocoles et échelles d’évaluation en psychiatrie et en psychologie, Masson, 2010. (le premier chapitre est sur l’évaluation des psychothérapies)</p>
+<p>Huber, W. (1993). Les psychothérapies : quelle thérapie pour quel patient ? Paris, Nathan.</p>
+<p>Inserm (dir.). Psychothérapie : Trois approches évaluées. Rapport. Paris : Les éditions Inserm, 2004, XII- 553 p.&nbsp;- (Expertise collective). - <a href="http://hdl.handle.net/10608/146" class="uri">http://hdl.handle.net/10608/146</a></p>
+<p>Lambert, M.J. (2004). Handbook of Psychotherapy and behavior change. A.E. Bergin and S.L.</p>
+<p>Norcross, J. C. (2002). Psychotherapy relationships that work: Therapist contributions and responsiveness to patients. New York: Oxford University Press.</p>
+<p>Wampold, B. E. (2001). The great psychotherapy debate: Models, methods, and findings.</p>
+</section>
+<section id="données-récentes-de-la-recherche-en-psychopathologie-de-lenfant-et-de-ladulte-m2-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="données-récentes-de-la-recherche-en-psychopathologie-de-lenfant-et-de-ladulte-m2-psychologie-tcc">20.Données récentes de la recherche en psychopathologie de l’enfant et de l’adulte, M2 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Oui, 20h CM (2h x 10 semaines) puis 24h TD (2h x 12 semaines).</p>
+<p>Descriptif : Devenir à long terme des troubles psychopathologiques des enfants et des adolescents. Les résultats des études longitudinales prospectives de cohorte : évolution des troubles, validité prédictive des comorbidités. Nouvelles méthodologie et nouvelles données de la recherche dans le cadre de la prise en charge des troubles psychiques chez l’adulte : de la question de la transition dans la pathologie aux techniques ciblées d’intervention.</p>
+</section>
+<section id="actualité-de-la-recherche-en-psychothérapie-m2-psychologie-tcc-neuropsychologie" class="level5">
+<h5 class="anchored" data-anchor-id="actualité-de-la-recherche-en-psychothérapie-m2-psychologie-tcc-neuropsychologie">21.Actualité de la recherche en psychothérapie, M2 Psychologie TCC + Neuropsychologie</h5>
+<p>Responsabilité &amp; volume : Oui, 24h CM (2h x 12 semaines).</p>
+<p>Descriptif : et enseignement s’organisera en deux grandes parties. La première visera a présenter l’actualité de la recherche des modélisations en neurocognition développementale et de leurs implications dans le cadre de psychothérapies comportementales et cognitives et de remédiations cognitives. Dans une seconde partie, seront abordés les grands enjeux liés à la mesure des effets et à l’évaluation des psychothérapies. Une partie pratique sera également présente avec une introduction aux méthodes et outils des revues systématiques de la littérature et des meta-analyses ainsi que des approches idiographiques telles que les analyses de cas uniques.</p>
+<p><strong>Bibliographie :</strong></p>
+<p>Lysaker, P. H., Minor, K. S., Lysaker, J. T., Hasson-Ohayon, I., Bonfils, K., Hochheiser, J., &amp; Vohs, J. L. (2019). Metacognitive function and fragmentation in schizophrenia: Relationship to cognition, self-experience and developing treatments. Schizophrenia Research: Cognition, 100142. https://doi.org/10.1016/j.scog.2019.100142</p>
+<p>Despland, J. N., De Roten, Y., &amp; Kramer, U. (2019). L’évaluation des psychothérapies. Lavoisier.</p>
+<p>Atkinson, L. Z., &amp; Cipriani, A. (2018). How to carry out a literature search for a systematic review: a practical guide. BJPsych Advances. <a href="https://doi.org/10.1192/bja.2017.3" class="uri">https://doi.org/10.1192/bja.2017.3</a></p>
+</section>
+<section id="mesures-et-statistiques-pour-psychologues-cliniciens-m1-m2-option-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="mesures-et-statistiques-pour-psychologues-cliniciens-m1-m2-option-psychologie-tcc">22.Mesures et statistiques pour psychologues cliniciens, M1+ M2 (Option) Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Oui, 18h TD (9h x 2 semaines).</p>
+<p>Descriptif : Cet enseignement cherchera à introduire auprès des psychologues cliniciens des connaissances pratiques de psychométrie sous un abord statistique. Ce cours sera conduit selon une approche didactique et appliquée sur R &amp; Rstudio avec des exemples en psychologie clinique notamment autour des analyses factorielles d’échelles (exploratoires et confirmatoires), des questions relatives à l’unidimensionalité ou non des outils (analyses bi-factorielles) et de l’utilisation des scores (scores latents, invariance de mesures et comparaisons de groupes). Enfin une introduction aux modélisations longitudinales et complexes en réseaux sera proposée.</p>
+<p><strong>Bibliographie :</strong></p>
+<p>Schmitt, T. a. (2011). Current Methodological Considerations in Exploratory and Confirmatory Factor Analysis. Journal of Psychoeducational Assessment, 29(4), 304–321. https://doi.org/10.1177/0734282911406653</p>
+<p>van de Schoot, R., Lugtig, P., &amp; Hox, J. (2012). A checklist for testing measurement invariance. European Journal of Developmental Psychology, 9(4), 486–492. https://doi.org/10.1080/17405629.2012.686740</p>
+<p>Gu, H., Wen, Z., &amp; Fan, X. (2017). Structural validity of the Machiavellian Personality Scale : A bifactor exploratory structural equation modeling approach. Personality and Individual Differences, 105, 116‑123. https://doi.org/10.1016/j.paid.2016.09.042</p>
+<p>Berlin, K. S., Parra, G. R., &amp; Williams, N. a. (2014). An introduction to latent variable mixture modeling (part 2) : Longitudinal latent class growth analysis and growth mixture models. Journal of pediatric psychology, 39(2), 188‑203. https://doi.org/10.1093/jpepsy/jst085</p>
+<p>Borsboom, D. (2017). A network theory of mental disorders. World Psychiatry, 16(1), 5‑13. <a href="https://doi.org/10.1002/wps.20375" class="uri">https://doi.org/10.1002/wps.20375</a></p>
+</section>
+<section id="communiquer-en-anglais-à-loral-et-à-lécrit-m2-psychologie-recherche" class="level5">
+<h5 class="anchored" data-anchor-id="communiquer-en-anglais-à-loral-et-à-lécrit-m2-psychologie-recherche">23.Communiquer en anglais à l’oral et à l’écrit, M2 Psychologie Recherche</h5>
+<p>Responsabilité &amp; volume : Oui, 24h TD (2h x 12 semaines).</p>
+<p>Descriptif : Dans ce cours les étudiants apprennent à lire et à comprendre des articles scientifiques et à écouter et à comprendre des présentations de recherches en langue anglaise. Les discussions, en anglais, de ces articles et présentations leur permettent d’améliorer leur expression orale. Ils et elles apprennent également à rédiger leur propre recherche sous forme d’un article scientifique et à le présenter sous forme d’un PowerPoint.</p>
+</section>
+<section id="research-seminar-in-clinical-psychology-science-m2-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="research-seminar-in-clinical-psychology-science-m2-psychologie-tcc">24.Research Seminar in Clinical Psychology Science, M2 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Oui, 18h TD (2h x 9 semaines).</p>
+<p>Descriptif : This Research Seminar in English is composed of two distinct parts. The first part is clearly inspired by the ReproducibiliTea journal clubs arizing in several universities around the world. This short course of 6 sessions will examine topics related to reproducibility, open science, research quality, or good/bad research practices in clinical psychology or within science in general. Students will be given a list of research papers and podcasts on this topic to be discussed with the group. In the second part of this course, we will explore Evidence-Based Practice in Clinical Psychology, the integration of the best available research with clinical expertise in the context of patient characteristics, culture and preferences. Systematic reviews and meta-analysis will be discussed with a special focus on the Cochrane collaboration and reviews.</p>
+</section>
+<section id="connaître-les-thérapies-evidence-based-m2-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="connaître-les-thérapies-evidence-based-m2-psychologie-tcc">25.Connaître les thérapies «evidence based», M2 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 24h CM (2h x 12 semaines).</p>
+<p>Descriptif : Lors de ce cours, les étudiants prendront connaissance de la plupart des psychothérapies disponibles actuellement, basées sur la preuve (evidence based) ou s’inscrivant dans cette démarche, complétant ainsi le cours : ” Intervenir en TCC : connaître les grandes approches spécifiques”. Les étudiants auront une information, délivrée par des spécialiste du domaine, leur permettant d’évaluer l’intérêt, les indications et les limites de ses approches. Les thérapies étudiées seront : l’hypnose, les thérapies systémiques, l’EMDR, l’ICV, la thérapie interpersonnelle, la remédiation cognitive…</p>
+</section>
+<section id="troubles-émotionnels-recherches-cliniques-empiriques-m2-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="troubles-émotionnels-recherches-cliniques-empiriques-m2-psychologie-tcc">26.Troubles émotionnels : recherches cliniques empiriques, M2 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 24h TD (2h x 12 semaines).</p>
+<p>Descriptif : L’enseignement s’articule autour des présentations des recherches des membres du paradigme suivant : Psychologie clinique empirique et TCC.</p>
+<p>Nous aborderons :</p>
+<ul>
+<li><p>L’évaluation des troubles psychopathologiques des enfants et des adolescents, ainsi que de leurs parents.</p></li>
+<li><p>Les méthodes d’évaluation dimensionnelle et catégorielle des troubles psychopathologiques.</p></li>
+<li><p>L’évaluation des prises en charge de troubles anxieux, des troubles dépressifs et des dimensions de la personnalité.</p></li>
+<li><p>L’évaluation des effets et des actions de réhabilitation psychosociale en psychiatrie sur des personnes handicapées par leurs troubles psychiques.</p></li>
+<li><p>L’évaluation des addictions et leur prise en charge.</p></li>
+<li><p>L’évaluation de la validité des méthodes projectives, l’exemple du TAT, méthode SCORS.</p></li>
+<li><p>Les entretiens motivationnels et la psychologie positive.</p></li>
+<li><p>L’efficacité des psychothérapies, ingrédients actifs et facteurs prédictifs d’efficacité, notamment des nouvelles méthodes de psychothérapie (l’entretien motivationnel, la psychothérapie positive, la thérapie de la « mindfulness »).</p></li>
+</ul>
+</section>
+<section id="pratique-de-la-recherche-clinique-m2-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="pratique-de-la-recherche-clinique-m2-psychologie-tcc">27.Pratique de la recherche clinique, M2 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 6h TD.</p>
+<p>Descriptif : Devenir à long terme des troubles psychopathologiques des enfants et des adolescents. Les résultats des études longitudinales prospectives de cohorte : évolution des troubles, validité prédictive des comorbidités. Nouvelles méthodologie et nouvelles données de la recherche dans le cadre de la prise en charge des troubles psychiques chez l’adulte : de la question de la transition dans la pathologie aux techniques ciblées d’intervention.</p>
+</section>
+<section id="pratique-de-la-recherche-clinique-approfondissement-m2-psychologie-tcc" class="level5">
+<h5 class="anchored" data-anchor-id="pratique-de-la-recherche-clinique-approfondissement-m2-psychologie-tcc">28.Pratique de la recherche clinique Approfondissement, M2 Psychologie TCC</h5>
+<p>Responsabilité &amp; volume : Non, 6h TD.</p>
+<p>Descriptif : L’étudiant termine le recueil des données cliniques, les analyse, les interprète, les discute et rédige le mémoire définitif. Ce mémoire pourra être élaboré sous la forme d’un article scientifique. Le mémoire devra également exposer les prolongements possibles pour une recherche de niveau doctorat (thèse). Ainsi, l’étudiant mettra en place le projet de recherche susceptible d’évoluer vers une thèse.</p>
+</section>
+<section id="biais-expérimentaux-et-plans-dexpériences-m2-psychologie-recherche" class="level5">
+<h5 class="anchored" data-anchor-id="biais-expérimentaux-et-plans-dexpériences-m2-psychologie-recherche">29.Biais expérimentaux et plans d’expériences, M2 Psychologie Recherche</h5>
+<p>Responsabilité &amp; volume : Non, 24h TD (2h x 12 semaines).</p>
+<p>Descriptif : Toute recherche en psychologie implique de choisir un plan de recherche qui limite la possibilité de confusion des variables. Dans un premier temps, on mettra en perspective le statut des variables impliquées (indépendantes/dépendantes, modératrices/médiatrices, antécédentes/conséquences, manipulées/observées, intra/inter-sujets, aléatoires/fixées, etc.). Dans un second, on examinera les principaux plans de recherche quais-expérimentaux et expérimentaux qui présentent les meilleurs compromis pour maximiser la validité interne. Une seconde partie sera consacrée aux biais méthodologiques relatifs au recueil de l’information sous forme verbale (questionnaires notamment), et les moyens de les maîtriser.</p>
+</section>
+</section>
+<section id="niveau-doctorat" class="level4">
+<h4 class="anchored" data-anchor-id="niveau-doctorat">Niveau Doctorat</h4>
+<section id="analyse-de-données-textuelle-analyse-des-discours-assistée-par-ordinateur-ou-pas." class="level5">
+<h5 class="anchored" data-anchor-id="analyse-de-données-textuelle-analyse-des-discours-assistée-par-ordinateur-ou-pas.">30.Analyse de données textuelle : analyse des discours assistée par ordinateur ou pas.</h5>
+<p>Responsabilité &amp; volume : Non, 15h CM puis TD.</p>
+<p>Descriptif :Le recours à des outils informatiques et méthodologie manuelle pour analyser des données textuelles indispensable dans le champ de la recherche en Sciences Humaines et Sociales. Selon les cas, ils permettent une approche automatique, semi-automatique ou encore manuelle des corpus. Cet enseignement vise à montrer aux étudiants quels partis ils peuvent tirer de ces techniques et méthodologies qu’ils se situent dans une démarche compréhensive ou expérimentale. Pourquoi recourir à un logiciel ? Quels usages est-il possible d’en faire ? Quels sont les intérêts et limites des méthodologies proposées ? En quoi facilitent-ils la production et l’interprétation des résultats ? pourquoi choisir telle ou telle approche méthodologique ?</p>
+<p>Ce cours comprend une première partie générale sur l’analyse du discours dans le champ de la recherche centré davantage sur l’entretien, et une présentation d’1 logiciel (Iramuteq). La présentation de ce logiciel permettra d’aborder une analyse « en aveugle ».</p>
+<p>Cet enseignement est réservé aux étudiants, quelle que soit leur discipline, qui vont réaliser ou ont réalisé des entretiens de recherche ou doivent, dans le cadre de leur thèse, analyser un texte.</p>
+<ol type="1">
+<li><strong>Présentation Iramuteq</strong></li>
+</ol>
+<p>Ce logiciel est un outil lexicométrique facilitant l’exploration automatique des données textuelles et qui permet de croiser plusieurs niveaux de structuration du corpus. Yannick Morvan (6 heures)</p>
+<ol start="2" type="1">
+<li><strong>Présentation de 2 méthodologies d’analyse qualitative inductive</strong> qui visent à construire des théories non pas à partir d’hypothèses prédéterminées mais à partir des données du terrain et de situation de terrain que le chercheur a collecté ou peut collecter.</li>
+</ol>
+<p>La méthodologie IPA (Interpretative Phenomenological Analysis, (Smith, Flowers, Larkin, 2009)</p>
+<p>La Grounded theory ou la théorie ancrée (Paillé, 1994) ou la Méthodologie de la théorisation enracinée (Luckerhoff et Guillemette, 2012) 3 heures pour l’IPA : présentation et illustrations pratiques (Feldman) et 4 heures pour la GT : présentation et illustrations pratique</p>
+<ol start="3" type="1">
+<li><strong>Présentation des principes généraux de l’analyse des discours - cas des entretiens collectifs de la recherche.</strong></li>
+</ol>
+<p>Il s’agira lors de cette séance de présenter les différents supports théoriques et méthodologiques à disposition (avec des perspectives dialogiques, socio-communicationnelles, interactionnistes, socio-linguistiques, …), pour réaliser une analyse de discours collectifs recueillis par exemple lors de focus group ou de réunions. En effet, l’attention sera portée sur le contexte collectif d’énonciation afin d’analyser notamment les mouvements d’influences, de contagion, d’opposition entre les membres d’un collectif en situation de communication et/ou de co-production.</p>
+<ol start="4" type="1">
+<li><strong>Présentation de la méthodologie de l’analyse de contenu thématique.</strong></li>
+</ol>
+<p>Après un rappel de la définition et du cadre de l’entretien clinique de recherche individuel, la méthodologie de l’analyse de contenu thématique selon L. Bardin (2013) sera présentée : lecture flottante, puis procédure de l’analyse thématique, et enfin écriture de l’analyse.</p>
+</section>
+<section id="equations-structurelles-avec-r-introduction-aux-analyses-factorielles-et-aux-modélisation-longitudinales-doctorat-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="equations-structurelles-avec-r-introduction-aux-analyses-factorielles-et-aux-modélisation-longitudinales-doctorat-psychologie">31.Equations structurelles avec R : Introduction aux analyses factorielles et aux modélisation longitudinales, Doctorat Psychologie</h5>
+<p>Responsabilité &amp; volume : Oui, 7h TD.</p>
+<p>Découverte de différents modèles d’analyse de données quantitatives par équations structurelles : analyses exploratoires, confirmatoires et en courbes latentes. Initiation à l’utilisation de ces 3 modèles d’analyses.</p>
+<p>Structural Equation Modeling (SEM) Basics – L’objectif de cet enseignement sera de présenter les principes des modélisations en équations structurelles (MES). Il s’agit d’une introduction aux conceptions théoriques (2h) et à la mise en pratique de ce type d’analyse (2h) sous R avec Lavaan.</p>
+<p>Latent Growth Modeling (LGM) Basics (3h) – Y.Morvan – L’objectif de cet enseignement sera de présenter les modèles d’analyse de données longitudinales par équations structurelles à l’aide des modélisations LGM et GMM. Il s’agit d’une introduction aux conceptions théoriques (2h) et à la mise en pratique de ce type d’analyse (1h).</p>
+</section>
+<section id="science-ouverte-et-ethique-et-de-la-recherche-doctorat-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="science-ouverte-et-ethique-et-de-la-recherche-doctorat-psychologie">32.Science Ouverte et Ethique et de la Recherche, Doctorat Psychologie</h5>
+<p>Responsabilité &amp; volume : Oui, 3h TD.</p>
+<p>Descriptif : Qu’est-ce que sont les sciences ouvertes ? En quoi ambitionnent-elles de favoriser l’éthique de la recherche ? Durant ce séminaire, les doctorants seront confrontés aux difficultés du travail scientifique et notamment les questions relatives à la crise de reproductibilité ainsi qu’aux pratiques de recherches discutables et aux fraudes scientifiques. Le terme de sciences ouvertes sera présenté sous ses différents angles et comme pratique qui favorise une révolution dite de crédibilité, essentielle à l’éthique scientifique.</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+</section>
+<section id="b.-reims-champagne-ardenne-2010-2013" class="level3">
+<h3 class="anchored" data-anchor-id="b.-reims-champagne-ardenne-2010-2013">B. Reims Champagne Ardenne (2010-2013)</h3>
+<section id="niveau-licence-1" class="level4">
+<h4 class="anchored" data-anchor-id="niveau-licence-1">Niveau Licence</h4>
+<section id="sémiologie-l1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="sémiologie-l1-psychologie">1.Sémiologie, L1 Psychologie</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan &amp; Catherine Potard, CM + TD</p>
+<p>Descriptif : La sémiologie relève de l’analyse et de l’étude des signes et symptômes cliniques, mais également de la manière de les recueillir afin d’établir un diagnostic. Les 12h de CM de Y.Morvan consisteront à étudier les besoins sous-jacents de la sémiologie pour la clinique actuelle et des enjeux vis-à-vis des systèmes de classifications (ex utilisation du DSM-IV et discussions autour du DSM-V). Le cours abordera également les fondements des systèmes de classifications et de la sémiologie dans une perspective historique afin d’en éclairer les débats épistémologiques générés par la confrontation de différentes approches utilisées en psychopathologie et en psychologie clinique. Les TD porteront sur l’étude de textes théoriques illustrant ces débats épistémologiques (Foucault, Gori, Widlöcher…).</p>
+</section>
+<section id="psychopathologie-de-ladulte-l2-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="psychopathologie-de-ladulte-l2-psychologie">2.Psychopathologie de l’adulte, L2 Psychologie</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan &amp; Catherine Potard, CM + TD</p>
+<p>Descriptif : Les 12h de CM de Y. Morvan, porteront sur les troubles psychotiques dans une approche comparative entre l’approche descriptive du manuel diagnostique et statistique des troubles mentaux (DSM IV TR) et l’approche européenne basée sur la distinction entre psychoses dissociatives et non dissociatives. Les approches dimensionnelles et catégorielles seront présentées ainsi que la distinction entre schizophrénie et psychoses chroniques systématisées. Les TD porteront sur l’apprentissage des méthodes permettant d’étudier et d’analyser des vignettes cliniques. Ces vignettes seront des cas cliniques présentés dans le cadre d’approches diversifiées en psychopathologie selon différents « grands auteurs », mais également diversifiées, car intervenant à différents moments au cours du temps en fonction de l’évolution historique des concepts cliniques.</p>
+</section>
+<section id="méthodologies-cliniques-l2-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="méthodologies-cliniques-l2-psychologie">3.Méthodologies Cliniques, L2 Psychologie</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan, TD</p>
+<p>Descriptif : Ce cours de méthodologie clinique fait suite à l’introduction en méthodologie clinique suivie en première année. Les 12h de TD seront plus particulièrement focalisées sur l’entretien et la conduite de l’entretien clinique. Les principes d’alliance thérapeutique et d’engagement, de relation asymétrique en entretien, de transfert et de contre-transfert, de recueil anamnéstique ainsi que la formulation d’une problématique psychothérapeutique seront abordés. Nous verrons également les principaux éléments constitutifs d’un compte-rendu. Enfin, nous aborderons, autour de cas cliniques, quelques situations concrètes ou différentes erreurs commises par le clinicien à différents moments de la relation thérapeutique, pouvant amener à interrompre le suivi psychothérapeutique.</p>
+</section>
+<section id="travaux-détude-et-de-recherche-ter-l3-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="travaux-détude-et-de-recherche-ter-l3-psychologie">4.Travaux d’étude et de recherche TER, L3 Psychologie</h5>
+<p>Descriptif : Les étudiants seront invités à travailler sur « la santé mentale des étudiants » et notamment :</p>
+<ul>
+<li>l’évaluation de la prévalence des problématiques psychologiques chez les étudiants (conduites à risques, consommations de toxiques, risques psychopathologiques c’est à dire dépression, troubles anxieux, TCA, hallucinations…)</li>
+<li>la mesure du recours aux professionnels de santé (médecin généraliste, « psy »)</li>
+<li>l’impact et du retentissement de leurs difficultés sur leur qualité de vie et leurs résultats universitaires</li>
+</ul>
+</section>
+</section>
+<section id="niveau-master-1" class="level4">
+<h4 class="anchored" data-anchor-id="niveau-master-1">Niveau Master</h4>
+<section id="travaux-détude-et-de-recherche-ter-m1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="travaux-détude-et-de-recherche-ter-m1-psychologie">5.Travaux d’étude et de recherche TER, M1 Psychologie</h5>
+<p>Descriptif : Trois axes de recherche sont proposés. L’étudiant est invité à développer sa propre problématique de recherche dans le cadre de l’un de ces trois axes :</p>
+<p><strong>Axe n°1</strong> : Facteurs de risque et facteurs de transition dans : l’entrée dans la pathologie psychiatrique / l’évolution des troubles psychiatriques</p>
+<p><strong>Axe n°2 :</strong> Parcours de soins des personnes présentant une symptomatologie psychiatrique.</p>
+<p><strong>Axe n°3 :</strong> Cannabis et cognition</p>
+</section>
+<section id="méthodologies-cliniques-m1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="méthodologies-cliniques-m1-psychologie">6.Méthodologies Cliniques, M1 Psychologie</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan, CM + TD</p>
+<p>Descriptif :Cet enseignement abordera la spécificité de la pratique et de la recherche en psychologie clinique notamment de ce que l’on appelle « la clinique armée ». Cet enseignement présentera principalement certains tests et échelles qui sont utilisé par les psychologues cliniciens. Parmi les outils présentés, nous verrons :</p>
+<ul>
+<li>les tests de personnalité et plus précisément le MMPI2,</li>
+<li>les échelles d’évaluation de la symptomatologie
+<ul>
+<li>générale (BPRS, SCL-90, GHQ, RDC)</li>
+<li>dépressive (ERD, Plaisir-Déplaisir, BDI-13, HAD)</li>
+<li>psychotique (PANSS, SAPS &amp; SANS)</li>
+</ul></li>
+<li>Les échelles de fonctionnement (ESM, EGF)</li>
+<li>les échelles de qualité de vie (QLS, S-QoL, SF36, WHOQOL-26)</li>
+</ul>
+</section>
+<section id="troubles-de-la-personnalité-et-troubles-de-lhumeur-m1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="troubles-de-la-personnalité-et-troubles-de-lhumeur-m1-psychologie">7.Troubles de la personnalité et Troubles de l’humeur, M1 Psychologie</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan, CM + TD</p>
+<p>Descriptif :Cet enseignement est structuré en deux parties : une première partie qui porte sur les troubles de la personnalité et une seconde partie qui porte sur les troubles de l’humeur. Bien qu’évoqués depuis l’Antiquité par les écrivains et moralistes, les troubles de la personnalité n’ont suscité qu’un intérêt tardif en psychiatrie. Depuis la deuxième moitié du 20ème siècle en revanche, le concept connaît un véritable essor en clinique et dans la recherche. Cet enseignement doit permettre à l’étudiant d’acquérir des bases solides concernant le concept de personnalité et les troubles qui y sont associés. Nous discuterons alors des aspects cliniques, psychopathologiques et psychothérapeutiques propres à ces troubles.</p>
+<p>Les troubles de l’humeur représentent les troubles psychiques les plus fréquents. Depuis plusieurs années, la psychopathologie a largement progressé dans la description séméiologique, l’analyse psychopathologique et étiopathogénique de ces troubles. Nous aborderons les différentes pathologies appartenant aux troubles de l’humeur (épisode dépressif majeur, trouble bipolaire, trouble dysthymique, <em>etc</em>.) en mettant l’accent sur les aspects séméiologiques, psychopathologiques et étiopathogéniques.</p>
+</section>
+<section id="psychopathologies-des-psychoses-de-ladulte-m1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="psychopathologies-des-psychoses-de-ladulte-m1-psychologie">8.Psychopathologies des psychoses de l’adulte, M1 Psychologie</h5>
+<p>Responsabilité &amp; volume : Chrystel Besche (Yannick Morvan-2010), CM + TD</p>
+<p>Descriptif : Dans ce cours, nous aborderons les troubles psychotiques de l’adulte selon une classification internationale (DSM-IVTR) mais aussi selon les spécificités de la psychopathologie française concernant la conception clinique des troubles schizophréniques qui occuperont une grande partie de cet enseignement. Selon ce schéma, seront présentés et comparés, d’une part, les troubles psychotiques aigus vs.&nbsp;chroniques et, d’autre part, les psychoses dissociatives vs.&nbsp;les psychoses non dissociatives. L’accent sera mis sur l’analyse sémiologique, psychopathologique dans une perspective de diagnostic différentiel. Seront également abordées les méthodes actuelles d’évaluation et de prise en charge des troubles psychotiques de l’adulte au regard des modèles théoriques de référence.</p>
+</section>
+<section id="phénomènes-de-transition-en-psychopathologie" class="level5">
+<h5 class="anchored" data-anchor-id="phénomènes-de-transition-en-psychopathologie">9.Phénomènes de transition en psychopathologie</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan (2h x 12 semaines)</p>
+<p>Descriptif : Il peut être difficile de distinguer le début d’un trouble mental des différents changements transitoires, évolutifs et normaux concernant les émotions et le comportement, et ce, particulièrement pour les populations jeunes ou âgées. La question se pose constamment dans ce cadre : comment opérer une distinction entre une personne qui éprouve simplement des difficultés, et une autre qui développe un trouble mental pour lequel une prise en charge semble nécessaire ? L’enseignement portera sur l’identification des facteurs de risque et de transition dans le cadre des pathologies dépressives et schizophréniques, nous aborderons la psychopathologie dans une perspective développementale et dynamique en interaction avec l’environnement.</p>
+</section>
+<section id="les-états-mentaux-à-risques-m2-psychologie-des-perturbations-cognitives-ppc" class="level5">
+<h5 class="anchored" data-anchor-id="les-états-mentaux-à-risques-m2-psychologie-des-perturbations-cognitives-ppc">10.Les états mentaux à risques, M2 Psychologie des Perturbations Cognitives (PPC)</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan (2h x 6 semaines), CM</p>
+<p>Descriptif : Il peut être difficile de distinguer le début d’un trouble mental des différents changements transitoires, évolutifs et normaux concernant les émotions et le comportement, et ce, particulièrement pour les populations jeunes. La question se pose constamment dans ce cadre : comment opérer une distinction entre une personne qui éprouve simplement des difficultés, et une autre qui développe un trouble mental pour lequel une prise en charge semble nécessaire ? L’enseignement portera sur l’identification des facteurs de risque et de transition dans le cadre des états mentaux à risques. Nous aborderons quels sont les outils qui peuvent aider à distinguer ces états (CAARMS) et verront comment la logique de prise en charge est abordée (« staging model » ou modèle de l’« en escalier »). Enfin, nous évoquerons les aspects liés à la prise en charge et notamment l’approche en TCC spécifiquement développé pour les sujets à risque de transition dans la pathologie psychotique.</p>
+</section>
+<section id="traitement-quantitatif-denquêtes-m2-insertion-et-risques-psycho-sociaux-irps" class="level5">
+<h5 class="anchored" data-anchor-id="traitement-quantitatif-denquêtes-m2-insertion-et-risques-psycho-sociaux-irps">11.Traitement quantitatif d’enquêtes, M2 Insertion et Risques Psycho-Sociaux (IRPS)</h5>
+<p>Responsabilité &amp; volume : Yannick Morvan (2h x 6 semaines), TD</p>
+<p>Descriptif :Principe et méthodologie des enquêtes de grandes tailles : de la santé mentale aux risques psycho-sociaux. Cet enseignement s’appuiera sur des cas concrets et des données de gestion des enquêtes ainsi que des moyens pour s’assurer de la bonne qualité des données et du traitement des informations. Enfin, l’enseignement s’attachera à enseigner les outils et méthodes permettant la production efficiente de rapports de synthèses scientifiques et techniques.</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+</section>
+<section id="c.-paris-descartes---paris-cité-2007-2010" class="level3">
+<h3 class="anchored" data-anchor-id="c.-paris-descartes---paris-cité-2007-2010">C. Paris Descartes - Paris Cité (2007-2010)</h3>
+<section id="niveau-licence-2" class="level4">
+<h4 class="anchored" data-anchor-id="niveau-licence-2">Niveau Licence</h4>
+<section id="travail-individuel-supervisé-l1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="travail-individuel-supervisé-l1-psychologie">1.Travail Individuel Supervisé, L1 Psychologie</h5>
+<p>Responsabilité &amp; volume : Romuald Blanc (9h), TD</p>
+<p>Descriptif : L’objectif principal du TIS est de rendre les étudiants les plus autonomes et les plus actifs possible dans la recherche documentaire et plus globalement dans l’acquisition et l’organisation des savoirs. Ceci va s’opérationnaliser, au cours de 6 séances et de nombreuses heures de travail personnel, par la préparation d’un court mémoire. L’enseignant qui est face à son groupe pour la première fois impose le thème à tout le groupe. Il s’agit d’une approche générale sur un thème qui sera abordé selon, au minimum, de deux approches sous-disciplinaires différentes parmi les approches suivantes : différentielle, cognitive, pathologique, clinique, biologique, développementale, sociale, ou historique.</p>
+<p>Choix d’enseignement : Les thèmes suivants sont proposés aux étudiants : <em>Dépression</em> ou <em>Schizophrénie</em>. Mon objectif est de cibler sur des pathologies « bien connues » afin de demander aux étudiants soit :</p>
+<ul>
+<li>un effort d’ouverture en essayant de favoriser une approche « large » c’est-à-dire une recherche impliquant un nombre divers d’approches théoriques (supérieures à 2)</li>
+<li>un effort de précision en essayant de favoriser une approche plus « détaillée » dans le cas d’un choix de deux approches théoriques.</li>
+</ul>
+<p>L’enseignement se focalise ensuite sur l’accompagnement méthodologique, l’organisation et la hiérarchisation du travail pour la rédaction d’un petit mémoire de 6 pages. Au-delà de la nécessaire transmission des « automatismes » liés à la rédaction d’un tel document (recherche documentaire, citations et référencement bibliographique, mise en forme), une attention particulière est portée sur l’aide à l’identification d’une problématique et à son développement autour d’une logique argumentaire afin de favoriser l’appropriation et la nécessaire articulation des connaissances.</p>
+</section>
+<section id="psychopathologie-l1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="psychopathologie-l1-psychologie">2.Psychopathologie, L1 Psychologie</h5>
+<p>Responsabilité &amp; volume : Benoit Verdon (1h30 x12 semaines), TD</p>
+<p>Descriptif <strong>:</strong> L’objectif de l’enseignement est d’introduire les étudiants aux connaissances de base de la psychopathologie et à leur évolution, choisissant pour ce faire d’ancrer cette première approche dans une perspective historique retraçant l’évolution des idées qui ont contribué à sa naissance et à son développement, notamment depuis la fin du XVIIIème siècle jusqu’à nos jours. La découverte de la psychopathologie clinique se fait ainsi à travers l’étude de cas d’auteurs majeurs ayant participé à son développement, autour de trois axes fondamentaux : la sémiologie et la nosographie, l’étiologie, ainsi que les thérapeutiques préconisées. L’étudiant peut arriver ainsi à se représenter l’évolution des considérations sur chaque maladie mentale à partir des « grands » noms qui y sont associés : l’ancrage de la folie dans la médecine avec l’aliénation mentale chez Pinel et Esquirol, son éclatement en plusieurs maladies mentales et leur différenciation endogène / exogène par Kraepelin, l’intérêt de la psychiatrie pour les psychoses et la classification des délires, l’évolution des considérations sur l’hystérie de Charcot à Freud en passant par Janet, le passage du signe au symptôme et la démonstration de la psychogenèse par Freud, l’évolution de la démence précoce à la schizophrénie avec Bleuler. La psychopathologie dynamique et le rôle de l’inconscient sont développés depuis Messmer jusqu’à l’avènement de la psychanalyse avec Freud. Le cours se centre également sur la prise en charge institutionnelle des malades mentaux à travers l’histoire (depuis l’Antiquité grecque en passant par le Moyen-Age pour aboutir à la critique de l’Hôpital Général, la naissance de l’asile et le traitement moral, le mouvement de désinstitutionnalisation et l’anti-psychiatrie). Les TD se construisent autour d’extraits d’études de cas publiées par certains des auteurs.</p>
+</section>
+<section id="analyse-statistique-des-données-en-psychologie-l2-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="analyse-statistique-des-données-en-psychologie-l2-psychologie">3.Analyse statistique des données en psychologie, L2 Psychologie</h5>
+<p>Responsabilité &amp; volume : Denis Corroyer (12h), TD</p>
+<p>Descriptif : L’objectif de cet enseignement est de présenter les procédures d’<em>analyse de données bivariées</em>, que ce soit au niveau descriptif ou inférentiel. À partir de nombreux exemples issus de différents domaines de la Psychologie, on étudiera trois types de liaison : la liaison entre une variable numérique et une variable binaire ou catégorisée, la liaison entre deux variables numériques, et la liaison entre deux variables binaires ou catégorisées. Pour l’étude de la liaison entre une variable numérique et une variable catégorisée (ou binaire), l’analyse descriptive abordera les notions de comparaison de moyennes, et de décomposition de la variance. Les tests de signification <em>F</em> et <em>T</em> seront présentés lors de l’analyse inférentielle. Pour ce qui concerne la liaison entre deux variables numériques, après avoir analysé le nuage de points bivarié, on présentera le coefficient de corrélation linéaire (étude descriptive et inférentielle), ainsi que la régression linéaire (droite de régression, analyse des résidus, du coefficient de détermination). L’étude de la liaison entre deux variables catégorisées (ou binaires) amènera à analyser des tableaux de contingence, tant au niveau descriptif (étude des différents profils, notions d’effectifs théoriques, d’écarts à l’indépendance, d’attraction-répulsion et présentation du <em>Phi2</em>) qu’au niveau inférentiel (tests <em>Khi2 de Pearson et Mac Nemar</em>).</p>
+</section>
+</section>
+<section id="niveau-master-2" class="level4">
+<h4 class="anchored" data-anchor-id="niveau-master-2">Niveau Master</h4>
+<section id="analyse-informatique-des-données-en-psychologie-m1-psychologie" class="level5">
+<h5 class="anchored" data-anchor-id="analyse-informatique-des-données-en-psychologie-m1-psychologie">4.Analyse informatique des données en psychologie, M1 Psychologie</h5>
+<p>Responsabilité &amp; volume : Denis Corroyer, (20h), TD</p>
+<p>Descriptif : L’UE STAT est composée de 3 modules (ADC, LVN, VAR). L’étudiant choisit deux modules parmi trois, en accord avec l’enseignant Responsabilité &amp; volume de son mémoire de recherche. Chaque module comprend 10 heures de cours magistraux et 10 heures de travaux dirigés. Ces travaux dirigés ont lieu en salle informatique. Ils portent sur l’utilisation des logiciels statistiques et visent à autonomiser les étudiants dans l’analyse des données de leur mémoire de recherche.</p>
+<p>Différents enseignements du TD : (extrait du plan des séances de TD distribués aux chargés d’enseignement par le Responsabilité &amp; volume de l’enseignement)</p>
+<ul>
+<li>Saisie de différents types de données avec un tableur. Saisie des métadonnées. Sauvegarde des fichiers. Explorateur Windows. Copier-coller depuis Excel vers Word.</li>
+<li>Utilisation d’un tableur pour coder des données. Interface entre le tableur et les différents logiciels statistiques. Création de bases de données aux différents formats. Recodages simples (sommes, moyennes, différences, calcul des âges, dérivation de Protocole Dérivé Pertinent). Vérification des données (tri à plat par tableau croisé dynamique).</li>
+<li>Import d’un fichier Excel. Saisie des métadonnées (noms longs, type des variables). Analyses univariées (variables qualitative/quantitative). Analyse de la liaison entre deux variables numériques (graphe de corrélation, corrélation, Test t, Intervalle de Confiance, régression simple).</li>
+<li>Import d’un fichier Excel dans un logiciel statistique. Descripteurs et Métadonnées ; T de Student ; Analyse de la variance sur des structures élémentaires (S&lt;G2&gt; ; S*T2 et S&lt;G2&gt;*T2) ; Indices de taille d’effet.</li>
+<li>Analyse de la variance sur une structure complexe. Tailles d’effets. Intervalle de confiance. Bayésien.</li>
+<li>Liaison entre deux variables catégorisées. Analyse d’un tableau de contingence. Analyses locales et globale. Inférence. Analyse des correspondances (AC).</li>
+<li>Analyse en composantes principales (ACP).</li>
+<li>Classification automatique (CAH).</li>
+<li>Régression simple et multiple. Comparaison de coefficients de corrélation.</li>
+<li>Tris à plat, Codage disjonctif, Analyse des correspondances multiples (ACM).</li>
+</ul>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+</section>
+</section>
+<section id="évaluation-des-enseignements-et-de-lenseignant" class="level2">
+<h2 class="anchored" data-anchor-id="évaluation-des-enseignements-et-de-lenseignant">Évaluation des enseignements et de l’enseignant</h2>
+<p>En tant que membre d’une commission à l’université sur l’évaluation des enseignements (tant en tant qu’étudiant dans les années 2000 qu’en tant qu’enseignant-chercheur en 2015-2016), la mise en place dès 2015 d’une évaluation quantitative et qualitative de mes enseignements ainsi qu’en tant qu’enseignant m’est apparu très importante.</p>
+<p>La logique n’est pas celle d’une évaluation rigide, mais de permettre un retour ou “feed-back” systématique à la fin des enseignements dispensés (et avant examens) pour les étudiants qui le souhaitent, et ce de manière anonyme. Je lis systématiquement toutes les évaluations individuelles (à l’aide d’un système d’alerte par mail) dans la mesure où l’évaluation est réalisée avec le logiciel Limesurvey et les données sont stockées à l’université Paris Nanterre.</p>
+<p>Une analyse mixte (quantitative et qualitative) des données a été réalisée à partir de 1 642 réponses brutes collectées depuis l’année universitaire 2015-2016 est présentée ci-dessous.</p>
+<section id="résultats-quantitatifs" class="level3">
+<h3 class="anchored" data-anchor-id="résultats-quantitatifs">Résultats quantitatifs</h3>
+<p>L’ensemble des analyses quantitatives reposent sur des réponses complètes sur l’ensemble des quatre variables suivantes :</p>
+<ol type="1">
+<li><p>le niveau de diplôme,</p></li>
+<li><p>l’intitulé de l’enseignement,</p></li>
+<li><p>l’appréciation globale du cours et</p></li>
+<li><p>l’appréciation globale de l’enseignant.</p></li>
+</ol>
+<p>A noter que cette stratégie implique que seules soit 1 144 données sont disponibles pour l’analyse<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Une analyse incluant les données incomplètes sur trois des quatre variables (niveau de diplôme et les appréciations du cours et de l’enseignant permettant) permet d’obtenir des résultats de1 407 réponses sur les 1 642</p>
+<p>Les deux questions relatives à l’évaluation sont formulées de la manière suivante :</p>
+<ol type="1">
+<li>Appréciation globale du cours : Merci d’indiquer ci-dessous votre degré d’appréciation du cours</li>
+<li>Appréciation globale de l’enseignant : Merci d’indiquer ci-dessous votre degré d’appréciation de l’enseignant</li>
+</ol>
+<p>Les modalités de réponses sont<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> :</p>
+<ul>
+<li><p>Énormément apprécié = 5</p></li>
+<li><p>Beaucoup apprécié = 4</p></li>
+<li><p>Plutôt apprécié = 3</p></li>
+<li><p>Plutôt peu apprécié = 2</p></li>
+<li><p>Très peu apprécié = 1</p></li>
+<li><p>Pas du tout apprécié = 0</p></li>
+</ul>
+<p>Deux indicateurs globaux ont été définis :</p>
+<ol type="1">
+<li><p>un pourcentage de satisfaction (du cours et de l’enseignant) qui regroupe les trois réponses d’évaluation positives (énormément, beaucoup et plutôt apprécié)</p></li>
+<li><p>un pourcentage d’appréciation (du cours et de l’enseignant) qui regroupe les deux réponses d’évaluation les plus positives (énormément &amp; beaucoup).</p></li>
+</ol>
+<section id="analyses-générales" class="level4">
+<h4 class="anchored" data-anchor-id="analyses-générales">Analyses générales</h4>
+<p>Les résultats indiquent une évaluation globalement positive des cours par les étudiants avec un pourcentage général de satisfaction de plus de 80% et plus de 40% qui ont beaucoup ou énormément apprécié le cours. Les évaluations de l’enseignant sont plus positives encore avec plus de 95% de satisfaction et plus de 70% qui ont beaucoup ou énormément apprécié l’enseignant.</p>
+<p>L’évolution temporelle des évaluations est à mettre en regard à l’évolution de la grille d’évaluation ainsi que de la participation d’une part et à l’évolution des contenus d’enseignements d’autre part. On note également une inflexion de l’évaluation en 2021 qui correspond à une année passée complètement en distanciel pour les étudiants suite à la pandémie de COVID-19<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<div style="page-break-after: always;"></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/EvalGolbalYM.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Évaluation des Enseignements, synthèse globale</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Evalgraph.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Évaluation des Enseignements, évolution depuis 2015</figcaption>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="analyses-détaillées" class="level4">
+<h4 class="anchored" data-anchor-id="analyses-détaillées">Analyses détaillées</h4>
+<p>Les évaluations générales par type de diplôme LMD mettent en évidence un léger décalage entre niveaux d’appréciation du cours et de l’enseignant (surtout si l’on se focalise sur les niveaux d’appréciation les plus élevés à savoir énormément &amp; beaucoup) qui est plus prononcé pour les niveaux licence et master (hormis la PASS mais qui est un enseignement essentiellement à distance).</p>
+<p>Une explication potentielle à ce décalage semble se trouver pour les cours de Master à des disciplines enseignées qui relèvent de la méthodologie de la recherche (en Master 1), de son application sur l’évaluation des psychothérapies ainsi que sur les approches neurocognitives et à la pratique de l’anglais scientifique (en Master 2).</p>
+<p>L’interprétation subjective est que ce type d’enseignement qui bien qu’indispensable sur l’adossement recherche à la formation clinique, est probablement moins apprécié dans une formation qui vise principalement à la formation de cliniciens. Un motif de satisfaction, cependant et malgré ces thématiques spécifiques, réside dans le taux toujours relativement élevé de la satisfaction vis-à-vis de l’enseignant (68% ayant énormément ou beaucoup apprécié l’enseignant). Bien évidemment, il est possible d’être agréable vis-à-vis d’un auditoire facilitant ainsi une évaluation positive sans pour autant transmettre un contenu de manière correcte ou exigeante traduisant dans les deux cas une satisfaction moindre du cours par les étudiants. J’espère ici rentrer dans le cadre de la difficulté à transmettre un contenu exigeant et m’appuierai sur les descriptifs des enseignements ainsi que les résultats des évaluations qualitatives des étudiants.</p>
+<p>Concernant les évaluations de Licence c’est à ce niveau que le décalage pourrait paraître comme étant le plus élevé. Si, là aussi, j’espère me situer dans la même logique que les enseignements de Master, il est également probable qu’une grande partie des évaluations relève du premier enseignement de clinique rencontré par les étudiants en première année de psychologie. Il est, dans ce cadre, envisageable qu’une partie du décalage puisse s’expliquer par la confrontation entre la réalité de la discipline telle qu’enseignée à l’université et ce que se représentaient les étudiants au préalable. Il y a également a considérer la spécificité de la première année à l’université en psychologie, cet enseignement se déroulant ales six premières semaines du second semestre de L1.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/EvalparDip2YM.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Évaluation des enseignements, par type de diplôme (LMD)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/tab_enseignement.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Evaluations des Enseignements, Détails des réponses</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/tab_enseignementwithNA.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Evaluations des Enseignements, Détails des réponses (avec données manquantes)</figcaption>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/EvalparDipYM.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Evaluation des enseignements, par niveau LMD (détail)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/EvalparEnsYM.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Évaluation des enseignements, par Enseignement</figcaption>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="résultats-qualitatifs" class="level3">
+<h3 class="anchored" data-anchor-id="résultats-qualitatifs">Résultats qualitatifs</h3>
+<p>Les analyses ont été réalisées à l’aide du logiciel Iramuteq <span class="citation" data-cites="Ratinaud2009">[@Ratinaud2009]</span>. Elles s’appuient sur les réponses textuelles combinées (1 125 lignes) aux questions suivantes<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> :</p>
+<ul>
+<li><p>Quels sont, selon vous, les points forts de l’enseignant ?</p></li>
+<li><p>Quels sont, selon vous, les points forts du cours ?</p></li>
+<li><p>Quels sont, selon vous, les aspects que l’enseignant devrait améliorer sur son enseignement (et non sur son cours) ?</p></li>
+<li><p>Quels sont, selon vous, les aspects que l’enseignant devrait améliorer sur son cours (et non sur son enseignement) ?</p></li>
+</ul>
+<p>Les analyses lexicométriques viennent en regard des résultats quantitatifs et, en partie, les éclairer. En effet, pour des raisons de matériel textuel disponible pour des analyses de cette nature, ces derniers n’ont pu bénéficier d’un niveau d’analyse détaillé par niveau de diplôme ou par enseignement.</p>
+<section id="synthèse-des-analyses" class="level4">
+<h4 class="anchored" data-anchor-id="synthèse-des-analyses">Synthèse des analyses</h4>
+<p>Les 3 mots les plus prévalents après le mot cours (1 119 occurrences après lémmatisation) sont les mots intéressants, exemple et clair. Une analyse de co-occurrences de mots avec détection de communauté (algorithme walktrap) permet d’identifier 4 communautés, au-delà d’une communauté plus générale relative aux cours, et sont relatives au fait de donner :</p>
+<ol type="1">
+<li><p>des exemples concrets ;</p></li>
+<li><p>des explications claires ;</p></li>
+<li><p>envie ;</p></li>
+<li><p>du temps.</p></li>
+</ol>
+<p>Une analyse qui utilise la méthode dite “Alceste” développée par Max Reinert a permis d’identifier et d’interpréter quatre classes de discours<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> sur l’évaluation des cours et de l’enseignant relatifs :</p>
+<ol type="1">
+<li><p>au format de l’enseignement (type de support, manière de les utiliser…)</p></li>
+<li><p>au contenu de l’enseignement (la nature de ce qui est qui est enseignée)</p></li>
+<li><p>au mode de transmission des connaissances par l’enseignant (sa manière d’enseigner)</p></li>
+<li><p>au style de personnalité de l’enseignant (sa manière de transmettre)</p></li>
+</ol>
+<p>Le choix de verbatims caractéristique pour aide à interpréter les classes en plus des mots les plus fréquents est nécessairement subjectif même s’il s’appuie sur des indicateurs chiffrés<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. Le découpage des classes mêmes de manière réduite fait apparaître des verbatim qui, lu dans leur ensemble, peuvent contribuer à éclairer différentes classes. Les verbatims présentés sont nécessairement restreints par rapport au nombre de textes disponibles et des choix sont également opérés par l’observateur qui n’est, ici, pas neutre.</p>
+<p>Si globalement les analyses sont positives relativement au format des cours (supports et vidéo) sur les contenus (parfois complexes) transmis ou encore sur la manière de transmettre (passion), il n’en demeure pas moins une difficulté relative au mode de transmission qui s’exprime et ressort des évaluations (digressions).</p>
+<p>Une spécificité propre à la manière d’enseigner sur certains cours et plus particulièrement en Master 2 de psychologie est de confronter les étudiants à un style de pédagogie qui les confronte à l’incertitude et au doute vis-à-vis des résultats de la Science quant à la prise en charge clinique. Cette approche est, par ailleurs, doublée d’une volonté de ne pas proposer aux étudiants de “recettes de cuisine” avec un plan “linéaire et pré-mâché” mais de les stimuler et pousser chaque thématique qui s’ouvre dans le cours en tentant de faire des liens qui ne sacrifie pas à la complexité des sujets. Une certaine liberté me parait indispensable pour permettre à l’enseignant de prendre cette voie tout comme une certaine exigence d’attention est nécessaire pour les étudiants afin de la suivre. Le corollaire de cette liberté est aussi la capacité offerte aux étudiants en retour de questionner, challenger, critiquer comme bon leur semble le cours et l’enseignant.</p>
+</section>
+<section id="analyses-globales" class="level4">
+<h4 class="anchored" data-anchor-id="analyses-globales">Analyses globales</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Peda50mots.png" class="img-fluid figure-img" width="433"></p>
+<figcaption class="figure-caption">Pédagogie, 50 mots pour qualifier l’enseignement et l’enseignant</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/PedaSimiCommunaute.png" class="img-fluid figure-img" width="536"></p>
+<figcaption class="figure-caption">Pédagogie, Co-occurrence des mots et détection de communautés</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/PedaReinert.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pédagogie, Analyse Reinert (Alceste)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/PedaAFC.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pédagogie, Analyse Reinert - réduction des dimensions</figcaption>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="segments-de-textes-caractéristiques-après-classification-reinert" class="level4">
+<h4 class="anchored" data-anchor-id="segments-de-textes-caractéristiques-après-classification-reinert">Segments de textes caractéristiques après classification (Reinert)</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Rein41.png" class="img-fluid figure-img" style="width:19.5cm"></p>
+<figcaption class="figure-caption">Pédagogie, Classe 1 Reinert</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Rein42.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pédagogie, Classe 2 Reinert</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Rein43.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pédagogie, Classe 3 Reinert</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Rein44.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pédagogie, Classe 4 Reinert</figcaption>
+</figure>
+</div>
+</section>
+<section id="sélection-subjective-de-témoignages-illustratifs" class="level4">
+<h4 class="anchored" data-anchor-id="sélection-subjective-de-témoignages-illustratifs">Sélection subjective de témoignages illustratifs</h4>
+<p>Même s’il s’agit à nouveau d’un choix subjectif, il me semble que quelques témoignages d’étudiants qui m’ont touché ou marqué (il y en a d’autres) constituent une illustration pertinente (bien que positivement biaisé) des enjeux pédagogiques de ces enseignements de Master :</p>
+<ul>
+<li>3 témoignages récents issus d’un questionnaire d’évaluation de l’ensemble de la formation du parcours de Master Empirique et TCC de l’université Paris Nanterre (que j’organise également)</li>
+</ul>
+<blockquote class="blockquote">
+<p><em>“Mon souhait étant de devenir thérapeute, je suis particulièrement intéressé par les cours cliniques, que ce soit la nosologie ou les cours d’entretien qui permettent la mise en situation. J’ai également apprécié le cours sur les péchés capitaux de la recherche, car cela nous rappel de prendre du recul et redonne toute sa place au sens clinique.”</em></p>
+<p><em>“Pour l’anglais, l’évaluation est très pertinente. Réaliser un podcast est très formateur et cela nous permet de nous entraîner. D’ailleurs les professeurs d’anglais ont imposé le fait de parler en anglais et cela est un très bon choix. Parce que cela nous force à nous exprimer en anglais et de ce fait, nous améliorer. Et cela toujours malgré la réticence d’une minorité. Donc je remercie au professeur d’anglais de nous avoir imposé de parler anglais lors de ce cours.</em></p>
+<p><em>Le cours de recherche est très intéressant. C’est l’un des cours qui étaient dispensé par un professeur investi et qui avait un support de cours très complet. Ce cours est très pertinent et il est nécessaire. Car il met en lumière les biais par lesquels nous sommes influencés en tant que psychologues et cela nous permet de prendre du recul dans notre pratique. D’ailleurs nous en discutions avec quelques étudiants et nous avons conclus que ce cours nous avait particulièrement marqué. En effet nous avons rencontré des situations en stage qui ont illustré le cours de recherche. Alors bien évidement le terme «&nbsp;recherche&nbsp;» peut faire peur, en particulier quand nous savons que tous les étudiants ne veulent pas forcément faire de thèse. Mais le lien entre ce cours et notre pratique en tant que psychologue est évident. Je remercie Monsieur Morvan d’avoir pu rendre son cours accessible et vivant. Et je le remercie d’avoir fait preuve d’une grande patience.”</em></p>
+<p><em>“PS (pour M.Morvan) : je faisait partie des étudiants un peu braqués par rapport à vos cours mais une fois que nous arrivons à comprendre votre logique c’est beaucoup plus clair et on ressent votre implication, votre envie de transmettre et votre passion, merci”</em></p>
+</blockquote>
+<ul>
+<li>un témoignage plus ancien issu des évaluations de mes enseignements</li>
+</ul>
+<blockquote class="blockquote">
+<p>“<em>Je n’ai pas vraiment le temps et l’energie de structurer ma pensée en points forts et faibles, je vais vous balancer mon avis de manière générale et non seulement en ce qui concerne le cours de l’actualité de la recherche (car nous nous sommes vus dans d’autres cours aussi). Je me permets d’être sincère&nbsp; ... car j’ai confiance en vous et votre capacité d’accueillir mon opinion.</em></p>
+<p><em>Pour moi, vous êtes l’un de meilleurs profs de la fac. Vous avez l’amour et la passion du savoir et vous cherchez à le transmettre aux étudiants, contrairement à d’autres profs qui cherchent à transmettre seulement de la connaissance concrète (parfois très limitée). C’est une grande question philosophique que je me pose depuis longtemps: doit-on transmettre l’information ou alors la passion du savoir qui fait que l’étudiant (mais aussi les élèves du primaire et du collège) va chercher les informations par lui-même? Car l’information, on l’oublie, mais la passion du savoir reste à vie. Je ne suis pas sure qu’il y a une réponse tranchée à cette question mais effectivement, la façon de transmettre une information de la part d’un prof, détermine le degré de passion transmise. Certains prof la tuent, c’est indiscutable. Combien d’enfants quittent l’école primaire en sachant compter mais en détestant les mathématiques? C’est la tragédie de l’éducation scolaire.</em></p>
+<p><em>J’avoue qu’en M1 j’avais du mal à saisir votre message. J’étais agacée par la forme de votre enseignement (vos blagues et vos agitations constantes) et je me suis privée du fond de votre message. Je ne sais pas ce qui s’était passé en M2 (peut-être que j’ai vieilli et muri mais peut-être bien que les chouquettes que vous avez distribuées en cours ont fait effet, mdr) mais j’ai quitté mon mode de nana névrosée et j’ai pu vraiment écouter ce que vous dites. C’est là que je me suis rendu compte de l’ampleur de votre message, de votre passion pour le savoir, pour la recherche, pour les sciences ... et aussi de l’étendue de vos connaissances qui dépassent votre domaine d’expertise. C’est là que je me suis dit que si un jour je fais une thèse, je voudrais la faire avec vous (ou madame X pour sa grande humanité, douceur, sens d’humour et son coté zen. Vous pouvez lui passer le mot avec plaisir ... elle n’a pas de questionnaire en ligne.). :-)</em></p>
+<p><em>Vu la réaction de certains étudiants concernant le cours l’actualité de la recherche, je me suis dit que vous êtes en avance sur votre époque. Je ne sais pas si c’est l’époque ou alors le système de formation universitaire en France ou alors le style d’enseignement de la psycho ou encore quelque chose de spécifique pour Nanterre. Quoi qu’il en soit, certains étudiants avaient du mal à se détacher du style classique de l’enseignement “donner une information concrète, l’apprendre par coeur et la recracher telle quelle pendant le partiel”. Très souvent, j’ai vu que le fait de ne pas savoir où ils vont, les angoisse au point qu’ils se privent du fond de votre message. Ils n’arrivent pas à se lâcher. Je ne sais pas. Peut-être que certains n’en sont pas capables, tout simplement. Malheureusement, il faut tenir compte de ces étudiants-là. Ils sont formatés par des années passées dans le moulin de l’Education Nationale ... ok, j’ai envie de dire que ce sont des imbéciles qui ne voient pas plus loin que le bout de leur nez mais là ça serait passer une nouvelle fois en mode de la nana névrosée que je ne suis plus (grâce à vos chouquettes).</em></p>
+<p><em>Je pense donc qu’une partie d’étudiants a la capacité de voir le fond de votre message et votre cours est un régal pour cette gens-là mais qu’une grande partie d’étudiants n’y arrivent pas car il leur manque un cadre rassurant pour qu’ils puissent lâcher prise intellectuellement et poser leur stylo pendant une seconde. Oui, il restera toujours une partie d’étudiants que vous aurez beau rassurer comme vous voudrez, ils ne comprendront rien à votre message mais bon ... Peut-être qu’ils y penseront un jour, dans quelques années ... allez savoir ... la vie est imprévisible.</em></p>
+<p><em>Je pense que je vous ai tout dit ... ah non, j’ai oublié quelque chose ... l’autre jour, quand je vous ai vu vous agiter devant le tableau à essayer de transmettre la passion du savoir et la capacité de quitter son petit monde pré-formaté, vous m’avez fait penser à Richard P. Feynman, prix Nobel en physique. J’ai lu tous ses livres mais bien trop tard pour devenir physicienne. Je ne suis même pas sure d’en avoir les capacités intellectuelles. Il ne m’a rien transmis de la physique mais il m’a transmis la passion du savoir, la passion de la physique, de la nature et de la recherche. Les étudiants aux USA disaient qu’il enseignait “de la physique avec un visage humain”. Feynman m’a appris aussi quelque chose, ce à quoi je tiens plus qu’à tout: la simplicité. Il disait que s’il ne sait pas expliquer les choses compliquées aux étudiants de la première année (et donc avec des mots simples), c’est que lui-même n’y a rien compris. Tout ça pour vous dire que le fait que vous me fassiez penser à Feynman, est un sacré compliment.”</em></p>
+</blockquote>
+<ul>
+<li>Un témoignage envoyé par mail pour conclure sur cette partie</li>
+</ul>
+<blockquote class="blockquote">
+<p>“<em>Si je résume ce que j’aurais voulu vous dire à cette dernière soirée, c’est que, pour vos étudiants, vous êtes beaucoup plus important que vos cours et leurs contenus. J’ai heureusement pu-su- en profiter largement. Votre approche restera toujours une boussole pour moi. Quant à moi, je promets de faire le maximum pour être un bon représentant des valeurs et des connaissances que vous m’avez transmises. C’est la meilleure façon que j’aurai de vous remercier.</em>”</p>
+</blockquote>
+
+
+</section>
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Années effectuées en tant que Maître de Conférences, hors CRCT obtenu en 2022-2023 avec une activité d’enseignements (hors responsabilités) de 180 heures. En incluant l’année de CRCT la moyenne annuelle est de 225 heures.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Si l’on inclue l’année de CRCT dans le calcul la répartition est de 35% en licence, 52% en Master et 8% en doctorat (38% des enseignements en cours magistraux).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Compte-tenu d’un nombre d’évaluation inférieur à 20 pour les cours en DU, cette catégorie a n’a pas été incluse dans les analyses générales mais on retrouve ces informations dans les analyses détaillées .<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>En 2015-2016 et 2016-2017 les questions étaient : “Globalement, vous avez apprécié cet enseignement” et “Globalement, vous avez apprécié cet enseignant” avec comme modalités de réponses : “Non=1 / Plutôt Non=2 / Plutôt Oui = 3 / Oui = 4”. Les réponses ont été recordées de la manière suivante : “Non=0 / Plutôt Non=2 / Plutôt Oui = 3 / Oui = 5” afin de rendre les réponses compatibles pour les 264 données brutes (171 données complètes) correspondant à ces années avec les 1 378 données brutes (973 données complètes) des années 2018 à 2023.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Une autre inflexion en 2016-2017 et 2017-2018 (moindre en 2018-2019) est identifiable et que nous attribuerons subjectivement à un manque de sommeil chronique de l’enseignant.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Les questions à réponses textuelles sont restées identiques sur l’ensemble des évaluations depuis 2015.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>A noter que la méthode utilisé par <a href="https://juba.github.io/rainette/articles/algorithmes.html#diff%C3%A9rences-avec-la-m%C3%A9thode-reinert">Iramuteq ne permet pas de choisir le nombre de classe contrairement au package</a> R <a href="https://juba.github.io/rainette/index.html">Rainette</a> développé par Julien Barnier. Le choix des paramètres d’entré dans Iramuteq qui se fait par options dans un fenêtres et non par code pose des difficulté en terme de transparence et de reproductibilité (sauf prendre une capture d’écran du paramétrage). Nous avons ici procédé de manière à obtenir un nombre de classes interprétables et “suffisamment” distinctes pour pouvoir être interprétées. A l’avenir le choix d’utiliser R sera privilégié mais il est nécessaire d’effectuer un travail sur le corpus également en code (nettoyage du corpus, suppressions des déterminants, identification des formes “actives”, lématisation etc…) qui sont actuellement automatiquement réalisées par Iramuteq (d’où le choix de cet outil).<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Segments de textes caractéristiques fournit par Iramuteq à partir de valeurs de Chi².<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Site construit avec du <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://quarto.org/">Quarto</a> et l’aide de Csik [Samantha (https://samanthacsik.github.io/talks_workshops/2022-08-05-creating-your-personal-website-using-quarto/index.html)</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./LICENSE-CC-BY-4.0.html">
+<p>Licence CC-BY-4.0</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
