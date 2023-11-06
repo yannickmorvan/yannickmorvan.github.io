@@ -6,15 +6,43 @@ website:
   title: "Yannick Morvan"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Acceuil
+        href: index.qmd
+      - text: A propos
+        href: about.qmd
+      - text: Mon HDR
+        menu: 
+          - peda.qmd
+          - publi.qmd
+          - pedaPerspectives.qmd
+          - publiPerspectives.qmd
+          - ComplexSystems.qmd
+          - ComplexPsycho.qmd
+      - text: cv
+        href: CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf
+      - text: Références
+        href: references.qmd
+      - icon: github
+        href: https://github.com/yannickmorvan/yannickmorvan.github.io
+      - icon: twitter
+        href: https://twitter.com/yannick_morvan
+      - icon: envelope
+        href: mailto:ymorvan@parisnanterre.fr
+  page-footer:
+    left: Site construit avec du {{< fa heart title="a heart" >}}, [Quarto](https://quarto.org/) et l'aide de Csik [Samantha (https://samanthacsik.github.io/talks_workshops/2022-08-05-creating-your-personal-website-using-quarto/index.html)
+    right: 
+      - text: "Licence CC-BY-4.0"
+        href: LICENSE-CC-BY-4.0.qmd
+
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: lumen
+      dark: darkly
     css: styles.css
     toc: true
+    page-layout: full
 
 editor: visual
 
