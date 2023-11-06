@@ -3,7 +3,7 @@ title: "Yannick Morvan"
 image: images/photoYM3ter.png
 toc: false
 about: 
-  template: trestles
+  template: solana
   image-shape: round
   image-width: 20em
   links:
@@ -21,6 +21,6 @@ Bonjour et bienvenu sur mon site personnel. Je suis Yannick Morvan, psychologue 
 
 Evidemment, cela ne m'aurait pas effleuré si je n'avais été inspiré et aidé (c'est ce qui est formidable dans la perspective de science ouverte). Parmi les inspirations que je trouve fantastiques, plusieurs proviennent de chercheurs qui sont impliqués dans l'approche dite "en réseau" de la psycho(patho)logie et de la santé mentale. Il m'est impossible de ne pas citer plusieurs d'entre eux comme ceux de [Claudia van Borkulo](https://cvborkulo.com/), [Julian Burger](https://www.julianburger.com/), [Sacha Epskamp](http://sachaepskamp.com/), [Eiko Fried](https://eiko-fried.com/), [Jonas Haslbeck](https://jonashaslbeck.com/), [Adela Isvoranu](https://www.adelaisvoranu.com/) et d'autres encore !
 
-Pour la réalisation de ce site, il n'aurait pas été possible sans les nombreux tutoriels disponibles, je dois en citer deux. Le premier est celui qui m'a permis de [lier Rstudio et GitHub et a été réalisé par Daniel Lakens](https://lakens.github.io/statistical_inferences/14-computationalreproducibility.html). C'est devenu tellement essentiel pour moi que tous mes étudiants à qui j'enseigne "la pratique de la recherche (séminaire de recherche de Master et Doctorants) passent par cette étape indispensable. Le second est excellent [tutoriel de Samantha Csik pour construire son site web avec Quarto](https://ucsb-meds.github.io/creating-quarto-websites/).
+Pour la réalisation de ce site, il n'aurait pas été possible sans les nombreux tutoriels disponibles, je dois en citer deux. Le premier est celui qui m'a permis de [lier Rstudio et GitHub et a été réalisé par Daniel Lakens](https://lakens.github.io/statistical_inferences/14-computationalreproducibility.html). C'est devenu tellement essentiel pour moi que tous mes étudiants à qui j'enseigne "la pratique de la recherche (séminaire de recherche de Master et Doctorants) passent par cette étape indispensable. Le second est excellent [tutoriel de Samantha Csik pour construire son site web avec Quarto](https://ucsb-meds.github.io/creating-quarto-websites/) .
 
 # /!\\ Site en construction /!\\
