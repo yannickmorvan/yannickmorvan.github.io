@@ -6,22 +6,22 @@ website:
   title: "Yannick Morvan"
   navbar:
     left:
-      - text: Acceuil
-        href: index.qmd
-      - text: A propos
-        href: about.qmd
+      - href: index.qmd
+        text: Acceuil
+      - href: about.qmd
+        text: A propos
       - text: Mon HDR
-        menu: 
-          - peda.qmd
-          - publi.qmd
-          - pedaPerspectives.qmd
-          - publiPerspectives.qmd
-          - ComplexSystems.qmd
-          - ComplexPsycho.qmd
-      - text: cv
-        href: CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf
-      - text: Références
-        href: references.qmd
+          menu: 
+            - peda.qmd
+            - publi.qmd
+            - pedaPerspectives.qmd
+            - publiPerspectives.qmd
+           - ComplexSystems.qmd
+            - ComplexPsycho.qmd
+      - href: CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf
+        text: cv
+      - href: references.qmd
+        text: Références
       - icon: github
         href: https://github.com/yannickmorvan/yannickmorvan.github.io
       - icon: twitter
