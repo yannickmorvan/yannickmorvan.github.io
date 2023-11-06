@@ -20,7 +20,7 @@ website:
           - ComplexSystems.qmd
           - ComplexPsycho.qmd
       - href: CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf
-        text: cv
+        text: CV
       - href: references.qmd
         text: Références
       - icon: github
@@ -40,7 +40,7 @@ format:
   html:
     theme: 
       light: zephyr
-      dark: darkly
+      dark: superhero
     css: styles.css
     toc: true
     page-layout: full
