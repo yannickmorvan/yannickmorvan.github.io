@@ -7,10 +7,10 @@ about:
   image-shape: rectangle
   image-width: 20em
   links:
-    - text: Twitter
-      href: https://twitter.com/yannick_morvan
     - text: GitHub
       href: https://github.com/yannickmorvan
+    - text: Twitter
+      href: https://twitter.com/yannick_morvan
     - text: Email
       href: mailto::ymorvan@parisnanterre.fr
 ---

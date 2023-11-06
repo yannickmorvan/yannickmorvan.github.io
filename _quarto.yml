@@ -7,18 +7,18 @@ website:
   reader-mode: true
   navbar:
     left:
-      - text: Acceuil
+      - text: Accueil
         href: index.qmd
       - text: A propos
         href: about.qmd
-      - text: "Mon HDR"
+      - text: "HDR"
         menu: 
           - peda.qmd
           - publi.qmd
           - href: pedaPerspectives.qmd
-            text: Perspecives pédagogiques
+            text: Perspectives pédagogiques
           - href: publiPerspectives.qmd
-            text: Perspecives de publications
+            text: Perspectives de publications
           - ComplexSystems.qmd
           - ComplexPsycho.qmd
       - href: CV/CV_Yannick_MORVAN_sept22_Fra_vshort.pdf
