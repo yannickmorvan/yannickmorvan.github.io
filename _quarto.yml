@@ -7,10 +7,10 @@ website:
   reader-mode: true
   navbar:
     left:
-      - href: index.qmd
-        text: Acceuil
-      - href: about.qmd
-        text: A propos
+      - text: Acceuil
+        href: index.qmd
+      - text: A propos
+        href: about.qmd
       - text: "Mon HDR"
         menu: 
           - peda.qmd
