@@ -4,7 +4,7 @@ image: images/photoYM3ter.png
 toc: false
 about: 
   template: solana
-  image-shape: round
+  image-shape: rectangle
   image-width: 20em
   links:
     - text: Twitter
