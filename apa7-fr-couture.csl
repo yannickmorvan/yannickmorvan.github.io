@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded" default-locale="fr-CA">
+  <info>
+    <title>Adaptation française du style APA (7e éd.)- M. Couture</title>
+    <title-short>APA 7 FR M-Couture</title-short>
+    <id>http://www.zotero.org/styles/apa7-fr-couture</id>
+    <link href="http://profmcouture.ca/apa/apa7-fr-couture.csl" rel="self"/>
+    <link href="http://www.zotero.org/styles/apa" rel="template"/>
+    <link href="https://apastyle.apa.org/style-grammar-guidelines/references/examples" rel="documentation"/>
+    <author>
+      <name>Brenton M. Wiernik</name>
+      <email>zotero@wiernik.org</email>
+    </author>
+    <author>
+      <name>Marc Couture</name> 
+      <email>jaamcouture@gmail.com</email>
+    </author>
+    <summary>Adaptation et traduction du fichier créé par B. M. Wiernik en fonction de l'adaptation française des normes APA, 7e édition, de Marc Couture.</summary>
+    <category citation-format="author-date"/>
+    <category field="psychology"/>
+    <category field="generic-base"/>
+    <updated>2022-10-05T00:00:00+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <locale xml:lang="fr-CA">
+  <!-- MC Ce qui est défini ici prime sur ce qu'on trouve dans https://github.com/citation-style-language/locales/blob/master/locales-fr-CA.xml  
+  Idéalement, la gestion de la casse de la première lettre d'un terme, qui dépend de la langue, devrait se faire ici, du moins quand cela ne change pas selon les divers usages du terme. Actuellement, on emploie en général (mais pas toujours) "text-case", ce qui oblige à modifier le code à de nombreux endroits.
+  Les "locales" en diverses autres langues, qui concernaient la division de "letter" communication personnelle (long) et lettre (court) ont été supprimés
+  -->
+    <date form="numeric">
+		<date-part name="year" suffix="/"/>
+		<date-part name="month" form="numeric-leading-zeros" suffix="/"/>
+		<date-part name="day" form="numeric-leading-zeros"/>
+	</date>
+  
+    <terms>
+      <term name="editor" form="short">dir.</term>
+      <term name="collection-editor" form="short">dir.</term>
+      <term name="editortranslator" form="short">dir. et trad.</term>
+      <term name="interviewer">
+        <single>intervieweur</single>
+        <multiple>intervieweurs</multiple>
+      </term>
+	  <term name="interviewer" form="verb">entrevue réalisée par</term>
+      <term name="author" form="verb">par</term>
+      
+      <term name="interview">entrevue</term>
+      <term name="letter">communication personnelle</term>
+      <term name="software">logiciel</term>
+      <term name="review">compte rendu</term>
+      <term name="patent">brevet</term>
+      <term name="dataset">jeu de données</term>
+      <term name="map">carte</term>
+      <term name="post-weblog">billet de blogue</term>
+	  <term name="review-of">compte rendu de</term>
+	  <term name="motion_picture">vidéo</term>
+     
+      <term name="no date" form="short">s.d.</term>
+      <term name="retrieved">récupéré le</term>
+      <term name="from">de</term>
+      <term name="page" form="short">p.</term>
+      <term name="issue" form="long">
+        <single>numéro</single>
+        <multiple>numéros</multiple>
+      </term>
+      <term name="issue" form="short">
+		<single>n°</single>
+		<multiple>nᵒˢ</multiple>
+	  </term>
+      <term name="original-work-published">ouvrage original publié</term>
+      <term name="bc"> av. J.-C.</term>
+      <term name="ad"> ap. J.-C.</term>
+	  <term name="page-range-delimiter">-</term>
+    </terms>
+  </locale>
+  <!-- General categories of item types:
+       Periodical: article-journal article-magazine article-newspaper post-weblog review review-book
+       Periodical or Booklike: paper-conference
+       Booklike: article book broadcast chapter dataset entry entry-dictionary entry-encyclopedia figure 
+                 graphic interview manuscript map motion_picture musical_score pamphlet patent 
+                 personal_communication report song speech thesis post webpage
+       Legal: bill legal_case legislation treaty
+  -->
+   <!-- MC L'auteur (Wiernick) faisait l'hypothèse que des présentations (speech) et des articles de colloque parus dans des revues (article-journal) pouvaient avoir été entrés dans Zotero comme des articles dans des actes (paper-conference), et tentait de corriger la situation en repérant certaines caractéristiques, dont l'absence de directeur et / ou de numéros de page. Cependant :
+   (1) Les champs qui figurent dans Zotéro pour ces divers types de documents ne portent pas à faire ce genre d'erreur. Par exemple, pour des actes parus dans une revue (numéro thématique, ou revue qui ne publie que des actes), pourquoi quelqu'un, au lieu d'employer le type Article de revue, choisirait-il le type Article de colloque, ce qui le force à inscrire le nom de la revue dans le champ Titre des actes?
+   (2) Souveent, les actes en ligne n'ont pas de numéro de page, ou de directeur, du moins facile à identifier. Les corrections pouvaient donc transformer des articles dans des actes en articles de revue, sans le "Dans" devant le titre des actes, considéré comme le nom d'une revue. J'avais d'ailleurs ajouté une exception pour ce cas...
+   J'ai donc modifié le code partout où ce genre de correction était faite, en indiquant en commentaire "MC correction pour paper-conference éliminée"
+   
+  -->
+  
+  
+  
+  <!-- APA references contain four parts: author, date, title, source -->
+  <macro name="author-bib">
+    <names variable="composer" delimiter=", ">
+      <name name-as-sort-order="all" and="text" delimiter-precedes-last="never" sort-separator=", " initialize-with=". " delimiter=", " />
+      <substitute>
+        <names variable="author"/>
+        <names variable="illustrator"/>
+        <names variable="director">
+          <name name-as-sort-order="all" and="text" delimiter-precedes-last="never" sort-separator=", " initialize-with=". " delimiter=", " />
+          <label form="long" prefix=" (" suffix=")" text-case="lowercase"/>
+        </names>
+        <choose>
+          <if variable="container-title">
+            <choose>
+              <if type="book entry entry-dictionary entry-encyclopedia" match="any">
+                <choose>
+                  <if variable="title">
+                    <group delimiter=" ">
+                      <text macro="title"/>
+                      <text macro="parenthetical"/>
+                    </group>
+                  </if>
+                  <else>
+                    <text macro="title-and-descriptions"/>
+                  </else>
+                </choose>
+              </if>
+            </choose>
+          </if>
+        </choose>
+        <!-- Test for editortranslator and put that first as that becomes available -->
+        <names variable="editor" delimiter=", ">
+          <name name-as-sort-order="all" and="text" delimiter-precedes-last="never" sort-separator=", " initialize-with=". " delimiter=", " />
+          <label form="short" prefix=" (" suffix=")" text-case="lowercase"/>
+        </names>
+        <names variable="editorial-director">
+          <name name-as-sort-order="all" and="text" delimiter-precedes-last="never" sort-separator=", " initialize-with=". " delimiter=", " />
+          <label form="short" prefix=" (" suffix=")" text-case="lowercase"/>
+        </names>
+        <names variable="collection-editor">
+          <name name-as-sort-order="all" and="text" delimiter-precedes-last="never" sort-separator=", " initialize-with=". " delimiter=", " />
+          <label form="short" prefix=" (" suffix=")" text-case="lowercase"/>
+        </names>
+        <choose>
+          <if variable="title">
+            <group delimiter=" ">
+              <text macro="title"/>
+              <text macro="parenthetical"/>
+            </group>
+          </if>
+          <else>
+            <text macro="title-and-descriptions"/>
+          </else>
+        </choose>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="author-intext">
+    <choose>
+      <if type="bill legal_case legislation treaty" match="any">
+        <text macro="title-intext"/>
+      </if>
+      <else-if type="interview personal_communication">
+        <choose>
+          <!-- These variables indicate that the letter is retrievable by the reader. 
+                If not, then use the APA in-text-only personal communication format -->
+          <if variable="archive container-title DOI publisher URL" match="none">
+            <group delimiter=", ">
+              <names variable="author">
+                <name and="text" delimiter-precedes-last="never" delimiter=", " initialize-with=". "/>  <et-al font-style="italic"/>
+                <substitute>
+                  <text macro="title-intext"/>
+                </substitute>
+              </names>
+              <!-- Replace with term="personal-communication" if that becomes available -->
+              <text term="letter"/>
+            </group>
+          </if>
+          <else>
+            <names variable="author" delimiter=", ">
+              <name form="short" and="text" delimiter-precedes-last="never" delimiter=", " initialize-with=". "/>
+              <et-al font-style="italic"/>
+              <substitute>
+                <text macro="title-intext"/>
+              </substitute>
+            </names>
+          </else>
+        </choose>
+      </else-if>
+      <else>
+        <names variable="composer" delimiter=", ">
+          <name form="short" and="text" delimiter-precedes-last="never" delimiter=", " initialize-with=". "/>
+          <et-al font-style="italic"/>
+          <substitute>
+            <names variable="author"/>
+            <names variable="illustrator"/>
+            <names variable="director"/>
+            <choose>
+              <if variable="container-title">
+                <choose>
+                  <if type="book entry entry-dictionary entry-encyclopedia" match="any">
+                    <text macro="title-intext"/>
+                  </if>
+                </choose>
+              </if>
+            </choose>
+            <names variable="editor"/>
+            <names variable="editorial-director"/>
+            <text macro="title-intext"/>
+          </substitute>
+        </names>
+      </else>
+    </choose>
+  </macro>
+  <macro name="date-bib">
+    <group delimiter=" " prefix="(" suffix=")">
+      <choose>
+        <if is-uncertain-date="issued">
+          <text term="circa" form="short"/>
+        </if>
+      </choose>
+      <group>
+        <choose>
+          <if variable="issued">
+            <date variable="issued">
+              <date-part name="year"/>
+            </date>
+            <text variable="year-suffix"/>
+            <choose>
+			<!-- MC Ne pas oublier Wikipédia (date de l'article au jour près) -->
+              <if type="article-magazine article-newspaper broadcast entry-encyclopedia interview motion_picture pamphlet personal_communication post post-weblog song speech webpage" match="any">
+                <!-- Many video and audio examples in manual give full dates. Err on the side of too much information. MC Petit problème avec les présentations (speech), où le Manual demande d'indiquer les dates de début et de fin du colloque, quelle que soit la date de la présentation elle-même (Zotero ne prévoit pas deux dates) -->
+                <group prefix=", ">
+                <date variable="issued">
+                    <date-part prefix=" " name="day"/>
+                    <date-part prefix=" " name="month"/>
+                </date>
+                </group>
+              </if>
+                <!-- Only year: article article-journal book chapter entry entry-dictionary dataset figure graphic manuscript map musical_score paper-conference[published] patent report review review-book thesis -->
+            </choose>
+          </if>
+          <else-if variable="status">
+            <group>
+              <text variable="status" text-case="lowercase"/>
+              <text variable="year-suffix" prefix="-"/>
+            </group>
+          </else-if>
+          <else>
+            <group>
+              <text term="no date" form="short"/>
+              <text variable="year-suffix" prefix="-"/>
+            </group>
+          </else>
+        </choose>
+      </group>
+    </group>
+  </macro>
+  <macro name="date-sort-group">
+    <choose>
+      <if variable="issued">
+        <text value="1"/>
+      </if>
+      <else-if variable="status">
+        <text value="2"/>
+      </else-if>
+      <else>
+        <text value="0"/>
+      </else>
+    </choose>
+  </macro>
+  <!-- MC correction pour paper-conference éliminée; une erreur dans le code empêchait de trier par date les articles de conférences des mêmes auteurs -->
+  <macro name="date-sort-date">
+     <date variable="issued" form="numeric"/>
+  </macro>
+  <macro name="date-intext">
+    <choose>
+      <if variable="issued">
+        <group delimiter="/">
+          <group delimiter=" ">
+            <choose>
+              <if is-uncertain-date="original-date">
+                <text term="circa" form="short"/>
+              </if>
+            </choose>
+            <date variable="original-date">
+              <date-part name="year"/>
+            </date>
+          </group>
+          <group delimiter=" ">
+            <choose>
+              <if is-uncertain-date="issued">
+                <text term="circa" form="short"/>
+              </if>
+            </choose>
+            <group>
+              <choose>
+                <if type="interview personal_communication">
+                  <choose>
+                    <if variable="archive container-title DOI publisher URL" match="none">
+                      <!-- These variables indicate that the communication is retrievable by the reader. 
+                           If not, then use the in-text-only personal communication format -->
+                      <date variable="issued" form="text"/>
+                    </if>
+                    <else>
+                      <date variable="issued">
+                        <date-part name="year"/>
+                      </date>
+                    </else>
+                  </choose>
+                </if>
+                <else>
+                  <date variable="issued">
+                    <date-part name="year"/>
+                  </date>
+                </else>
+              </choose>
+              <text variable="year-suffix"/>
+            </group>
+          </group>
+        </group>
+      </if>
+      <else-if variable="status">
+        <text variable="status" text-case="lowercase"/>
+        <text variable="year-suffix" prefix="-"/>
+      </else-if>
+      <else>
+        <text term="no date" form="short"/>
+        <text variable="year-suffix" prefix="-"/>
+      </else>
+    </choose>
+  </macro>
+ 
+  <macro name="translation">
+     <!-- MC Dans Zotero, le champ "original-title" n'est pas employé. Cette adaptation propose de l'utiliser pour offrir, entre crochets à la suite du titre, un titre alternatif, dans deux cas distincts :
+     1. Ouvrage non en anglais consulté dans sa langue d'origine (voir ex. 27 et 41) : traduction française du titre original (dans ce cas le nom "original-title" peut sembler trompeur)
+     2. (Suggestion de la présente adaptation.) Ouvrage en anglais dont la traduction française a été consultée : titre original en anglais. Ce titre doit être saisi dans le champ Extra, comme suit : original-title:Titre_alternatif
+     
+     Dans le 2e cas, la variable "original-date" doit aussi être utilisée; elle génère un commentaire entre parenthèses à la fin de la référence; elle est aussi saisie dans Extra, comme suit : original-date:XXXX-->
+    <choose>
+      <if variable="original-title" match="any">
+        <text variable="original-title" prefix="[" suffix="]"/>
+      </if>
+    </choose>
+  </macro>
+
+    <!-- APA has two description elements following the title:
+       title (parenthetical) [bracketed]  -->     
+
+  <macro name="title-and-descriptions">
+    <choose>
+      <if variable="title">
+        <group delimiter=" ">
+          <text macro="title"/>
+          <!-- MC Pour le titre, original anglais ou traduit en français, entre crochets -->
+          <text macro="translation"/>
+          <text macro="parenthetical"/>
+          <text macro="bracketed"/>
+        </group>
+      </if>
+      <else>
+        <group delimiter=" ">
+          <text macro="bracketed"/>
+          <text macro="parenthetical"/>
+        </group>
+      </else>
+    </choose>
+
+  </macro>
+  <macro name="title">
+    <choose>
+      <if type="post webpage" match="any">
+        <!-- Webpages are always italicized -->
+        <text variable="title" font-style="italic"/>
+      </if>
+      <else-if variable="container-title" match="any">
+        <!-- Other types are italicized based on presence of container-title.
+             Assume that review and review-book are published in periodicals/blogs,
+             not just on a web page (ex. 69) -->
+        <text variable="title"/>
+      </else-if>
+	  <!-- MC correction pour paper-conference éliminée; -->
+      <else>
+        <choose>
+          <if type="article-journal article-magazine article-newspaper paper-conference post-weblog review review-book"><!-- MC Il me semble que les 4 premiers auront toujours un container-title... mais on le laisse quand même -->
+		  
+            <text variable="title" font-style="italic"/>
+          </if>
+          <else-if type="paper-conference">
+            <choose>
+              <if variable="collection-editor editor editorial-director" match="any">
+                <group delimiter="&#160;: " font-style="italic">
+                  <text variable="title"/>
+                  <!-- Replace with volume-title as that becomes available 
+					  MC Il vaut mieux employer le champ Volume seulement pour un numéro (chiffre arabe). Dans ce cas, le numéro est indiqué entre parenthèses après le titre. Si le Volume a un titre, on inclut tout ( : vol. XX. Titre du volume) dans le champ Titre plutôt que de laisser Zotero ajouter au titre vol. + contenu du champ Volume -->
+                  <choose>
+                    <if is-numeric="volume" match="none">
+                      <group delimiter=" ">
+                      <!-- MC Première lettre minusucle et non majuscule -->
+                        <label variable="volume" form="short" text-case="lowercase"/>
+                        <text variable="volume"/>
+                      </group>
+                    </if>
+                  </choose>
+                </group>
+              </if>
+              <else>
+                <text variable="title" font-style="italic"/>
+              </else>
+            </choose>
+          </else-if>
+          <else>
+            <group delimiter="&#160;: " font-style="italic">
+              <text variable="title"/>
+              <!-- Replace with volume-title as that becomes available -->
+              <choose>
+                <if is-numeric="volume" match="none">
+                  <group delimiter=" ">
+                    <!-- MC Première lettre minusucle et non majuscule -->
+                    <label variable="volume" form="short" text-case="lowercase"/>
+                    <text variable="volume"/>
+                  </group>
+                </if>
+              </choose>
+            </group>
+          </else>
+        </choose>
+      </else>
+    </choose>
+  </macro>
+  <macro name="title-intext">
+    <choose>
+      <if variable="title" match="none">
+        <text macro="bracketed-intext" prefix="[" suffix="]"/>
+      </if>
+      <else-if type="bill">
+        <!-- If a bill has no number or container-title, assume it is a hearing; italic -->
+        <choose>
+          <if variable="number container-title" match="none">
+            <text variable="title" form="short" font-style="italic" text-case="title"/>
+          </if>
+          <else-if variable="title">
+            <text variable="title" form="short" text-case="title"/>
+          </else-if>
+          <else>
+            <group delimiter=" ">
+              <text variable="genre"/>
+              <group delimiter=" ">
+                <choose>
+                  <if variable="chapter-number container-title" match="none">
+                    <!-- Replace with label variable="number" as that becomes available -->
+                    <text term="issue" form="short"/>
+                  </if>
+                </choose>
+                <text variable="number"/>
+              </group>
+            </group>
+          </else>
+        </choose>
+      </else-if>
+      <else-if type="legal_case" match="any">
+        <!-- Cases are italicized -->
+        <text variable="title" font-style="italic"/>
+      </else-if>
+      <else-if type="legislation treaty" match="any">
+        <!-- Legislation and treaties not italicized or quoted -->
+        <text variable="title" form="short" text-case="title"/>
+      </else-if>
+      <else-if type="post webpage" match="any">
+        <!-- Webpages are always italicized -->
+        <text variable="title" form="short" font-style="italic" text-case="title"/>
+      </else-if>
+      <else-if variable="container-title" match="any">
+        <!-- Other types are italicized or quoted based on presence of container-title. As in title macro. -->
+        <text variable="title" form="short" quotes="true" text-case="title"/>
+      </else-if>
+      <else>
+        <text variable="title" form="short" font-style="italic" text-case="title"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="parenthetical">
+    <!-- (Secondary contributors; Database location; Genre no. 123; Report Series 123, Version, Edition, Volume, Page) -->
+    <!-- MC capitalize-first devient lowercase partout (3 cas) : genre, brevet, issue,  -->
+    <group prefix="(" suffix=")">
+      <choose>
+        <if type="patent">
+          <!-- authority: U.S. ; genre: patent ; number: 123,445 -->
+          <group delimiter=" ">
+            <text variable="authority" form="short"/>
+            <choose>
+              <if variable="genre">
+                <text variable="genre" text-case="lowercase"/>
+              </if>
+              <else>
+                <!-- This should be localized MC : fait -->
+                <text term="patent" text-case="lowercase"/>
+              </else>
+            </choose>
+            <group delimiter=" ">
+              <!-- Replace with label variable="number" if that becomes available -->
+              <text term="issue" form="short" text-case="lowercase"/>
+              <text variable="number"/>
+            </group>
+          </group>
+        </if>
+        <else-if type="post webpage">
+          <!-- For post webpage, container-title is treated as publisher -->
+          <group delimiter="; ">
+            <text macro="secondary-contributors"/>
+            <text macro="database-location"/>
+            <text macro="number"/>
+            <text macro="locators-booklike"/>
+          </group>
+        </else-if>
+        <else-if variable="container-title">
+          <group delimiter="; ">
+            <text macro="secondary-contributors"/>
+            <choose>
+              <if type="broadcast graphic map motion_picture song" match="any">
+                <!-- For audiovisual media, number information comes after title, not container-title -->
+                <text macro="number"/>
+              </if>
+            </choose>
+          </group>
+        </else-if>
+        <else>
+          <group delimiter="; ">
+            <text macro="secondary-contributors"/>
+            <text macro="database-location"/>
+            <text macro="number"/>
+            <text macro="locators-booklike"/>
+          </group>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="parenthetical-container">
+    <choose>
+      <if variable="container-title" match="any">
+        <group prefix="(" suffix=")">
+          <group delimiter="; ">
+            <text macro="database-location"/>
+            <choose>
+              <if type="broadcast graphic map motion_picture song" match="none">
+                <!-- For audiovisual media, number information comes after title, not container-title -->
+                <text macro="number"/>
+              </if>
+            </choose>
+            <text macro="locators-booklike"/>
+          </group>
+        </group>
+      </if>
+    </choose>
+  </macro>
+  <macro name="bracketed">
+    <!-- [Descriptive information] -->
+    <!-- If there is a number, genre is already printed in macro="number" -->
+    <!-- MC capitalize-first devient lowercase partout (19 cas) : genre, number, medium, letter, interviewer -->
+    <group prefix="[" suffix="]">
+      <choose>
+        <if variable="reviewed-author reviewed-title" type="review review-book" match="any">
+          <!-- Reviewed item -->
+          <group delimiter="; ">
+            <group delimiter=", ">
+              <group delimiter=" ">
+                <!-- Assume that genre is entered as 'Review of the book' or similar -->
+                <choose>
+                  <if variable="number" match="none">
+                    <choose>
+                      <if variable="genre">
+                        <text variable="genre" text-case="lowercase"/>
+                      </if>
+                      <else-if variable="medium">
+                        <text variable="medium" text-case="lowercase"/>
+                      </else-if>
+                      <else>
+                        <!-- Replace with term="review" as that becomes available. MC : fait-->
+                        <text term="review-of"/>
+                      </else>
+                    </choose>
+                  </if>
+                  <else>
+                    <choose>
+                      <if variable="medium">
+                        <text variable="medium" text-case="lowercase"/>
+                      </if>
+                      <else>
+                        <!-- Replace with term="review" as that becomes available -->
+                        <text term="review-of"/>
+                      </else>
+                    </choose>
+                  </else>
+                </choose>
+                <text macro="reviewed-title"/>
+              </group>
+              <names variable="reviewed-author">
+                <label form="verb-short" suffix=" "/>
+                <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+              </names>
+            </group>
+            <choose>
+              <if variable="genre" match="any">
+                <choose>
+                  <if variable="number" match="none">
+                    <text variable="medium" text-case="lowercase"/>
+                  </if>
+                </choose>
+              </if>
+            </choose>
+          </group>
+        </if>
+        <else-if type="thesis">
+          <!-- Thesis type and institution -->
+          <group delimiter="; ">
+            <choose>
+              <if variable="number" match="none">
+                <group delimiter=", ">
+                  <text variable="genre" text-case="lowercase"/>
+                  <choose>
+                    <if variable="archive DOI URL" match="any">
+                      <!-- Include the university in brackets if thesis is published -->
+                      <text variable="publisher"/>
+                      <!-- MC le lieu de l'Université est pertinent -->
+                      <text variable="publisher-place"/>
+                    </if>
+                  </choose>
+                </group>
+              </if>
+            </choose>
+            <text variable="medium" text-case="lowercase"/>
+          </group>
+        </else-if>
+        <else-if variable="interviewer" type="interview" match="any">
+          <!-- Interview information -->
+          <choose>
+            <if variable="title">
+              <text macro="format"/>
+            </if>
+            <else-if variable="genre">
+              <group delimiter="; ">
+                <group delimiter=" ">
+                  <text variable="genre" text-case="lowercase"/>
+                  <group delimiter=" ">
+                    <text term="author" form="verb"/>
+                    <names variable="interviewer">
+                      <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                    </names>
+                  </group>
+                </group>
+              </group>
+            </else-if>
+            <else-if variable="interviewer">
+              <group delimiter="; ">
+                <names variable="interviewer">
+                  <label form="verb" suffix=" " text-case="lowercase"/>
+                  <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                </names>
+                <text variable="medium" text-case="lowercase"/>
+              </group>
+            </else-if>
+            <else>
+              <text macro="format"/>
+            </else>
+          </choose>
+        </else-if>
+        <else-if type="personal_communication">
+          <!-- Letter information -->
+          <choose>
+            <if variable="recipient">
+              <group delimiter="; ">
+                <group delimiter=" ">
+                  <choose>
+                    <if variable="number" match="none">
+                      <choose>
+                        <if variable="genre">
+                          <text variable="genre" text-case="lowercase"/>
+                        </if>
+                        <else-if variable="medium">
+                          <text variable="medium" text-case="lowercase"/>
+                        </else-if>
+                        <else>
+                          <text term="letter" form="short" text-case="lowercase"/>
+                        </else>
+                      </choose>
+                    </if>
+                    <else>
+                      <choose>
+                        <if variable="medium">
+                          <text variable="medium" text-case="lowercase"/>
+                        </if>
+                        <else>
+                          <text term="letter" form="short" text-case="lowercase"/>
+                        </else>
+                      </choose>
+                    </else>
+                  </choose>
+                  <names variable="recipient" delimiter=", ">
+                    <label form="verb" suffix=" "/>
+                    <name and="text" delimiter-precedes-last="never" delimiter=", "/>
+                  </names>
+                </group>
+                <choose>
+                  <if variable="genre" match="any">
+                    <choose>
+                      <if variable="number" match="none">
+                        <text variable="medium" text-case="lowercase"/>
+                      </if>
+                    </choose>
+                  </if>
+                </choose>
+              </group>
+            </if>
+            <else>
+              <text macro="format"/>
+            </else>
+          </choose>
+        </else-if>
+        <else-if variable="composer" type="song" match="all">
+          <!-- Performer of classical music works -->
+          <group delimiter="; ">
+            <choose>
+              <if variable="number" match="none">
+                <group delimiter=" ">
+                  <choose>
+                    <if variable="genre">
+                      <text variable="genre" text-case="lowercase"/>
+                      <!-- Replace prefix with performer label as that becomes available -->
+                      <names variable="author" prefix="enregistré par ">
+                        <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                      </names>
+                    </if>
+                    <else-if variable="medium">
+                      <text variable="medium" text-case="lowercase"/>
+                      <!-- Replace prefix with performer label as that becomes available -->
+                      <names variable="author" prefix="enregistré par ">
+                        <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                      </names>
+                    </else-if>
+                    <else>
+                      <!-- Replace prefix with performer label as that becomes available -->
+                      <names variable="author" prefix="enregistré par ">
+                        <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                      </names>
+                    </else>
+                  </choose>
+                </group>
+              </if>
+              <else>
+                <group delimiter=" ">
+                  <choose>
+                    <if variable="medium">
+                      <text variable="medium" text-case="lowercase"/>
+                      <!-- Replace prefix with performer label as that becomes available -->
+                      <names variable="author" prefix="enregistré par ">
+                        <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                      </names>
+                    </if>
+                    <else>
+                      <!-- Replace prefix with performer label as that becomes available -->
+                      <names variable="author" prefix="enregistré par ">
+                        <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                      </names>
+                    </else>
+                  </choose>
+                </group>
+              </else>
+            </choose>
+            <choose>
+              <if variable="genre" match="any">
+                <choose>
+                  <if variable="number" match="none">
+                    <text variable="medium" text-case="lowercase"/>
+                  </if>
+                </choose>
+              </if>
+            </choose>
+          </group>
+        </else-if>
+        <else-if variable="container-title" match="none">
+          <!-- Other description -->
+          <text macro="format"/>
+        </else-if>
+        <else>
+          <!-- For conference presentations, chapters in reports, software, place bracketed after the container title -->
+          <choose>
+            <if type="paper-conference speech" match="any">
+              <choose>
+                <if variable="collection-editor editor editorial-director issue page volume" match="any">
+                  <text macro="format"/>
+                </if>
+              </choose>
+            </if>
+            <else-if type="book">
+              <choose>
+                <if variable="version" match="none">
+                  <text macro="format"/>
+                </if>
+              </choose>
+            </else-if>
+            <else-if type="report" match="none">
+              <text macro="format"/>
+            </else-if>
+          </choose>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="bracketed-intext">
+  <!-- MC capitalize-first devient lowercase partout (3 cas) : genre, number, interviewer -->
+
+    <group prefix="[" suffix="]">
+      <choose>
+        <if variable="reviewed-author reviewed-title" type="review review-book" match="any">
+          <!-- This should be localized -->
+          <text macro="reviewed-title-intext" prefix="Compte rendu de "/>
+        </if>
+        <else-if variable="interviewer" type="interview" match="any">
+          <names variable="interviewer">
+            <label form="verb" suffix=" " text-case="lowercase"/>
+            <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+            <substitute>
+              <text macro="format-intext"/>
+            </substitute>
+          </names>
+        </else-if>
+        <else-if type="personal_communication">
+          <!-- Letter information -->
+          <choose>
+            <if variable="recipient">
+              <group delimiter=" ">
+                <choose>
+                  <if variable="number" match="none">
+                    <text variable="genre" text-case="lowercase"/>
+                  </if>
+                  <else>
+                    <text term="letter" form="short" text-case="lowercase"/>
+                  </else>
+                </choose>
+                <names variable="recipient" delimiter=", ">
+                  <label form="verb" suffix=" "/>
+                  <name and="text" delimiter-precedes-last="never" delimiter=", "/>
+                </names>
+              </group>
+            </if>
+            <else>
+              <text macro="format-intext"/>
+            </else>
+          </choose>
+        </else-if>
+        <else>
+          <text macro="format-intext"/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="bracketed-container">
+    <group prefix="[" suffix="]">
+      <choose>
+        <if type="paper-conference speech" match="any">
+          <!-- Conference presentations should describe the session [container] in bracketed unless published in a proceedings -->
+          <choose>
+            <if variable="collection-editor editor editorial-director issue page volume" match="none">
+              <text macro="format"/>
+            </if>
+          </choose>
+        </if>
+        <else-if type="book" variable="version" match="all">
+          <!-- For entries in mobile app reference works, place bracketed after the container-title -->
+          <text macro="format"/>
+        </else-if>
+        <else-if type="report">
+          <!-- For chapters in reports, place bracketed after the container title -->
+          <text macro="format"/>
+        </else-if>
+      </choose>
+    </group>
+  </macro>
+  <macro name="secondary-contributors">
+    <choose>
+      <if type="article-journal article-magazine article-newspaper post-weblog review review-book" match="any">
+        <text macro="secondary-contributors-periodical"/>
+      </if>
+	  <!-- MC correction pour paper-conference éliminée; -->
+      <else>
+        <text macro="secondary-contributors-booklike"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="secondary-contributors-periodical">
+  <!-- MC (text-case:)title devient lowercase partout (7 cas) : editor, translator, interviewer, container-author  -->
+    <group delimiter="; ">
+      <choose>
+        <if variable="title">
+          <names variable="interviewer" delimiter="; ">
+            <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+            <label form="short" prefix=", " text-case="lowercase"/>
+          </names>
+        </if>
+      </choose>
+      <names variable="translator" delimiter="; ">
+        <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+        <label form="short" prefix=", " text-case="lowercase"/>
+      </names>
+    </group>
+  </macro>
+  <macro name="secondary-contributors-booklike">
+    <group delimiter="; ">
+      <choose>
+        <if variable="title">
+          <names variable="interviewer">
+            <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+            <label form="short" prefix=", " text-case="lowercase"/>
+          </names>
+        </if>
+      </choose>
+      <!-- When editortranslator becomes available, add a test: variable="editortranslator" match="none"; then print translator -->
+      <choose>
+        <if type="post webpage" match="none">
+          <!-- Webpages treat container-title like publisher -->
+          <choose>
+            <if variable="container-title" match="none">
+              <group delimiter="; ">
+                <names variable="container-author">
+                  <label form="verb-short" suffix=" " text-case="lowercase"/>
+                  <name  and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                </names>
+                <names variable="editor translator " delimiter="; ">
+                  <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+                  <label form="short" prefix=", " text-case="lowercase"/>
+                </names>
+              </group>
+            </if>
+          </choose>
+        </if>
+        <else>
+          <group delimiter="; ">
+            <names variable="container-author">
+              <label form="verb-short" suffix=" " text-case="lowercase"/>
+              <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+            </names>
+            <names variable="editor translator" delimiter="; ">
+              <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+              <label form="short" prefix=", " text-case="lowercase"/>
+            </names>
+          </group>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="database-location">
+    <choose>
+      <if variable="archive-place" match="none">
+        <!-- With `archive-place`: physical archives. Without: online archives. -->
+        <!-- Add archive_collection as that becomes available -->
+        <text variable="archive_location"/>
+      </if>
+    </choose>
+  </macro>
+  <macro name="number">
+    <!-- MC (text-case:)title ou capitalize-first devient lowercase (3 cas) : gnere, issue -->
+    <choose>
+      <if variable="number">
+        <group delimiter=", ">
+          <group delimiter=" ">
+            <text variable="genre" text-case="lowercase"/>
+            <choose>
+              <if is-numeric="number">
+                <!-- Replace with label variable="number" if that becomes available -->
+                <text term="issue" form="short" text-case="lowercase"/>
+                <text variable="number"/>
+              </if>
+              <else>
+                <text variable="number"/>
+              </else>
+            </choose>
+          </group>
+          <choose>
+            <if type="thesis">
+              <choose>
+                <!-- Include the university in brackets if thesis is published -->
+                <if variable="archive DOI URL" match="any">
+                  <text variable="publisher"/>
+                  <!-- MC le lieu de l'Université est pertinent -->
+                  <text variable="publisher-place"/>
+                </if>
+              </choose>
+            </if>
+          </choose>
+        </group>
+      </if>
+    </choose>
+  </macro>
+  <macro name="locators-booklike">
+    <choose>
+      <if type="article-journal article-magazine article-newspaper broadcast interview patent post post-weblog review review-book speech webpage" match="any"/>
+	  <!-- MC correction pour paper-conference éliminée; -->
+      <else>
+        <group delimiter=", ">
+          <text macro="version"/>
+          <text macro="edition"/>
+          <text macro="volume-booklike"/>
+        </group>
+      </else>
+    </choose>
+  </macro>
+  <macro name="version">
+    <choose>
+    <!-- MC X.YY ne semble pas considéré "numeric"; un livre avec version est la façon de désigner un logiciel dans Zotero, alors on peut mettre le mot "version" devant. -->
+      <if is-numeric="version" type="book" match="any">
+        <group delimiter=" ">
+          <!-- replace with label variable="version" if that becomes available -->
+           <!-- (text-case:)capitalize-first devient lowercase -->
+          <text term="version" text-case="lowercase"/>
+          <text variable="version"/>
+        </group>
+      </if>
+      <else>
+        <text variable="version"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="edition">
+    <choose>
+      <if is-numeric="edition">
+        <group delimiter=" ">
+          <number variable="edition" form="ordinal"/>
+          <label variable="edition" form="short"/>
+        </group>
+      </if>
+      <else>
+        <text variable="edition"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="volume-booklike">
+  <!-- (text-case:)capitalize-first devient lowercase (3 cas) : volume, issue -->
+    <group delimiter=", ">
+      <!-- Report series [ex. 52] -->
+      <choose>
+        <if type="report">
+          <group delimiter=" ">
+           <!-- MC (text-case:)title devient capitalize-first (valable pour ouvrage en français; les majuscules à chaque mot, pour titres anglais, devraient être saisies dans Zotero) --> 
+            <text variable="collection-title" text-case="capitalize-first"/>
+            <text variable="collection-number"/>
+          </group>
+        </if>
+      </choose>
+      <choose>
+        <if variable="volume" match="any">
+          <choose>
+            <!-- Non-numeric volumes are already printed as part of the book title -->
+            <if is-numeric="volume" match="none"/>
+            <else>
+              <group delimiter=" ">
+                <label variable="volume" form="short" text-case="lowercase"/>
+                <number variable="volume" form="numeric"/>
+              </group>
+            </else>
+          </choose>
+        </if>
+        <else>
+          <group>
+            <!-- Replace with label variable="number-of-volumes" if that becomes available -->
+            <text term="volume" form="short" text-case="lowercase" suffix=" "/>
+            <text term="page-range-delimiter" prefix="1"/>
+            <number variable="number-of-volumes" form="numeric"/>
+          </group>
+        </else>
+      </choose>
+      <group delimiter=" ">
+        <label variable="issue" text-case="lowercase"/>
+        <text variable="issue"/>
+      </group>
+      <group delimiter=" ">
+        <label variable="page" form="short" suffix=" "/>
+        <text variable="page"/>
+      </group>
+    </group>
+  </macro>
+  <macro name="reviewed-title">
+    <choose>
+      <if variable="reviewed-title">
+        <!-- Not possible to distinguish TV series episode from other reviewed 
+              works [Ex. 69] -->
+        <text variable="reviewed-title" font-style="italic"/>
+      </if>
+      <else>
+        <!-- Assume title is title of reviewed work -->
+        <text variable="title" font-style="italic"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="reviewed-title-intext">
+    <!-- MC (text-case:)title devient capitalize-first (2 cas) : reviewed-title, title (erreur dans la version anglaise (voir ex. 67 et 68)? -->
+    <choose>
+      <if variable="reviewed-title">
+        <!-- Not possible to distinguish TV series episode from other reviewed works [Ex. 69] -->
+        <text variable="reviewed-title" form="short" font-style="italic" text-case="capitalize-first"/>
+      </if>
+      <else>
+        <!-- Assume title is title of reviewed work -->
+        <text variable="title" form="short" font-style="italic" text-case="capitalize-first"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="format">
+    <choose>
+      <!-- MC voir exemple 77; pour un logiciel, "medium" est le nom de variable de System (dans Zotero)
+      il ne doit pas figurer dans les crochets.
+      (text-case:)capitalize-first devient lowercase (3 cas) : volume, issue -->
+      <if type="software" match="any">
+        <!-- Replace with type="software" and term="software" (MC : fait) as that becomes available -->
+        <text term="software"/>
+      </if>    
+      <else-if variable="genre medium" match="any">
+        <group delimiter="; ">
+          <choose>
+            <if variable="number" match="none">
+              <text variable="genre" text-case="lowercase"/>
+            </if>
+          </choose>
+          <text variable="medium" text-case="lowercase"/> 
+        </group>
+      </else-if>
+      <!-- Generic labels for specific types -->
+      <!-- These should be localized when possible -->
+      <else-if type="dataset">
+        <text term="dataset"/>
+      </else-if>
+      <else-if type="interview personal_communication" match="any">
+        <choose>
+          <if variable="archive container-title DOI publisher URL" match="none">
+            <text term="letter" text-case="lowercase"/>
+          </if>
+          <else-if type="interview">
+            <text term="interview" text-case="lowercase"/>
+          </else-if>
+        </choose>
+      </else-if>
+      <else-if type="map">
+        <text term="map"/>
+      </else-if>
+    </choose>
+  </macro>
+  <macro name="format-intext">
+       <!-- (text-case:)capitalize-first devient lowercase (3 cas) : medium, letter, interview -->
+    <choose>
+      <if variable="genre" match="any">
+        <text variable="genre" text-case="lowercase"/>
+      </if>
+      <else-if variable="medium">
+        <text variable="medium" text-case="lowercase"/>
+      </else-if>
+      <!-- Generic labels for specific types -->
+      <!-- These should be localized when possible -->
+      <else-if type="dataset">
+        <text term="dataset"/>
+      </else-if>
+      <else-if type="book" variable="version" match="all">
+        <!-- Replace with type="software" and term="software" (MC : fait ) as that becomes available -->
+        <text term="software"/>
+      </else-if>
+      <else-if type="interview personal_communication" match="any">
+        <choose>
+          <if variable="archive container-title DOI publisher URL" match="none">
+            <text term="letter" text-case="lowercase"/>
+          </if>
+          <else-if type="interview">
+            <text term="interview" text-case="lowercase"/>
+          </else-if>
+        </choose>
+      </else-if>
+      <else-if type="map">
+        <text term="map"/>
+      </else-if>
+    </choose>
+  </macro>
+  <!-- APA 'source' element contains four parts:
+       container, event, publisher, access -->
+  <macro name="container">
+    <choose>
+      <if type="article-journal article-magazine article-newspaper post-weblog review review-book" match="any">  <!-- Periodical items -->
+        <text macro="container-periodical"/>
+      </if>
+	  <!-- MC correction pour paper-conference éliminée; -->
+	  <else-if type="post webpage" match="none">
+            <text macro="container-booklike"/>
+      </else-if>
+    </choose>
+  </macro>
+  <macro name="container-periodical">
+   <!-- MC text-case:)title devient capitalize-first (valable pour ouvrage en français; les majuscules à chaque mot, pour titres anglais, devraient être saisies dans Zotero).
+        (text-case:)capitalize-first devient lowercase : status (sous presse...) -->
+		
+    <group delimiter=". ">
+      <group delimiter=", ">
+        <text variable="container-title" font-style="italic" text-case="capitalize-first"/>
+        <group>
+          <text variable="volume" font-style="italic"/>
+          <text variable="issue" prefix="(" suffix=")"/>
+        </group>
+        <choose>
+          <if variable="page">
+            <text variable="page"/>
+          </if>
+          <else>
+            <!-- Ex. 6: Journal article with article number or eLocator -->
+            <!-- This should be localized -->
+            <text variable="number" prefix="article "/>
+          </else>
+        </choose>
+      </group>
+      <choose>
+        <if variable="issued">
+          <choose>
+            <if variable="issue page volume" match="none">
+              <text variable="status" text-case="lowercase"/>
+            </if>
+          </choose>
+        </if>
+      </choose>
+    </group>
+  </macro>
+  <macro name="container-booklike">
+   <!-- (text-case:)title devient lowercase : contributeurs.
+   (text-case:)capitalize-first devient lowercase : volume -->
+  
+    <choose>
+      <if variable="container-title" match="any">
+        <group delimiter=" ">
+          <text term="in" text-case="capitalize-first"/>
+          <group delimiter=", ">
+            <names variable="editor translator">
+              <!-- Change to editortranslator and move editor to substitute as that becomes available -->
+              <name and="text" delimiter-precedes-last="never" initialize-with=". " delimiter=", "/>
+              <label form="short" text-case="lowercase" prefix=" (" suffix=")"/>
+              <substitute>
+                <names variable="editorial-director"/>
+                <names variable="collection-editor"/>
+                <names variable="container-author"/>
+              </substitute>
+            </names>
+            <group delimiter="&#160;: " font-style="italic">
+              <text variable="container-title"/>
+              <!-- Replace with volume-title as that becomes available -->
+              <choose>
+                <if is-numeric="volume" match="none">
+                  <group delimiter=" ">
+                    <label variable="volume" form="short" text-case="lowercase"/>
+                    <text variable="volume"/>
+                  </group>
+                </if>
+              </choose>
+            </group>
+          </group>
+          <text macro="parenthetical-container"/>
+          <text macro="bracketed-container"/>
+        </group>
+      </if>
+    </choose>
+  </macro>
+  <macro name="publisher">
+   <!-- (text-case:)title devient capitalize-first : container-title. -->
+   <!-- MC Le séparateur entre lieu et archive était le ;  Un point me semble plus pertinent. 
+	   Fonction bien pour les manuscrits dans un répertoire, mais pour les archives en général ??? -->
+    <group delimiter=". ">
+      <choose>
+        <if type="thesis">
+          <choose>
+            <if variable="archive DOI URL" match="none">
+              <group delimiter=", ">
+                <text variable="publisher"/>
+                <text variable="publisher-place"/>
+              </group>
+            </if>
+          </choose>
+        </if>
+        <else-if type="post webpage">
+          <!-- For websites, treat container title like publisher -->
+          <group delimiter="; ">
+            <text variable="container-title" text-case="title"/>
+            <text variable="publisher"/>
+          </group>
+        </else-if>
+		<!-- MC correction pour paper-conference éliminée; -->
+		<!-- MC L'établissement de rattachement de l'auteur, normalement -->
+        <else-if type="manuscript" match="any">
+          <text variable="publisher-place" />
+        </else-if>
+        <else-if type="article-journal article-magazine article-newspaper post-weblog" match="none">
+          <text variable="publisher" />
+        </else-if>
+      </choose>
+      <group delimiter=", ">
+        <choose>
+          <if variable="archive-place">
+            <!-- With `archive-place`: physical archives. Without: online archives. -->
+            <!-- For physical archives, print the location before the archive name.
+                For electronic archives, these are printed in macro="description". -->
+            <!-- Split "archive_location" into "archive_collection" and "archive_location" as that becomes available -->
+            <!-- Must test for archive_collection:
+                With collection: archive_collection (archive_location), archive, archive-place
+                No collection: archive (archive_location), archive-place
+            -->
+            <text variable="archive_location"/>
+          </if>
+        </choose>
+        <text variable="archive"/>
+        <text variable="archive-place"/>
+      </group>
+    </group>
+  </macro>
+  <macro name="access">
+    <choose>
+      <if variable="DOI" match="any">
+        <text variable="DOI" prefix="https://doi.org/"/>
+      </if>
+      <else-if variable="URL">
+        <group delimiter=" ">
+          <choose>
+            <if variable="issued status" match="none">
+              <group delimiter=" ">
+                <text term="retrieved" text-case="capitalize-first"/>
+                <date variable="accessed" form="text"/>
+                <text term="from"/>
+              </group>
+            </if>
+          </choose>
+          <text variable="URL"/>
+        </group>
+      </else-if>
+    </choose>
+  </macro>
+  <macro name="event">
+    <choose>
+      <if variable="event">
+        <!-- To prevent Zotero from printing event-place due to its double-mapping of all 'place' to
+             both publisher-place and event-place. Remove this 'choose' when that is changed. -->
+        <choose>
+       <!-- MC  toujours le même problème <if variable="collection-editor editor editorial-director issue page volume" match="none"> -->
+            <!-- Don't print event info if published in a proceedings -->
+			<if type="speech" match="any">
+            <group delimiter=", ">
+              <text variable="event"/>
+              <text variable="event-place"/>
+            </group> 
+          </if>
+        </choose>
+      </if>
+    </choose>
+  </macro>
+  <!-- After 'source', APA also prints publication history (original publication, reprint info, retraction info) -->
+  <macro name="publication-history">
+        <!-- MC Pour une réimpression, "references" et "original-date" sont définis; cette dernière est affichée dans le renvoi, mais pas directement dans la notice : la description de la publication antérieure, saisie dans "references", inclut la date.
+
+        Pour une republication ou une traduction, seul le champ "original-date" est défini. La description de la publication antérieure, "(Ouvrage original publié en XXXX.)", est générée automatiquement (si references n'est pas défini)
+        
+        Dans Zotero, ces informations sont saisies dans Extra, comme suit 
+        original-date:XXXX
+        references:Description_de_la_publication antérieure   -->  
+        
+    <choose> 
+      <if variable="references">
+      <!-- This provides the option for more elaborate description 
+      of publication history, such as full "reprinted" references
+      (examples 11, 43, 44) or retracted references -->
+        <text variable="references" text-case="capitalize-first" prefix="(" suffix=")"/>
+      </if>    
+      <else-if variable="original-date">
+              <group delimiter=" " prefix="(" suffix=".)">
+                <!-- MC nouveau terme -->
+                <text term="original-work-published" text-case="capitalize-first" />
+                <choose>
+                  <if is-uncertain-date="original-date">
+                    <text term="circa" form="short"/>
+                  </if>
+                  <else>
+                  <!-- MC aurait pu être un nouveau terme, mais ne semble pas permis... 
+					  on pourrait aussi envisager mettre un préfixe à la date...-->
+                    <text value="en" />
+                  </else>
+                </choose>
+                <date variable="original-date">
+                  <date-part name="year"/>
+                </date>
+              </group>
+      </else-if>     
+    </choose>
+  </macro>
+  <!-- Legal citations have their own rules -->
+  <macro name="legal-cites">
+    <choose>
+      <if type="legal_case">
+        <group delimiter=". ">
+          <group delimiter=", ">
+            <text variable="title"/>
+            <group delimiter=" ">
+              <text macro="container-legal"/>
+              <text macro="date-legal"/>
+            </group>
+            <text variable="references"/>
+          </group>
+          <text macro="access"/>
+        </group>
+      </if>
+      <else-if type="bill">
+        <!-- Currently designed to handle bills, resolutions, hearings, rederal reports. -->
+        <group delimiter=". ">
+          <group delimiter=", ">
+            <choose>
+              <if variable="number container-title" match="none">
+                <!-- If no number or container-title, then assume it is a hearing -->
+                <text variable="title" font-style="italic"/>
+              </if>
+              <else>
+                <text variable="title"/>
+              </else>
+            </choose>
+            <group delimiter=" ">
+              <text macro="container-legal"/>
+              <text macro="date-legal"/>
+              <choose>
+                <if variable="number container-title" match="none">
+                  <!-- If no number or container-title, then assume it is a hearing -->
+                  <names variable="author" prefix="(testimony of " suffix=")">
+                    <name and="text" delimiter-precedes-last="never" delimiter=", "/>
+                  </names>
+                </if>
+                <else>
+                  <text variable="status" prefix="(" suffix=")"/>
+                </else>
+              </choose>
+            </group>
+            <text variable="references"/>
+          </group>
+          <text macro="access"/>
+        </group>
+      </else-if>
+      <else-if type="legislation">
+        <!-- Currently designed to handle statutes, codified regulations, executive orders.
+             For uncodified regulations, assume future code section is in status. -->
+        <group delimiter=". ">
+          <group delimiter=", ">
+            <text variable="title"/>
+            <group delimiter=" ">
+              <text macro="container-legal"/>
+              <text macro="date-legal"/>
+              <text variable="status" prefix="(" suffix=")"/>
+            </group>
+            <text variable="references"/>
+          </group>
+          <text macro="access"/>
+        </group>
+      </else-if>
+      <else-if type="treaty">
+        <!-- APA generally defers to Bluebook for legal citations, but diverges without
+             explanation for treaty items. The Bluebook format that was used in APA 6th
+             ed. is used here. -->
+        <group delimiter=", ">
+          <text variable="title" text-case="title"/>
+          <names variable="author">
+            <name initialize-with="." form="short" delimiter="-"/>
+          </names>
+          <text macro="date-legal"/>
+          <text macro="container-legal"/>
+          <text macro="access"/>
+        </group>
+      </else-if>
+    </choose>
+  </macro>
+  <macro name="date-legal">
+    <choose>
+      <if type="legal_case">
+        <group prefix="(" suffix=")" delimiter=" ">
+          <text variable="authority"/>
+          <choose>
+            <if variable="container-title" match="any">
+              <!-- Print only year for cases published in reporters-->
+              <date variable="issued" form="numeric" date-parts="year"/>
+            </if>
+            <else>
+              <date variable="issued" form="text"/>
+            </else>
+          </choose>
+        </group>
+      </if>
+      <else-if type="bill legislation" match="any">
+        <group prefix="(" suffix=")" delimiter=" ">
+          <group delimiter=" ">
+            <date variable="original-date">
+              <date-part name="year"/>
+            </date>
+            <text term="and" form="symbol"/>
+          </group>
+          <date variable="issued">
+            <date-part name="year"/>
+          </date>
+        </group>
+      </else-if>
+      <else-if type="treaty">
+        <date variable="issued" form="text"/>
+      </else-if>
+    </choose>
+  </macro>
+  <macro name="container-legal">
+    <!-- Expect legal item container-titles to be stored in short form -->
+    <choose>
+      <if type="legal_case">
+        <group delimiter=" ">
+          <choose>
+            <if variable="container-title">
+              <group delimiter=" ">
+                <text variable="volume"/>
+                <text variable="container-title"/>
+                <group delimiter=" ">
+                  <!-- Change to label variable="section" as that becomes available -->
+                  <text term="section" form="symbol"/>
+                  <text variable="section"/>
+                </group>
+                <choose>
+                  <if variable="page page-first" match="any">
+                    <text variable="page-first"/>
+                  </if>
+                  <else>
+                    <text value="___"/>
+                  </else>
+                </choose>
+              </group>
+            </if>
+            <else>
+              <group delimiter=" ">
+                <choose>
+                  <if is-numeric="number">
+                    <!-- Replace with label variable="number" if that becomes available -->
+                    <text term="issue" form="short" text-case="lowercase"/>
+                  </if>
+                </choose>
+                <text variable="number"/>
+              </group>
+            </else>
+          </choose>
+        </group>
+      </if>
+      <else-if type="bill">
+        <group delimiter=", ">
+          <group delimiter=" ">
+            <text variable="genre"/>
+            <group delimiter=" ">
+              <choose>
+                <if variable="chapter-number container-title" match="none">
+                  <!-- Replace with label variable="number" as that becomes available -->
+                  <text term="issue" form="short"/>
+                </if>
+              </choose>
+              <text variable="number"/>
+            </group>
+          </group>
+          <text variable="authority"/>
+          <text variable="chapter-number"/>
+          <group delimiter=" ">
+            <text variable="volume"/>
+            <text variable="container-title"/>
+            <text variable="page-first"/>
+          </group>
+        </group>
+      </else-if>
+      <else-if type="legislation">
+        <choose>
+          <if variable="number">
+            <!--There's a public law number-->
+            <group delimiter=", ">
+              <text variable="number" prefix="Pub. L. No. "/>
+              <group delimiter=" ">
+                <text variable="volume"/>
+                <text variable="container-title"/>
+                <text variable="page-first"/>
+              </group>
+            </group>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text variable="volume"/>
+              <text variable="container-title"/>
+              <choose>
+                <if variable="section">
+                  <group delimiter=" ">
+                    <!-- Change to label variable="section" as that becomes available -->
+                    <text term="section" form="symbol"/>
+                    <text variable="section"/>
+                  </group>
+                </if>
+                <else>
+                  <text variable="page-first"/>
+                </else>
+              </choose>
+            </group>
+          </else>
+        </choose>
+      </else-if>
+      <else-if type="treaty">
+        <group delimiter=" ">
+          <number variable="volume"/>
+          <text variable="container-title"/>
+          <choose>
+            <if variable="page page-first" match="any">
+              <text variable="page-first"/>
+            </if>
+            <else>
+              <group delimiter=" ">
+                <!-- Replace with label variable="number" if that becomes available -->
+                <text term="issue" form="short" text-case="lowercase"/>
+                <text variable="number"/>
+              </group>
+            </else>
+          </choose>
+        </group>
+      </else-if>
+    </choose>
+  </macro>
+  <macro name="citation-locator">
+    <group delimiter=" ">
+      <choose>
+        <if locator="chapter">
+          <label variable="locator" text-case="lowercase"/>
+        </if>
+        <else>
+          <label variable="locator" form="short"/>
+        </else>
+      </choose>
+      <text variable="locator"/>
+    </group>
+  </macro>
+  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year" givenname-disambiguation-rule="primary-name">
+    <sort>
+      <key macro="author-bib" names-min="3" names-use-first="1"/>
+      <key macro="date-sort-group"/>
+      <key macro="date-sort-date" sort="ascending"/>
+      <key variable="status"/>
+    </sort>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=", ">
+        <text macro="author-intext"/>
+        <text macro="date-intext"/>
+        <text macro="citation-locator"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="true" et-al-min="21" et-al-use-first="19" et-al-use-last="true" entry-spacing="0" line-spacing="2">
+    <sort>
+      <key macro="author-bib"/>
+      <key macro="date-sort-group"/>
+      <key macro="date-sort-date" sort="ascending"/>
+      <key variable="status"/>
+      <key macro="title"/>
+    </sort>
+    <layout>
+      <choose>
+        <if type="bill legal_case legislation treaty" match="any">
+          <!-- Legal items have different orders and delimiters -->
+          <choose>
+            <if variable="DOI URL" match="any">
+              <text macro="legal-cites"/>
+            </if>
+            <else>
+              <text macro="legal-cites" suffix="."/>
+            </else>
+          </choose>
+        </if>
+        <else>
+          <group delimiter=" ">
+            <group delimiter=". " suffix=".">
+              <text macro="author-bib"/>
+              <text macro="date-bib"/>
+              <text macro="title-and-descriptions"/>
+              <text macro="container"/>
+              <text macro="event"/>
+              <text macro="publisher"/>
+            </group>
+            <text macro="access"/>
+            <text macro="publication-history" />
+          </group>
+        </else>
+      </choose>
+    </layout>
+  </bibliography>
+</style>
